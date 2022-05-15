@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --fundo_background:#1B1B1B;
+    --fundo_header: #292929;
+    --fonte: #eee;
+    --verde_ligth: #3CF238;
+}
+
+/* Corpo da página */
+body{
+    background: var(--fundo_background);
+}
+
+/* Menu start */
+
+header{
+   padding: 0.1em;
+   position: fixed;
+   top: 0; left: 0; right: 0; 
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-color: var(--fundo_header);
+
+}
+
+header .logo #logo_branca{
+    width: auto;
+    height: 6em;
+    margin: 0 0 0 30px ;
+} 
+
+header .navbar{
+    margin: 0 30px 0 0 ;
+}
+
+header .navbar a{
+    text-decoration: none;
+    color: var(--fonte);
+    padding-left: 1.5em;
+    font-size: 1em;
+   font-weight: 500;
+   cursor: pointer;
+   animation: 0.5s;
+}
+
+header .navbar a:hover{
+     color: var(--verde_ligth);
+}
+/* Menu end */
