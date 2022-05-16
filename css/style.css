@@ -9,6 +9,7 @@
     --fundo_header: #292929;
     --fonte: #eee;
     --verde_ligth: #3CF238;
+    --verde: #5eae53;
 }
 
 /* Corpo da página */
@@ -27,30 +28,71 @@ header{
    align-items: center;
    justify-content: space-between;
    background-color: var(--fundo_header);
-
+   height: 6em;
 }
 
 header .logo #logo_branca{
     width: auto;
-    height: 6em;
+    height: 4em;
     margin: 0 0 0 30px ;
 } 
 
-header .navbar{
-    margin: 0 30px 0 0 ;
+header .navbar .menu_navbar{
+    margin: 0 90px 0 0 ;
 }
 
-header .navbar a{
+header .navbar  .menu_navbar a{
     text-decoration: none;
     color: var(--fonte);
-    padding-left: 1.5em;
-    font-size: 1em;
+    padding-left: 2.2em;
+    font-size: 1.1em;
    font-weight: 500;
    cursor: pointer;
    animation: 0.5s;
 }
 
-header .navbar a:hover{
-     color: var(--verde_ligth);
+header .navbar  .menu_navbar a:hover{
+    color: var(--verde_ligth);
 }
 /* Menu end */
+
+/* Acessibilidade start */
+
+header .acess_icon i{
+    color: var(--fonte);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover{
+    color: var(--verde);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 100%; right: 0%;
+    width: 10em;
+    background-color:#323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--fonte);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--fundo_header);
+}
+
+header .acess_nav p, i{
+    padding-right:10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Acessibilidade end */

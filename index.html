@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +12,8 @@
     <title>Meta Marcha</title>
 
     <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Links -->
     <link rel="stylesheet" href="css/style.css">
@@ -20,23 +22,38 @@
     <!-- Logo -->
     <link rel="shortcut icon" href="img/logo_1.png" type="image/x-icon">
 </head>
+
 <body>
 
     <header>
         <a href="#" class="logo">
             <img src="img/logo.png" alt="logo meta marcha" title="MetaMarcha" id="logo_branca">
-         </a>
+        </a>
 
         <nav class="navbar">
+            <div class="menu_navbar">
                 <a href="#home">Inicio</a>
-                <a href="#ERP">ERP</a>
+                <a href="#erp">ERP</a>
                 <a href="#plans">Planos</a>
                 <a href="#about">Sobre nós</a>
-               <a href="#blogs">Blogs</a>
+                <a href="#blogs">Blogs</a>
+            </div>
         </nav>
-      
-    </header>   
+
+        <div class="acess_icon">
+            <i class="fa-solid fa-fingerprint"
+            id="button_icon"></i>
+        </div>
+        
+        <div class="acess_nav">
+            <p id="maior_acess">A+</p>
+            <p id="menor_acess">A-</p>
+            <i class="fa-solid fa-circle-half-stroke" id="contraste_button"></i>
+        </div>
+        
+    </header>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
