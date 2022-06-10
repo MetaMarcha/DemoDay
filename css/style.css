@@ -10,6 +10,7 @@
     --font: #eee;
     --green_ligth: #3CF238;
     --green: #5eae53;
+    --green_dark: #1C8C3E;
 }
 
 /* Body the page */
@@ -58,6 +59,29 @@ header .navbar .menu_navbar a:hover {
     color: var(--green_ligth);
 }
 
+header .acesso {
+    display: flex;
+    width: auto;
+    height: 2em;
+    left: auto;
+    top: 1em;
+}
+
+header .acesso button {
+    border-radius: 10px;
+    background: none;
+    color: var(--green_dark);
+    margin-left: 16px;
+    border: var(--green_dark) solid 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header .acesso button:hover {
+    background-color: var(--green_dark);
+    color: #ffff;
+}
+
 /* Menu end */
 
 /* Accessibility start */
@@ -78,7 +102,7 @@ header .acess_icon i:hover {
 header .acess_nav {
     position: absolute;
     top: 100%;
-    right: 0%;
+    right: -110%;
     width: 10em;
     background-color: #323232;
     text-align: center;
@@ -104,6 +128,7 @@ header .acess_nav i {
 /* Accessibility end */
 
 /* Section Start */
+
 section .imagens #fundo img {
     position: absolute;
     width: 584.28px;
@@ -140,7 +165,6 @@ section .container #buttons-container i {
     color: var(--green);
     text-align: right;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    ;
 
 }
 
@@ -169,9 +193,54 @@ section .container .title {
     top: 16px;
 }
 
-section .container #buttons-container i:hover{
+section .container #buttons-container i:hover {
     color: var(--green_ligth);
     padding-left: 5px;
+}
+
+section .informacao {
+    position: absolute;
+    display: inline;
+    width: 90em;
+    height: 40em;
+    left: auto;
+    top: 50em;
+}
+
+section h3 {
+    margin-left: 5em;
+    text-align: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 3em;
+    color: #5CCD59;
+}
+
+section .informacao .container-text{
+    display: flex;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+section .informacao .container-text .text h4 {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 30px;
+    align-items: center;
+    color: #C5C5C5;
+    margin-left: 3em;
+    margin-top: 1em;
+}
+
+section .informacao .container-text .text p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-left: 3em;
+    margin-top: 1em;
 }
 
 /* Section End */
