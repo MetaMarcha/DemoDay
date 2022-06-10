@@ -1,65 +1,69 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --fundo_background:#1B1B1B;
-    --fundo_header: #292929;
-    --fonte: #eee;
-    --verde_ligth: #3CF238;
-    --verde: #5eae53;
+:root {
+    --background: #1B1B1B;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
 }
 
-/* Corpo da página */
-body{
-    background: var(--fundo_background);
+/* Body the page */
+body {
+    background: var(--background);
 }
 
 /* Menu start */
 
-header{
-   padding: 0.1em;
-   position: fixed;
-   top: 0; left: 0; right: 0; 
-   z-index: 1000;
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   background-color: var(--fundo_header);
-   height: 6em;
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 6em;
+    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
 }
 
-header .logo #logo_branca{
+header .logo #logo_branca {
     width: auto;
     height: 4em;
-    margin: 0 0 0 30px ;
-} 
-
-header .navbar .menu_navbar{
-    margin: 0 90px 0 0 ;
+    margin: 0 0 0 30px;
 }
 
-header .navbar  .menu_navbar a{
+header .navbar .menu_navbar {
+    margin: 0 90px 0 0;
+}
+
+header .navbar .menu_navbar a {
     text-decoration: none;
-    color: var(--fonte);
+    color: var(--font);
     padding-left: 2.2em;
     font-size: 1.1em;
-   font-weight: 500;
-   cursor: pointer;
-   animation: 0.5s;
+    font-weight: 500;
+    cursor: pointer;
+    animation: 0.5s;
 }
 
-header .navbar  .menu_navbar a:hover{
-    color: var(--verde_ligth);
+header .navbar .menu_navbar a:hover {
+    color: var(--green_ligth);
 }
+
 /* Menu end */
 
-/* Acessibilidade start */
+/* Accessibility start */
 
-header .acess_icon i{
-    color: var(--fonte);
+header .acess_icon i {
+    color: var(--font);
     font-size: 1.8em;
     float: left;
     margin: 0 30px 0 0;
@@ -67,26 +71,28 @@ header .acess_icon i{
 
 }
 
-header .acess_icon i:hover{
-    color: var(--verde);
+header .acess_icon i:hover {
+    color: var(--green);
 }
 
 header .acess_nav {
     position: absolute;
-    top: 100%; right: 0%;
+    top: 100%;
+    right: 0%;
     width: 10em;
-    background-color:#323232;
+    background-color: #323232;
     text-align: center;
     align-items: center;
     display: flex;
-    color: var(--fonte);
+    color: var(--font);
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
-    box-shadow: 0 0 1em var(--fundo_header);
+    box-shadow: 0 0 1em var(--header);
 }
 
-header .acess_nav p, i{
-    padding-right:10px;
+header .acess_nav p,
+i {
+    padding-right: 10px;
     padding-left: 10px;
 }
 
@@ -95,4 +101,77 @@ header .acess_nav i {
     align-items: center;
 }
 
-/* Acessibilidade end */
+/* Accessibility end */
+
+/* Section Start */
+section .imagens #fundo img {
+    position: absolute;
+    width: 584.28px;
+    height: 508.92px;
+    left: 48em;
+    top: 186px;
+}
+
+section .container {
+    position: absolute;
+    width: 10em;
+    height: 3em;
+    left: 2em;
+    top: 2em;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 3em;
+    line-height: 75px;
+    display: flex;
+    text-align: left;
+    color: var(--green);
+}
+
+section .container #buttons-container {
+    position: absolute;
+    width: 11em;
+    height: 5em;
+    left: 2em;
+    top: 4.5em;
+    display: grid;
+}
+
+section .container #buttons-container i {
+    color: var(--green);
+    text-align: right;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    ;
+
+}
+
+section .container #buttons-container button {
+    color: #fff;
+    font-size: .7em;
+    font-weight: 500;
+    background: var(--header);
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+    padding-left: .5em;
+    margin: .3em;
+}
+
+section .container .title {
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 75px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    width: 569px;
+    height: 150px;
+    left: 50px;
+    top: 16px;
+}
+
+section .container #buttons-container i:hover{
+    color: var(--green_ligth);
+    padding-left: 5px;
+}
+
+/* Section End */
