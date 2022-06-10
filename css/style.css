@@ -217,7 +217,7 @@ section h3 {
     color: #5CCD59;
 }
 
-section .informacao .container-text{
+section .informacao .container-text {
     display: flex;
     margin-left: 3em;
     margin-top: 1em;
@@ -241,6 +241,25 @@ section .informacao .container-text .text p {
     color: #FFFFFF;
     margin-left: 3em;
     margin-top: 1em;
+}
+
+section .container_planos {
+    position: absolute;
+    width: 943px;
+    height: 873px;
+    left: 257px;
+    top: 1553px;
+}
+
+section .container_planos h2 {
+    text-align: center;
+    color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
+}
+
+section .container_planos span {
+    color: #E8EC41;
 }
 
 /* Section End */
