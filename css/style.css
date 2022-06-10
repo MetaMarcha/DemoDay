@@ -68,7 +68,7 @@ header .acesso {
 }
 
 header .acesso button {
-    border-radius: 10px;
+    border-radius: .5em;
     background: none;
     color: var(--green_dark);
     margin-left: 16px;
@@ -129,7 +129,9 @@ header .acess_nav i {
 
 /* Section Start */
 
-section .imagens #fundo img {
+/* Conheça nossa ferramneta */
+
+section #home #fundo img {
     position: absolute;
     width: 584.28px;
     height: 508.92px;
@@ -198,7 +200,9 @@ section .container #buttons-container i:hover {
     padding-left: 5px;
 }
 
-section .informacao {
+/* O que é uma ERP */
+
+section #erp {
     position: absolute;
     display: inline;
     width: 90em;
@@ -208,32 +212,32 @@ section .informacao {
 }
 
 section h3 {
-    margin-left: 5em;
+    margin-top: 2em;
     text-align: center;
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 800;
     font-size: 3em;
     color: #5CCD59;
 }
 
-section .informacao .container-text{
+section #erp .container-text {
     display: flex;
-    margin-left: 3em;
-    margin-top: 1em;
+    margin-left: 5em;
+    margin-top: 2em;
+    text-align: left;
+    align-items: center;
 }
 
-section .informacao .container-text .text h4 {
+section #erp .container-text .text h4 {
     margin-top: 20px;
     font-weight: 600;
     font-size: 30px;
-    align-items: center;
     color: #C5C5C5;
-    margin-left: 3em;
+    margin-left: 2em;
     margin-top: 1em;
 }
 
-section .informacao .container-text .text p {
+section #erp .container-text .text p {
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -242,5 +246,232 @@ section .informacao .container-text .text p {
     margin-left: 3em;
     margin-top: 1em;
 }
+
+
+/* Planos */
+
+section #plans .titulo {
+    display: flex;
+}
+
+section #plans {
+    position: absolute;
+    width: 58em;
+    height: auto;
+    left: 16em;
+    top: 95em;
+}
+
+section #plans h2 {
+    margin-top: 3em;
+    text-align: center;
+    color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
+    margin-left: 5em;
+    font-size: 40px;
+}
+
+section #plans span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section #plans .icon-1 {
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+section #plans .icon-2 {
+    color: #8B0000;
+    font-size: 1.5em;
+}
+
+section #plans .bloco_1 {
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: var(--header);
+    color: var(--green);
+    font-weight: 600;
+    padding-left: 1em;
+    padding-top: .5em;
+    margin-right: 5em;
+    width: 10em;
+    height: 6em;
+    margin-top: 10em;
+}
+
+section #plans .planos {
+    display: flex;
+    align-items: center;
+}
+
+section #plans .planos .bloco_2 {
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: var(--header);
+    color: var(--font);
+    font-weight: 400;
+    line-height: 2.5em;
+    margin-right: 3em;
+    padding-right: 2em;
+    padding-top: 1em;
+    font-size: 1em;
+    margin-top: 2em;
+}
+
+section #plans .planos .bloco_2 ul {
+    width: 13em;
+    line-height: 3em;
+}
+
+section #plans .planos .bloco_3 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+section #plans .planos .bloco_3 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+    padding-top: 1em;
+}
+
+section #plans .planos .bloco_3 .container_icons i {
+    padding: .5em;
+}
+
+section #plans .planos .bloco_3 .container_icons h5 {
+    margin-top: 1.5em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.5em;
+}
+
+
+section #plans .planos .bloco_3 li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+section .bloco_3 .gratuito {
+    position: absolute;
+}
+
+/* bloco 4 */
+section #plans .planos .bloco_4 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+section #plans .planos .bloco_4 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+    padding-top: 1em;
+}
+
+section #plans .planos .bloco_4 .container_icons i {
+    padding: .5em;
+}
+
+section #plans .planos .bloco_4 .container_icons h5 {
+    margin-top: 1.5em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 2em;
+}
+
+
+section #plans .planos .bloco_4 li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+section .bloco_4 .gratuito {
+    position: absolute;
+}
+
+/* bloco 5 */
+section #plans .planos .bloco_5 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+section #plans .planos .bloco_5 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+    padding-top: 1em;
+}
+
+section #plans .planos .bloco_5 .container_icons i {
+    padding: .5em;
+}
+
+section #plans .planos .bloco_5 .container_icons h5 {
+    margin-top: 1.5em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.5em;
+}
+
+
+section #plans .planos .bloco_5 li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+section .bloco_5 .gratuito {
+    position: absolute;
+}
+
+/* Botão */
+
+section #plans .saber_mais {
+    position: absolute;
+    top: 62em;
+    left: 25em;
+}
+
+section #plans .saber_mais button {
+    width: 292px;
+    height: 52px;
+    border-radius: .5em;
+    background-color: var(--green_dark);
+    color: var(--font);
+    font-size: 28px;
+    font-weight: 600;
+    border: none;
+}
+
+section #plans .saber_mais button:hover {
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    border: var(--green_dark) solid 2px;
+}
+
+/* Sobre nós */
 
 /* Section End */
