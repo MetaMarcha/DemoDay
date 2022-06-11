@@ -268,7 +268,7 @@ section #plans h2 {
     color: var(--font);
     font-weight: 600;
     line-height: 42px;
-    margin-left: 5em;
+    margin-left: 3em;
     font-size: 40px;
 }
 
@@ -311,6 +311,7 @@ section #plans .planos {
     align-items: center;
 }
 
+/* Bloco 2 */
 section #plans .planos .bloco_2 {
     border: var(--green) solid 2px;
     border-radius: 10px;
@@ -330,6 +331,7 @@ section #plans .planos .bloco_2 ul {
     line-height: 3em;
 }
 
+/* Bloco 3 */
 section #plans .planos .bloco_3 {
     line-height: 42px;
     margin-right: 5em;
@@ -474,4 +476,333 @@ section #plans .saber_mais button:hover {
 
 /* Sobre nós */
 
+section #about {
+    position: absolute;
+    width: 64em;
+    height: 46em;
+    left: 15em;
+    top: 163em;
+}
+
+section #about h2 {
+    margin-top: 2.5em;
+    text-align: center;
+    color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 40px;
+}
+
+section #about span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section #about .container-about {
+    background-color: var(--header);
+    border: solid 1px var(--green_dark);
+    border-radius: .5em;
+    color: var(--font);
+    padding: 1em;
+    align-items: center;
+    text-align: center;
+    margin-top: 2em;
+    font-size: 1em;
+}
+
+section #about .container-about h6 {
+    color: var(--green_dark);
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+/* box1 */
+section #about #box1 h6 {
+    text-transform: uppercase;
+}
+
+section #about #box1 p {
+    width: 45em;
+    margin-left: 8em;
+    margin-top: 1em;
+}
+
+/* box2 */
+section #about .grid {
+    display: flex;
+}
+
+section #about #box2 {
+    margin: 1em;
+    width: 64em;
+    text-align: center;
+    margin-top: 5em;
+}
+
+section #about .image img {
+    position: absolute;
+    left: -15em;
+    top: 10em;
+}
+
+/* Nosso time */
+
+section #time h2 {
+    margin-top: 2.5em;
+    text-align: center;
+    color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 40px;
+}
+
+section #time span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section #time {
+    position: absolute;
+    width: 85em;
+    height: 49em;
+    left: 5em;
+    top: 210em;
+}
+
+section #time .profile {
+    color: var(--font);
+    margin-top: 5em;
+    width: 20em;
+    height: 32em;
+    background-color: var(--header);
+    text-align: center;
+    align-items: center;
+    padding: 1em;
+    box-shadow: 0px 3.16509px 3.16509px rgba(0, 0, 0, 0.25);
+    border-radius: .5em;
+    border: solid var(--green) 1px;
+    margin-left: 3em;
+}
+
+section #time .container-time-1 {
+    display: flex;
+}
+
+section #time .container-time-2 {
+    display: flex;
+    margin-left: 5em;
+}
+
+section #time .container-time-2 .profile {
+    margin-left: 5em;
+}
+
+
+section #time .profile img {
+    width: 10em;
+    height: auto;
+}
+
+section #time .profile h4 {
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 2em;
+    letter-spacing: -0.02em;
+    color: var(--font);
+}
+
+section #time .profile h5 {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1em;
+    letter-spacing: -0.02em;
+    color: var(--green_dark);
+}
+
+section #time .profile p {
+    font-weight: 300;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: -0.02em;
+    color: var(--font);
+}
+
+section #time .profile .icons-social i {
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+section #time a {
+    text-decoration: none;
+}
+
+/* Blogs */
+
+section #blogs {
+    position: absolute;
+    width: 85em;
+    height: 49em;
+    left: 5em;
+    top: 300em;
+}
+
+section #blogs h2 {
+    margin-top: 3em;
+    text-align: center;
+    color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
+    font-size: 40px;
+}
+
+section #blogs span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section #blogs .container-blogs {
+    display: flex;
+}
+
+section #blogs .container-blogs .caixa {
+    margin-top: 5em;
+    width: 19em;
+    height: 28.5em;
+    background: var(--header);
+    border-radius: .5rem;
+    text-align: center;
+    margin-left: 8em;
+}
+
+section #blogs .container-blogs .caixa img {
+    height: auto;
+    width: 100%;
+}
+
+section #blogs .container-blogs .caixa h5 {
+    color: var(--green_dark);
+    font-size: 1.5em;
+    font-weight: 800;
+    padding-left: .5em;
+    padding-right: .5em;
+    padding-top: .5em;
+    font-size: 22px;
+}
+
+section #blogs .container-blogs .caixa p {
+    color: var(--font);
+    padding: 0 .5em 0 .5em;
+}
+
+section #blogs .container-blogs .caixa button {
+    border-radius: .5em;
+    background: var(--green_dark);
+    color: var(--font);
+    border: none;
+}
+
+section #blogs .container-blogs .caixa button:hover {
+    background: none;
+    color: var(--green_dark);
+    border: solid 1.5px var(--green_dark);
+}
+
+section #blogs .image img {
+    position: absolute;
+    left: 72.5em;
+}
+
 /* Section End */
+
+/* Footer Start */
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 360em;
+    background-color: var(--header);
+    display: flex;
+    filter: drop-shadow(0px 8px 18px rgba(28, 140, 62, 0.63));
+}
+
+footer .contato {
+    height: auto;
+    width: 25%;
+    margin: 1em;
+}
+
+footer .contato h5{
+color: var(--green_dark);
+font-size: 1.5em;
+font-weight: 600;
+text-transform: uppercase;
+margin-left: 1em;
+margin-top: 1em;
+}
+
+footer .contato li{
+list-style: none;
+color: var(--font);
+font-size: 1em;
+line-height: 2em;
+font-weight: 500;
+cursor: pointer;
+}
+
+footer .contato li:hover{
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+footer #contato li{
+    cursor:auto;
+}
+
+footer #contato li:hover{
+    list-style: none;
+color: var(--font);
+font-size: 1em;
+line-height: 2em;
+font-weight: 500;
+}
+
+footer #social {
+    width: 30%;
+    align-items: center;
+    text-align: center;
+}
+
+footer #social h5{
+    color: var(--font);
+}
+
+footer #social img{
+    margin-top: 2em;
+    width: 5em;
+    height: auto;
+    
+}
+
+footer #social i{
+    font-size: 3em;
+    color: var(--green_dark);
+}
+
+/* Footer End */
