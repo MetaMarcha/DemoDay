@@ -7,10 +7,10 @@
 :root {
     --background: #1B1B1B;
     --header: #292929;
-    --font: #eee;
-    --green_light: #3CF238;
+    --font_color: #eee;
+    --light_green: #3CF238;
     --green: #5eae53;
-    --green_dark: #1C8C3E;
+    --dark_green: #1C8C3E;
 }
 
 /* Body the page */
@@ -47,7 +47,7 @@ header .navbar .menu_navbar {
 
 header .navbar .menu_navbar a {
     text-decoration: none;
-    color: var(--font);
+    color: var(--font_color);
     padding-left: 2.2em;
     font-size: 1.1em;
     font-weight: 500;
@@ -56,7 +56,7 @@ header .navbar .menu_navbar a {
 }
 
 header .navbar .menu_navbar a:hover {
-    color: var(--green_light);
+    color: var(--light_green);
 }
 
 header .acesso {
@@ -70,15 +70,15 @@ header .acesso {
 header .acesso button {
     border-radius: .5em;
     background: none;
-    color: var(--green_dark);
+    color: var(--dark_green);
     margin-left: 16px;
-    border: var(--green_dark) solid 2px;
+    border: var(--dark_green) solid 2px;
     font-size: 16px;
     font-weight: 600;
 }
 
 header .acesso button:hover {
-    background-color: var(--green_dark);
+    background-color: var(--dark_green);
     color: #ffff;
 }
 
@@ -87,7 +87,7 @@ header .acesso button:hover {
 /* Accessibility starts */
 
 header .acess_icon i {
-    color: var(--font);
+    color: var(--font_color);
     font-size: 1.8em;
     float: left;
     margin: 0 30px 0 0;
@@ -108,7 +108,7 @@ header .acess_nav {
     text-align: center;
     align-items: center;
     display: flex;
-    color: var(--font);
+    color: var(--font_color);
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
     box-shadow: 0 0 1em var(--header);
@@ -196,7 +196,7 @@ section .container .title {
 }
 
 section .container #buttons-container i:hover {
-    color: var(--green_light);
+    color: var(--light_green);
     padding-left: 5px;
 }
 
@@ -265,7 +265,7 @@ section #plans {
 section #plans h2 {
     margin-top: 3em;
     text-align: center;
-    color: var(--font);
+    color: var(--font_color);
     font-weight: 600;
     line-height: 42px;
     margin-left: 3em;
@@ -316,7 +316,7 @@ section #plans .planos .bloco_2 {
     border: var(--green) solid 2px;
     border-radius: 10px;
     background-color: var(--header);
-    color: var(--font);
+    color: var(--font_color);
     font-weight: 400;
     line-height: 2.5em;
     margin-right: 3em;
@@ -460,8 +460,8 @@ section #plans .saber_mais button {
     width: 292px;
     height: 52px;
     border-radius: .5em;
-    background-color: var(--green_dark);
-    color: var(--font);
+    background-color: var(--dark_green);
+    color: var(--font_color);
     font-size: 28px;
     font-weight: 600;
     border: none;
@@ -470,8 +470,8 @@ section #plans .saber_mais button {
 section #plans .saber_mais button:hover {
     border-radius: .5em;
     background: none;
-    color: var(--green_dark);
-    border: var(--green_dark) solid 2px;
+    color: var(--dark_green);
+    border: var(--dark_green) solid 2px;
 }
 
 /* Sobre nós */
@@ -487,7 +487,7 @@ section #about {
 section #about h2 {
     margin-top: 2.5em;
     text-align: center;
-    color: var(--font);
+    color: var(--font_color);
     font-weight: 600;
     line-height: 42px;
     font-size: 40px;
@@ -505,9 +505,9 @@ section #about span {
 
 section #about .container-about {
     background-color: var(--header);
-    border: solid 1px var(--green_dark);
+    border: solid 1px var(--dark_green);
     border-radius: .5em;
-    color: var(--font);
+    color: var(--font_color);
     padding: 1em;
     align-items: center;
     text-align: center;
@@ -516,7 +516,7 @@ section #about .container-about {
 }
 
 section #about .container-about h6 {
-    color: var(--green_dark);
+    color: var(--dark_green);
     font-size: 1.5em;
     font-weight: 800;
 }
@@ -555,7 +555,7 @@ section #about .image img {
 section #time h2 {
     margin-top: 2.5em;
     text-align: center;
-    color: var(--font);
+    color: var(--font_color);
     font-weight: 600;
     line-height: 42px;
     font-size: 40px;
@@ -580,7 +580,7 @@ section #time {
 }
 
 section #time .profile {
-    color: var(--font);
+    color: var(--font_color);
     margin-top: 5em;
     width: 20em;
     height: 32em;
@@ -618,7 +618,7 @@ section #time .profile h4 {
     font-size: 1.5em;
     line-height: 2em;
     letter-spacing: -0.02em;
-    color: var(--font);
+    color: var(--font_color);
 }
 
 section #time .profile h5 {
@@ -626,7 +626,7 @@ section #time .profile h5 {
     font-size: 1em;
     line-height: 1em;
     letter-spacing: -0.02em;
-    color: var(--green_dark);
+    color: var(--dark_green);
 }
 
 section #time .profile p {
@@ -634,7 +634,7 @@ section #time .profile p {
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: -0.02em;
-    color: var(--font);
+    color: var(--font_color);
 }
 
 section #time .profile .icons-social i {
@@ -659,7 +659,7 @@ section #blogs {
 section #blogs h2 {
     margin-top: 3em;
     text-align: center;
-    color: var(--font);
+    color: var(--font_color);
     font-weight: 600;
     line-height: 42px;
     font-size: 40px;
@@ -695,7 +695,7 @@ section #blogs .container-blogs .caixa img {
 }
 
 section #blogs .container-blogs .caixa h5 {
-    color: var(--green_dark);
+    color: var(--dark_green);
     font-size: 1.5em;
     font-weight: 800;
     padding-left: .5em;
@@ -705,21 +705,21 @@ section #blogs .container-blogs .caixa h5 {
 }
 
 section #blogs .container-blogs .caixa p {
-    color: var(--font);
+    color: var(--font_color);
     padding: 0 .5em 0 .5em;
 }
 
 section #blogs .container-blogs .caixa button {
     border-radius: .5em;
-    background: var(--green_dark);
-    color: var(--font);
+    background: var(--dark_green);
+    color: var(--font_color);
     border: none;
 }
 
 section #blogs .container-blogs .caixa button:hover {
     background: none;
-    color: var(--green_dark);
-    border: solid 1.5px var(--green_dark);
+    color: var(--dark_green);
+    border: solid 1.5px var(--dark_green);
 }
 
 section #blogs .image img {
@@ -749,7 +749,7 @@ footer .contato {
 }
 
 footer .contato h5{
-color: var(--green_dark);
+color: var(--dark_green);
 font-size: 1.5em;
 font-weight: 600;
 text-transform: uppercase;
@@ -759,7 +759,7 @@ margin-top: 1em;
 
 footer .contato li{
 list-style: none;
-color: var(--font);
+color: var(--font_color);
 font-size: 1em;
 line-height: 2em;
 font-weight: 500;
@@ -777,7 +777,7 @@ footer #contato li{
 
 footer #contato li:hover{
     list-style: none;
-color: var(--font);
+color: var(--font_color);
 font-size: 1em;
 line-height: 2em;
 font-weight: 500;
@@ -790,7 +790,7 @@ footer #social {
 }
 
 footer #social h5{
-    color: var(--font);
+    color: var(--font_color);
 }
 
 footer #social img{
@@ -802,7 +802,7 @@ footer #social img{
 
 footer #social i{
     font-size: 3em;
-    color: var(--green_dark);
+    color: var(--dark_green);
 }
 
 /* Footer Ends */
