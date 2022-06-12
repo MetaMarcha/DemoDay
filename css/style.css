@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --background: #1B1B1B;
     --barrinha: #4ab358;
@@ -107,6 +111,7 @@ header .acess_icon i:hover {
 
 header .acess_nav {
     position: absolute;
+    top: 100%;
     top: 105%;
     right: -90%;
     width: 10em;
@@ -117,6 +122,25 @@ header .acess_nav {
     color: var(--font);
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
+}
+
+header .acess_nav.active {
+    right: 0em ;
+    transition: 1s linear;
+    animation:reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
     /* animation: go-go .8s; */
 }
 
@@ -193,21 +217,22 @@ section .container {
 
 section .container #buttons-container {
     position: absolute;
+    width: 9.2em;
     width: 9.9em;
     height: 4.5em;
     left: 2em;
     top: 4.5em;
-    display: grid;
+    display: grid; 
 }
 
 section .container #buttons-container i {
     color: var(--green);
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    
 }
 
 section .container #buttons-container button {
     color: #fff;
+    font-size: .6em;
     font-size: .4em;
     font-weight: 500;
     background: var(--header);
@@ -232,9 +257,15 @@ section .container .title {
     top: 16px;
 }
 
+section .container #buttons-container i:hover {
+        color: var(--green_ligth);
+        padding-left: 5px;
+}
+
 section .container #buttons-container i:hover{
     color: var(--green_ligth);
     padding-left: 5px;
+
 }
 
 /* O que é uma ERP */
@@ -723,7 +754,7 @@ section #blogs .container-blogs .caixa {
     background: var(--header);
     border-radius: .5rem;
     text-align: center;
-    margin-left: 8em;
+    margin-left: 5em;
 }
 
 section #blogs .container-blogs .caixa img {
@@ -761,7 +792,7 @@ section #blogs .container-blogs .caixa button:hover {
 
 section #blogs .image img {
     position: absolute;
-    left: 72.5em;
+    margin-left: 70.5em;
 }
 
 /* Section End */
@@ -784,39 +815,39 @@ footer .contato {
     margin: 1em;
 }
 
-footer .contato h5{
-color: var(--green_dark);
-font-size: 1.5em;
-font-weight: 600;
-text-transform: uppercase;
-margin-left: 1em;
-margin-top: 1em;
+footer .contato h5 {
+    color: var(--green_dark);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
-footer .contato li{
-list-style: none;
-color: var(--font);
-font-size: 1em;
-line-height: 2em;
-font-weight: 500;
-cursor: pointer;
+footer .contato li {
+    list-style: none;
+    color: var(--font);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-footer .contato li:hover{
+footer .contato li:hover {
     font-size: 1.2em;
     transition: .5s;
 }
 
-footer #contato li{
-    cursor:auto;
+footer #contato li {
+    cursor: auto;
 }
 
-footer #contato li:hover{
+footer #contato li:hover {
     list-style: none;
-color: var(--font);
-font-size: 1em;
-line-height: 2em;
-font-weight: 500;
+    color: var(--font);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
 }
 
 footer #social {
@@ -825,18 +856,18 @@ footer #social {
     text-align: center;
 }
 
-footer #social h5{
+footer #social h5 {
     color: var(--font);
 }
 
-footer #social img{
+footer #social img {
     margin-top: 2em;
     width: 5em;
     height: auto;
-    
+
 }
 
-footer #social i{
+footer #social i {
     font-size: 3em;
     color: var(--green_dark);
 }
