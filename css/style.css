@@ -4,6 +4,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 :root {
     --background: #1B1B1B;
     --header: #292929;
@@ -102,7 +106,7 @@ header .acess_icon i:hover {
 header .acess_nav {
     position: absolute;
     top: 100%;
-    right: -110%;
+    right: -90%;
     width: 10em;
     background-color: #323232;
     text-align: center;
@@ -112,6 +116,24 @@ header .acess_nav {
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
     box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
+}
+
+header .acess_nav.active {
+    right: 0em ;
+    transition: 1s linear;
+    animation:reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
 }
 
 header .acess_nav p,
@@ -137,6 +159,13 @@ section #home #fundo img {
     height: 508.92px;
     left: 48em;
     top: 186px;
+    padding-right: 50px;
+}
+
+#formas {
+    position: absolute;
+    top: 0px;
+    width: 900pt;
 }
 
 section .container {
@@ -156,23 +185,21 @@ section .container {
 
 section .container #buttons-container {
     position: absolute;
-    width: 11em;
-    height: 5em;
+    width: 9.2em;
+    height: 4.5em;
     left: 2em;
     top: 4.5em;
-    display: grid;
+    display: grid; 
 }
 
 section .container #buttons-container i {
     color: var(--green);
-    text-align: right;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-
 }
 
 section .container #buttons-container button {
     color: #fff;
-    font-size: .7em;
+    font-size: .6em;
     font-weight: 500;
     background: var(--header);
     border: none;
@@ -180,6 +207,7 @@ section .container #buttons-container button {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     padding-left: .5em;
     margin: .3em;
+    text-align: left;
 }
 
 section .container .title {
@@ -196,8 +224,8 @@ section .container .title {
 }
 
 section .container #buttons-container i:hover {
-    color: var(--green_ligth);
-    padding-left: 5px;
+        color: var(--green_ligth);
+        padding-left: 5px;
 }
 
 /* O que é uma ERP */
