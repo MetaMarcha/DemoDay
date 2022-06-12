@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-* {
-    font-family: 'Poppins', sans-serif;
-}
 
 html {
     overflow-x: hidden;
@@ -10,11 +7,21 @@ html {
 
 :root {
     --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
     --header: #292929;
     --font: #eee;
     --green_ligth: #3CF238;
     --green: #5eae53;
     --green_dark: #1C8C3E;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    overflow-x: hidden;  
 }
 
 /* Body the page */
@@ -35,13 +42,12 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--header);
-    height: 6em;
-    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
+    height: 4.5em;
 }
 
 header .logo #logo_branca {
     width: auto;
-    height: 4em;
+    height: 3em;
     margin: 0 0 0 30px;
 }
 
@@ -106,6 +112,7 @@ header .acess_icon i:hover {
 header .acess_nav {
     position: absolute;
     top: 100%;
+    top: 105%;
     right: -90%;
     width: 10em;
     background-color: #323232;
@@ -134,7 +141,32 @@ header .acess_nav.active {
     to {
         transform: translateX(0);
     }
+    /* animation: go-go .8s; */
 }
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
 
 header .acess_nav p,
 i {
@@ -186,6 +218,7 @@ section .container {
 section .container #buttons-container {
     position: absolute;
     width: 9.2em;
+    width: 9.9em;
     height: 4.5em;
     left: 2em;
     top: 4.5em;
@@ -200,6 +233,7 @@ section .container #buttons-container i {
 section .container #buttons-container button {
     color: #fff;
     font-size: .6em;
+    font-size: .4em;
     font-weight: 500;
     background: var(--header);
     border: none;
@@ -219,13 +253,19 @@ section .container .title {
     position: absolute;
     width: 569px;
     height: 150px;
-    left: 50px;
+    left: 100px;
     top: 16px;
 }
 
 section .container #buttons-container i:hover {
         color: var(--green_ligth);
         padding-left: 5px;
+}
+
+section .container #buttons-container i:hover{
+    color: var(--green_ligth);
+    padding-left: 5px;
+
 }
 
 /* O que é uma ERP */
@@ -767,7 +807,6 @@ footer {
     top: 360em;
     background-color: var(--header);
     display: flex;
-    filter: drop-shadow(0px 8px 18px rgba(28, 140, 62, 0.63));
 }
 
 footer .contato {
@@ -834,3 +873,20 @@ footer #social i {
 }
 
 /* Footer End */
+
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar{
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: var(--header);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--barrinhahover);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--barrinha);
+}
+/* Barra de rolagem personalizada FINAL */
