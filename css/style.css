@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-* {
-    font-family: 'Poppins', sans-serif;
+
+html {
+    overflow-x: hidden;
 }
 
 :root {
     --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
     --header: #292929;
-    --font_color: #eee;
-    --light_green: #3CF238;
+    --font: #eee;
+    --green_ligth: #3CF238;
     --green: #5eae53;
-    --dark_green: #1C8C3E;
+    --green_dark: #1C8C3E;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    overflow-x: hidden;  
 }
 
 /* Body the page */
@@ -19,7 +30,7 @@ body {
     justify-content: center;
 }
 
-/* Menu starts */
+/* Menu start */
 
 header {
     padding: 0.1em;
@@ -32,13 +43,12 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: var(--header);
-    height: 6em;
-    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
+    height: 4.5em;
 }
 
 header .logo #logo_branca {
     width: auto;
-    height: 4em;
+    height: 3em;
     margin: 0 0 0 30px;
 }
 
@@ -48,7 +58,7 @@ header .navbar .menu_navbar {
 
 header .navbar .menu_navbar a {
     text-decoration: none;
-    color: var(--font_color);
+    color: var(--font);
     padding-left: 2.2em;
     font-size: 1.1em;
     font-weight: 500;
@@ -57,7 +67,7 @@ header .navbar .menu_navbar a {
 }
 
 header .navbar .menu_navbar a:hover {
-    color: var(--light_green);
+    color: var(--green_ligth);
 }
 
 header .acesso {
@@ -71,24 +81,24 @@ header .acesso {
 header .acesso button {
     border-radius: .5em;
     background: none;
-    color: var(--dark_green);
+    color: var(--green_dark);
     margin-left: 16px;
-    border: var(--dark_green) solid 2px;
+    border: var(--green_dark) solid 2px;
     font-size: 16px;
     font-weight: 600;
 }
 
 header .acesso button:hover {
-    background-color: var(--dark_green);
+    background-color: var(--green_dark);
     color: #ffff;
 }
 
-/* Menu ends */
+/* Menu end */
 
-/* Accessibility starts */
+/* Accessibility start */
 
 header .acess_icon i {
-    color: var(--font_color);
+    color: var(--font);
     font-size: 1.8em;
     float: left;
     margin: 0 30px 0 0;
@@ -103,17 +113,61 @@ header .acess_icon i:hover {
 header .acess_nav {
     position: absolute;
     top: 100%;
-    right: -110%;
+    top: 105%;
+    right: -90%;
     width: 10em;
     background-color: #323232;
     text-align: center;
     align-items: center;
     display: flex;
-    color: var(--font_color);
+    color: var(--font);
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
     box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
 }
+
+header .acess_nav.active {
+    right: 0em ;
+    transition: 1s linear;
+    animation:reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+    /* animation: go-go .8s; */
+}
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
 
 header .acess_nav p,
 i {
@@ -126,11 +180,11 @@ header .acess_nav i {
     align-items: center;
 }
 
-/* Accessibility ends */
+/* Accessibility end */
 
-/* Section Starts */
+/* Section Start */
 
-/* Conheça nossa ferramenta */
+/* Conheça nossa ferramneta */
 
 section #home #fundo img {
     position: absolute;
@@ -138,6 +192,13 @@ section #home #fundo img {
     height: 508.92px;
     left: 48em;
     top: 186px;
+    padding-right: 50px;
+}
+
+#formas {
+    position: absolute;
+    top: 0px;
+    width: 900pt;
 }
 
 section .container {
@@ -157,23 +218,23 @@ section .container {
 
 section .container #buttons-container {
     position: absolute;
-    width: 11em;
-    height: 5em;
+    width: 9.2em;
+    width: 9.9em;
+    height: 4.5em;
     left: 2em;
     top: 4.5em;
-    display: grid;
+    display: grid; 
 }
 
 section .container #buttons-container i {
     color: var(--green);
-    text-align: right;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-
 }
 
 section .container #buttons-container button {
     color: #fff;
-    font-size: .7em;
+    font-size: .6em;
+    font-size: .4em;
     font-weight: 500;
     background: var(--header);
     border: none;
@@ -181,6 +242,7 @@ section .container #buttons-container button {
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
     padding-left: .5em;
     margin: .3em;
+    text-align: left;
 }
 
 section .container .title {
@@ -192,13 +254,19 @@ section .container .title {
     position: absolute;
     width: 569px;
     height: 150px;
-    left: 50px;
+    left: 100px;
     top: 16px;
 }
 
 section .container #buttons-container i:hover {
-    color: var(--light_green);
+        color: var(--green_ligth);
+        padding-left: 5px;
+}
+
+section .container #buttons-container i:hover{
+    color: var(--green_ligth);
     padding-left: 5px;
+
 }
 
 /* O que é uma ERP */
@@ -266,7 +334,7 @@ section #plans {
 section #plans h2 {
     margin-top: 3em;
     text-align: center;
-    color: var(--font_color);
+    color: var(--font);
     font-weight: 600;
     line-height: 42px;
     margin-left: 3em;
@@ -317,7 +385,7 @@ section #plans .planos .bloco_2 {
     border: var(--green) solid 2px;
     border-radius: 10px;
     background-color: var(--header);
-    color: var(--font_color);
+    color: var(--font);
     font-weight: 400;
     line-height: 2.5em;
     margin-right: 3em;
@@ -461,8 +529,8 @@ section #plans .saber_mais button {
     width: 292px;
     height: 52px;
     border-radius: .5em;
-    background-color: var(--dark_green);
-    color: var(--font_color);
+    background-color: var(--green_dark);
+    color: var(--font);
     font-size: 28px;
     font-weight: 600;
     border: none;
@@ -471,8 +539,8 @@ section #plans .saber_mais button {
 section #plans .saber_mais button:hover {
     border-radius: .5em;
     background: none;
-    color: var(--dark_green);
-    border: var(--dark_green) solid 2px;
+    color: var(--green_dark);
+    border: var(--green_dark) solid 2px;
 }
 
 /* Sobre nós */
@@ -488,7 +556,7 @@ section #about {
 section #about h2 {
     margin-top: 2.5em;
     text-align: center;
-    color: var(--font_color);
+    color: var(--font);
     font-weight: 600;
     line-height: 42px;
     font-size: 40px;
@@ -506,9 +574,9 @@ section #about span {
 
 section #about .container-about {
     background-color: var(--header);
-    border: solid 1px var(--dark_green);
+    border: solid 1px var(--green_dark);
     border-radius: .5em;
-    color: var(--font_color);
+    color: var(--font);
     padding: 1em;
     align-items: center;
     text-align: center;
@@ -517,7 +585,7 @@ section #about .container-about {
 }
 
 section #about .container-about h6 {
-    color: var(--dark_green);
+    color: var(--green_dark);
     font-size: 1.5em;
     font-weight: 800;
 }
@@ -556,7 +624,7 @@ section #about .image img {
 section #time h2 {
     margin-top: 2.5em;
     text-align: center;
-    color: var(--font_color);
+    color: var(--font);
     font-weight: 600;
     line-height: 42px;
     font-size: 40px;
@@ -581,7 +649,7 @@ section #time {
 }
 
 section #time .profile {
-    color: var(--font_color);
+    color: var(--font);
     margin-top: 5em;
     width: 20em;
     height: 32em;
@@ -619,7 +687,7 @@ section #time .profile h4 {
     font-size: 1.5em;
     line-height: 2em;
     letter-spacing: -0.02em;
-    color: var(--font_color);
+    color: var(--font);
 }
 
 section #time .profile h5 {
@@ -627,7 +695,7 @@ section #time .profile h5 {
     font-size: 1em;
     line-height: 1em;
     letter-spacing: -0.02em;
-    color: var(--dark_green);
+    color: var(--green_dark);
 }
 
 section #time .profile p {
@@ -635,7 +703,7 @@ section #time .profile p {
     font-size: 1em;
     line-height: 1.5em;
     letter-spacing: -0.02em;
-    color: var(--font_color);
+    color: var(--font);
 }
 
 section #time .profile .icons-social i {
@@ -660,7 +728,7 @@ section #blogs {
 section #blogs h2 {
     margin-top: 3em;
     text-align: center;
-    color: var(--font_color);
+    color: var(--font);
     font-weight: 600;
     line-height: 42px;
     font-size: 40px;
@@ -687,7 +755,7 @@ section #blogs .container-blogs .caixa {
     background: var(--header);
     border-radius: .5rem;
     text-align: center;
-    margin-left: 8em;
+    margin-left: 5em;
 }
 
 section #blogs .container-blogs .caixa img {
@@ -696,7 +764,7 @@ section #blogs .container-blogs .caixa img {
 }
 
 section #blogs .container-blogs .caixa h5 {
-    color: var(--dark_green);
+    color: var(--green_dark);
     font-size: 1.5em;
     font-weight: 800;
     padding-left: .5em;
@@ -706,32 +774,31 @@ section #blogs .container-blogs .caixa h5 {
 }
 
 section #blogs .container-blogs .caixa p {
-    color: var(--font_color);
+    color: var(--font);
     padding: 0 .5em 0 .5em;
 }
 
 section #blogs .container-blogs .caixa button {
     border-radius: .5em;
-    background: var(--dark_green);
-    color: var(--font_color);
+    background: var(--green_dark);
+    color: var(--font);
     border: none;
 }
 
 section #blogs .container-blogs .caixa button:hover {
     background: none;
-    color: var(--dark_green);
-    border: solid 1.5px var(--dark_green);
+    color: var(--green_dark);
+    border: solid 1.5px var(--green_dark);
 }
 
 section #blogs .image img {
     position: absolute;
-    left: 72.5em;
+    margin-left: 70.5em;
 }
 
+/* Section End */
 
-/* Section Ends */
-
-/* Footer Starts */
+/* Footer Start */
 
 footer {
     position: absolute;
@@ -741,7 +808,6 @@ footer {
     top: 360em;
     background-color: var(--header);
     display: flex;
-    filter: drop-shadow(0px 8px 18px rgba(28, 140, 62, 0.63));
 }
 
 footer .contato {
@@ -752,6 +818,7 @@ footer .contato {
 
 footer .contato h5 {
     color: var(--dark_green);
+    color: var(--green_dark);
     font-size: 1.5em;
     font-weight: 600;
     text-transform: uppercase;
@@ -762,6 +829,7 @@ footer .contato h5 {
 footer .contato li {
     list-style: none;
     color: var(--font_color);
+    color: var(--font);
     font-size: 1em;
     line-height: 2em;
     font-weight: 500;
@@ -780,6 +848,7 @@ footer #contato li {
 footer #contato li:hover {
     list-style: none;
     color: var(--font_color);
+    color: var(--font);
     font-size: 1em;
     line-height: 2em;
     font-weight: 500;
@@ -793,6 +862,7 @@ footer #social {
 
 footer #social h5 {
     color: var(--font_color);
+    color: var(--font);
 }
 
 footer #social img {
@@ -804,7 +874,24 @@ footer #social img {
 
 footer #social i {
     font-size: 3em;
-    color: var(--dark_green);
+    color: var(--green_dark);
 }
 
-/* Footer Ends */
+/* Footer End */
+
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar{
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: var(--header);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--barrinhahover);
+    border-radius: .5rem;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--barrinha);
+}
+/* Barra de rolagem personalizada FINAL */
