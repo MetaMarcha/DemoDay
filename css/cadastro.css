@@ -6,11 +6,13 @@
 
 :root {
     --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
     --header: #292929;
-    --font_color: #eee;
-    --light_green: #3CF238;
+    --font: #eee;
+    --green_ligth: #3CF238;
     --green: #5eae53;
-    --dark_green: #1C8C3E;
+    --green_dark: #1C8C3E;
 }
 
 /* Body the page */
