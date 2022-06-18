@@ -786,7 +786,7 @@ footer {
 
 footer .contato {
     height: auto;
-    width: 25%;
+    width: 20%;
     margin: 1em;
 }
 
@@ -865,6 +865,17 @@ footer #social img {
 footer #social i {
     font-size: 3em;
     color: var(--green_dark);
+}
+
+footer #insta {
+    font-style: none;
+    display: inline;
+}
+
+footer #insta:hover{
+    transition: none;
+    font-size: 1em;
+    cursor:copy;
 }
 
 /* Footer End */
