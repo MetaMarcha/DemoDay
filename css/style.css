@@ -23,6 +23,7 @@ html {
 /* Body the page */
 body {
     background: var(--background);
+    justify-content: center;
 }
 
 /* Menu start */
@@ -790,6 +791,7 @@ footer .contato {
 }
 
 footer .contato h5 {
+    color: var(--dark_green);
     color: var(--green_dark);
     font-size: 1.5em;
     font-weight: 600;
@@ -800,6 +802,7 @@ footer .contato h5 {
 
 footer .contato li {
     list-style: none;
+    color: var(--font_color);
     color: var(--font);
     font-size: 1em;
     line-height: 2em;
@@ -818,6 +821,7 @@ footer #contato li {
 
 footer #contato li:hover {
     list-style: none;
+    color: var(--font_color);
     color: var(--font);
     font-size: 1em;
     line-height: 2em;
@@ -847,6 +851,7 @@ footer #social {
 }
 
 footer #social h5 {
+    color: var(--font_color);
     color: var(--font);
 }
 
