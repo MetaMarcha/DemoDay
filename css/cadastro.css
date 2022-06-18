@@ -51,7 +51,7 @@ header .navbar .menu_navbar {
 
 header .navbar .menu_navbar a {
     text-decoration: none;
-    color: var(--font_color);
+    color: var(--font);
     padding-left: 3.2em;
     font-size: 1.1em;
     font-weight: 500;
@@ -60,7 +60,7 @@ header .navbar .menu_navbar a {
 }
 
 header .navbar .menu_navbar a:hover {
-    color: var(--light_green);
+    color: var(--green_ligth);
 }
 
 header .acesso {
