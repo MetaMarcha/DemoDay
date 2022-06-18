@@ -536,19 +536,20 @@ section .saber_mais {
 section #plans .saber_mais button {
     width: 292px;
     height: 52px;
-    border-radius: .5em;
-    background-color: var(--green_dark);
-    color: var(--font);
     font-size: 28px;
     font-weight: 600;
-    border: none;
-}
-
-section #plans .saber_mais button:hover {
     border-radius: .5em;
     background: none;
     color: var(--green_dark);
     border: var(--green_dark) solid 2px;
+}
+
+section #plans .saber_mais button:hover {
+    border: none; 
+    border-radius: .5em;
+    background-color: var(--green_dark);
+    color: var(--font);
+    transition: .5s;
 }
 
 /* Sobre nós */
