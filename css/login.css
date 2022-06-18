@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
+    --green_dark: #1C8C3E;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body the page */
+
+section #fundo_login {
+    opacity: 30%;
+}
+
+body {
+    background: var(--background);
+    justify-content: center;
+}
+
+/* Menu start */
+
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 4.5em;
+    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
+}
+
+header .logo #logo_branca {
+    width: auto;
+    height: 3em;
+    margin: 0 0 0 30px;
+}
+
+header .navbar .menu_navbar {
+    margin: 0 90px 0 0;
+    margin-left: 150px;
+}
+
+header .navbar .menu_navbar a {
+    text-decoration: none;
+    color: var(--font);
+    padding-left: 3.2em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    animation: 0.5s;
+}
+
+header .navbar .menu_navbar a:hover {
+    color: var(--green_ligth);
+}
+
+header .acesso {
+    display: flex;
+    width: auto;
+    height: 2em;
+    left: auto;
+    top: 1em;
+}
+
+header .acesso button {
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    margin-left: 16px;
+    border: var(--green_dark) solid 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header .acesso button:hover {
+    background-color: var(--green_dark);
+    color: #ffff;
+}
+
+/* Menu end */
+
+/* Accessibility start */
+
+header .acess_icon i {
+    color: var(--font);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover {
+    color: var(--green_dark);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 105%;
+    right: -90%;
+    width: 10em;
+    background-color: #323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--font);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    /* animation: go-go .8s; */
+}
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .acess_nav p,
+i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Accessibility end */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Section Start */
+
+section .title {
+
+    position: absolute;
+    width: 448px;
+    height: 332px;
+    left: 151px;
+    top: 200px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 55px;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+section .container_login {
+    box-sizing: border-box;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width: 450px;
+    height: 693px;
+    left: 853px;
+    top: 125px;
+    background: #0E0E0E;
+    border: 0.865138px solid var(--green_dark);
+    box-shadow: 0px 3.46055px 3.46055px rgba(0, 0, 0, 0.25);
+    border-radius: 12.9771px;
+}
+
+
+section .container_login img {
+    width: 50px;
+    height: 50px;
+    top: 164px;
+}
+
+section .container_login h3 {
+    top: 222px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 48px;
+
+    display: flex;
+    color: #5CCD59;
+}
+
+
+section .container_login input {
+    width: 449px;
+    height: 62px;
+    top: 292px;
+}
+
+section .container_login form input{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    margin-left: 20%;
+    margin-top: -3.2em;
+    padding: 0.3em 0 0.3em 0;
+    padding-left: 2%;
+}
+
+section .container_login h4 {
+
+    width: 407.35px;
+    height: 30.35px;
+    left: 896.7px;
+    top: 490.98px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16.186px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: var(--green_dark);
+
+}
+
+.container_login button {
+    width: 314px;
+    height: 51px;
+    left: 959px;
+    top: 556px;
+
+    background: var(--green_dark);
+    border-radius: 17.5349px;
+    width: 173.33px;
+    height: 30.35px;
+    left: 1029px;
+    top: 566px;
+
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF;
+
+}
+
+section .container_login h5 {
+
+    width: 27px;
+    height: 27px;
+    left: 1117px;
+    top: 628px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: var(--green_dark);
+
+}
+
+
+
+
+
+
+
+/* Conheça nossa ferramneta */
+
+
+
+
+/* Footer Start *`{
+
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: var(--header);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--barrinhahover);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--barrinha);
+}
+
+/* Barra de rolagem personalizada FINAL */
