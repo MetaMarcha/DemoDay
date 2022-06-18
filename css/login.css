@@ -197,6 +197,7 @@ section .title {
 }
 
 section .container_login {
+    padding-top: 30px;
     box-sizing: border-box;
     position: absolute;
     align-items: center;
@@ -204,7 +205,7 @@ section .container_login {
     width: 450px;
     height: 693px;
     left: 853px;
-    top: 125px;
+    top: 105px;
     background: #0E0E0E;
     border: 0.865138px solid var(--green_dark);
     box-shadow: 0px 3.46055px 3.46055px rgba(0, 0, 0, 0.25);
@@ -220,98 +221,105 @@ section .container_login img {
 
 section .container_login h3 {
     top: 222px;
-
     font-style: normal;
     font-weight: 600;
     font-size: 30px;
     line-height: 48px;
-
-    display: flex;
     color: #5CCD59;
 }
 
 
-section .container_login input {
-    width: 449px;
-    height: 62px;
-    top: 292px;
+section .botao_login{
+    margin-left: 1.5em;
 }
 
-section .container_login form input{
+section .botao_login input {
+    background: var(--header);
+    border-radius: 0.9em;
+    border: none;
+    width: 400px;
+    height: 62px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+form input:focus{
+    color: #fff;
+    outline: 1px solid var(--green);
+}
+
+form input {
     color: #eee;
     font-family: 'Poppins', sans-serif;
-    display: flex;
-    margin-left: 20%;
-    margin-top: -3.2em;
-    padding: 0.3em 0 0.3em 0;
-    padding-left: 2%;
 }
 
+input {
+    display: flex;
+    padding: 0.3em 0 0.3em 0;
+    padding-left: 2%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section .container_login h4 {
-
-    width: 407.35px;
-    height: 30.35px;
-    left: 896.7px;
-    top: 490.98px;
-
+    margin: 10px;
     font-style: normal;
     font-weight: 600;
     font-size: 16.186px;
     line-height: 24px;
-    display: flex;
-    align-items: center;
     letter-spacing: -0.02em;
-
     color: var(--green_dark);
-
 }
 
 .container_login button {
     width: 314px;
     height: 51px;
-    left: 959px;
     top: 556px;
 
     background: var(--green_dark);
     border-radius: 17.5349px;
-    width: 173.33px;
-    height: 30.35px;
-    left: 1029px;
-    top: 566px;
-
-
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
-    display: flex;
     align-items: center;
     text-align: center;
     letter-spacing: -0.02em;
-
     color: #FFFFFF;
-
 }
 
-section .container_login h5 {
-
-    width: 27px;
-    height: 27px;
-    left: 1117px;
-    top: 628px;
-
+section .container_login h5{
     font-style: normal;
     font-weight: 600;
     font-size: 18px;
-    line-height: 27px;
-    /* identical to box height */
-
-    display: flex;
-    align-items: center;
     letter-spacing: -0.02em;
-
     color: var(--green_dark);
-
+    margin: 10px;
 }
 
 
