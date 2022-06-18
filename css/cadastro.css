@@ -58,7 +58,7 @@ header .navbar .menu_navbar a {
 }
 
 header .navbar .menu_navbar a:hover {
-    color: var(--dark_green);
+    color: var(--light_green);
 }
 
 header .acesso {
