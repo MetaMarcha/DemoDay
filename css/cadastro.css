@@ -24,6 +24,7 @@ html {
 body {
     background: var(--background);
     justify-content: center;
+    display: flex;
 }
 
 /* Menu start */
@@ -182,108 +183,14 @@ header .acess_nav i {
 
 /* Registration starts*/
 
-.cadastro input {
-    position: absolute;
-    width: 600px;
-    background: var(--header);
-    border-radius: 0.9em;
-    border: none;  
-}
-
-form input:focus{
-  color: var(--font);
-  outline: 1px solid var(--green);
-}
-
-form input{
-    color: #eee;
-    font-family: 'Poppins', sans-serif;
- 
-}
-
-input{
+.home{
+    min-height: 70vh;
     display: flex;
-    margin-left: 20%;
-    margin-top: -3.2em;
-    padding: 0.3em 0 0.3em 0;
-    padding-left: 2%;
-   
-}
-
-label {
-    display: flex;
-    color: #CDCDCD;
-    height: 50px;
-}
-
-h1{
-    text-align: center;
-    height: 1.5em;
-    margin: -2.5em 0 -1em 0;
-    font-size: 3em;
-    margin-left: 3em;
-    
-}
-
-h2{
-    text-align: center;
-    height: 10rem;
-    margin-top: 1em;
-    font-size: 2.5em;
-    margin-right: 1em;
-
-}
-
-p{
-    font-size: 1em;
-    color: #cdcdcd93
-}
-
-span{
-    color: red;
-    font-size: 1.5em;
-}
-
-.btn-success {
-    background: rgba(40, 40, 40, 0.5);
-    border-radius: 10px;
-    border-color: rgba(40, 40, 40, 0.5);
-    width: 12rem;
     align-items: center;
-    text-align: center;
-    display: inline-block;
-    margin-right: 40px;
 }
 
-.botoes{
-    text-align: center;
-    align-items: center;
-    margin-left: 7.5em;
-}
-
-fieldset{
-    text-align:justify;
-    margin-top: 2%;
-}
-
-.campo{
-    margin-bottom: 1em;
-    text-align:left;
-    margin-left: 15%;
-}
-
-#subtitulo{
-    margin-left: 15%;
-    margin-top: 5%;
-}
-
-#cadastro {
-    position: absolute;                 
-    width: 1063px;
-    height: 52px;
-    left: 184px;
-    top: 238px;
-    color: var(--font);
+.home .form-cadastro{
+    max-width: 60rem;
 }
 
 /* Registration ends*/
