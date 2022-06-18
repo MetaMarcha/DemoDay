@@ -1,14 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-
-html {
-    overflow-x: hidden;
-}
-
 :root {
     --background: #1B1B1B;
-    --barrinha: #4ab358;
-    --barrinhahover: #2d6d35;
     --header: #292929;
     --font: #eee;
     --green_ligth: #3CF238;
@@ -16,8 +9,12 @@ html {
     --green_dark: #1C8C3E;
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
+}
+
+html {
+    overflow-x: hidden;
 }
 
 /* Body the page */
@@ -64,7 +61,7 @@ header .navbar .menu_navbar a {
 }
 
 header .navbar .menu_navbar a:hover {
-    color: var(--green_ligth);
+    color: var(--green_dark);
 }
 
 header .acesso {
@@ -104,12 +101,11 @@ header .acess_icon i {
 }
 
 header .acess_icon i:hover {
-    color: var(--green);
+    color: var(--green_dark);
 }
 
 header .acess_nav {
     position: absolute;
-    top: 105%;
     top: 105%;
     right: -90%;
     width: 10em;
@@ -120,25 +116,6 @@ header .acess_nav {
     color: var(--font);
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
-    box-shadow: 0 0 1em var(--header);
-    animation: go-go .8s;
-}
-
-header .acess_nav.active {
-    right: 0em ;
-    transition: 1s linear;
-    animation:reverse .8s;
-}
-
-@keyframes go-back {
-
-    from {
-        transform: translateX(100px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
     /* animation: go-go .8s; */
 }
 
@@ -159,12 +136,13 @@ header .acess_nav.active {
 
 @keyframes go-back {
     from {
-      transform: translateX(100px);
+        transform: translateX(100px);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  } 
+}
 
 header .acess_nav p,
 i {
@@ -186,7 +164,7 @@ header .acess_nav i {
 section #home #fundo img {
     position: absolute;
     width: 550px;
-    height: 508.92px;
+    height: 478.87px;
     left: 48em;
     top: 130px;
     margin-right: 10px;
@@ -221,7 +199,7 @@ section .container #buttons-container {
     height: 4.5em;
     left: 2em;
     top: 4.5em;
-    display: grid; 
+    display: grid;
 }
 
 section .container #buttons-container i {
@@ -259,30 +237,26 @@ section .container .title {
 }
 
 section .container #buttons-container i:hover {
-        color: var(--green_ligth);
-        padding-left: 5px;
-}
-
-section .container #buttons-container i:hover{
     color: var(--green_ligth);
     padding-left: 5px;
-
 }
 
 /* O que é uma ERP */
 
 section #erp img {
-    margin-left: -80px;
+    margin-left: 80px;
 }
 
 section #erp {
     position: absolute;
     display: inline;
-    align-items: center;
+    width: 90em;
+    height: 20em;
+    left: auto;
     top: 40em;
 }
 
-section #erp h3 {
+section h3 {
     margin-top: 2em;
     text-align: center;
     font-style: normal;
@@ -293,11 +267,10 @@ section #erp h3 {
 
 section #erp .container-text {
     display: flex;
-    margin-left: 10em;
+    margin-right: 10em;
     margin-top: 2em;
     text-align: left;
     align-items: center;
-    margin-right: 80px;
 }
 
 section #erp .container-text .text h4 {
@@ -322,14 +295,11 @@ section #erp .container-text .text p {
 
 /* Planos */
 
-
 #linhas img{
     position: absolute;
-    align-items: center;
-    top: 410px;
-    bottom: 70px;
-    width: 918px;
-    height: 495px;
+    width: 905px;
+    height: 500.83px;
+    bottom: 70px;    
 }
 
 section #plans .titulo {
@@ -352,6 +322,16 @@ section #plans h2 {
     line-height: 42px;
     margin-left: 3em;
     font-size: 40px;
+}
+
+section #plans span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section #plans .icon-1 {
@@ -384,7 +364,6 @@ section #plans .planos {
 }
 
 /* Bloco 2 */
-
 section #plans .planos .bloco_2 {
     border: var(--green) solid 2px;
     border-radius: 12px;
@@ -399,13 +378,16 @@ section #plans .planos .bloco_2 {
     margin-top: 5em;
 }
 
+section #plans .planos .bloco_2 #clientes{
+    
+}
+
 section #plans .planos .bloco_2 ul {
     width: 13em;
     line-height: 3em;
 }
 
 /* Bloco 3 */
-
 section #plans .planos .bloco_3 {
     line-height: 42px;
     margin-right: 5em;
@@ -431,7 +413,7 @@ section #plans .planos .bloco_3 .container_icons h5 {
     margin-top: 1.5em;
     color: var(--green);
     font-weight: 800;
-    padding-left: 2em;
+    padding-left: 1.5em;
 }
 
 
@@ -445,7 +427,6 @@ section .bloco_3 .gratuito {
 }
 
 /* bloco 4 */
-
 section #plans .planos .bloco_4 {
     line-height: 42px;
     margin-right: 5em;
@@ -485,7 +466,6 @@ section .bloco_4 .gratuito {
 }
 
 /* bloco 5 */
-
 section #plans .planos .bloco_5 {
     line-height: 42px;
     margin-right: 5em;
@@ -526,10 +506,10 @@ section .bloco_5 .gratuito {
 
 /* Botão */
 
-section .saber_mais {
+section #plans .saber_mais {
     position: absolute;
     top: 62em;
-    left: 20em;
+    left: 25em;
 }
 
 section #plans .saber_mais button {
@@ -552,17 +532,11 @@ section #plans .saber_mais button:hover {
 
 /* Sobre nós */
 
-section #about .image img {
-    position: absolute;
-    left: -12em;
-    top: 10em;
-}
-
 section #about {
     position: absolute;
     width: 64em;
     height: 46em;
-    left: 12em;
+    left: 15em;
     top: 155em;
 }
 
@@ -570,7 +544,19 @@ section #about h2 {
     margin-top: 2.5em;
     text-align: center;
     color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
     font-size: 40px;
+}
+
+section #about span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section #about .container-about {
@@ -614,6 +600,12 @@ section #about #box2 {
     margin-top: 5em;
 }
 
+section #about .image img {
+    position: absolute;
+    left: -15em;
+    top: 10em;
+}
+
 /* Nosso time */
 
 section #time h2 {
@@ -625,16 +617,28 @@ section #time h2 {
     font-size: 40px;
 }
 
+section #time span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 section #time {
     position: absolute;
-    align-items:center ;
+    width: 85em;
+    height: 49em;
+    left: -1.55em;
     top: 210em;
 }
 
 section #time .profile {
     color: var(--font);
     margin-top: 5em;
-    width: 19em;
+    width: 20em;
     height: 32em;
     background-color: var(--header);
     text-align: center;
@@ -643,12 +647,11 @@ section #time .profile {
     box-shadow: 0px 3.16509px 3.16509px rgba(0, 0, 0, 0.25);
     border-radius: .5em;
     border: solid var(--green) 1px;
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
 section #time .container-time-1 {
     display: flex;
-    margin-left: -10px;
 }
 
 section #time .container-time-2 {
@@ -701,15 +704,11 @@ section #time a {
 
 /* Blogs */
 
-section #blogs .image img {
-    position: absolute;
-    left: 68.55em;
-    top: 10em;
-}
-
 section #blogs {
     position: absolute;
-    right: 80px;
+    width: 85em;
+    height: 49em;
+    right: 2em;
     top: 285em;
 }
 
@@ -717,8 +716,20 @@ section #blogs h2 {
     margin-top: 3em;
     text-align: center;
     color: var(--font);
+    margin-left: 1.9em;
     font-weight: 600;
+    line-height: 42px;
     font-size: 40px;
+}
+
+section #blogs span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 section #blogs .container-blogs {
@@ -768,9 +779,15 @@ section #blogs .container-blogs .caixa button:hover {
     border: solid 1.5px var(--green_dark);
 }
 
+section #blogs .image img {
+    position: absolute;
+    left: 71.5em;
+}
+
 /* Section End */
 
 /* Footer Start */
+
 
 footer {
     position: absolute;
@@ -812,18 +829,6 @@ footer .contato li:hover {
     transition: .5s;
 }
 
-footer #contato li {
-    cursor: auto;
-}
-
-footer #contato li:hover {
-    list-style: none;
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-}
-
 footer .contato a {
     list-style: none;
     color: var(--font);
@@ -838,6 +843,19 @@ footer .contato a {
 footer .contato a:hover {
     font-size: 1.2em;
     transition: .5s;
+}
+
+
+footer #contato li {
+    cursor: auto;
+}
+
+footer #contato li:hover {
+    list-style: none;
+    color: var(--font);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
 }
 
 footer #social {
@@ -863,20 +881,3 @@ footer #social i {
 }
 
 /* Footer End */
-
-
-/* Barra de rolagem personalizada INICIO */
-::-webkit-scrollbar{
-    width: .6rem;
-    height: .2rem;
-    border-radius: .5rem;
-    background-color: var(--header);
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--barrinhahover);
-    border-radius: .5rem;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: var(--barrinha);
-}
-/* Barra de rolagem personalizada FINAL */
