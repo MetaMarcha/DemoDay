@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma de gestão comercial, nós da MetaMarcha irá ajudar você micro, pequeno e até médio comerciante a gerir melhor o seu negócio. Acabou a era do papel e caneta, utilize de forma prática e fácil o nosso site e nos agradeça depois!">
+    <meta name="author"
+        content="Amanda Valentin, Beatriz Barreto, Camila Soares,João Gonçalves, Júlia Oliveira, Michelly Nonato, Samara Moura">
+    <meta name="keywords" content="Cadastro, ERP, PROA, Demoday, plataforma de gestão, gestão, financeiro, controle">
+
+    <title>Meta Marcha</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/cadastro.css">
+    <script src="https://kit.fontawesome.com/0eb9d79b15.js" crossorigin="anonymous"></script>
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="img/logo_1.png" type="image/x-icon">
+</head>
+
+<body>
+
+    <header>
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo meta marcha" title="MetaMarcha" id="logo_branca">
+        </a>
+
+        <nav class="navbar">
+            <div class="menu_navbar">
+                <a href="#home">Início</a>
+                <a href="#erp">ERP</a>
+                <a href="#plans">Planos</a>
+                <a href="#about">Sobre nós</a>
+                <a href="#blogs">Blogs</a>
+            </div>
+        </nav>
+
+        <div class="acesso">
+            <button type="button" href="#">Cadastre-se</button>
+            <button type="button" href="#">Entre</button>
+        </div>
+
+        <div class="acess_icon">
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
+        </div>
+
+        <div class="acess_nav">
+            <p id="maior_acess">A+</p>
+            <p id="menor_acess">A-</p>
+            <i class="fa-solid fa-circle-half-stroke" id="contraste_button"></i>
+        </div>
+
+    </header>
+
+    <section id="cadastro">
+
+        <div class="container_form">
+
+            <div class="area_cadastro">
+                <h1>Cadastre-se</h1>
+                <p id="subtitulo"><span>*</span> ← Obrigatórios</p>
+
+                <div class="formulario_cadastro">
+                    <form>
+                        <fieldset class="grupo">
+
+                            <div class="cadastro">
+                                <div class="campo">
+                                    <label for="nome">Nome completo<span> *</span></label>
+                                    <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="CPF">CPF ou CNPJ<span> *</span></label>
+                                    <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF ou CNPJ" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="empresa">Nome da empresa</label>
+                                    <input type="text" name="empresa" id="empresa" placeholder="Digite o nome da sua empresa">
+                                </div>
+                                <div class="campo">
+                                    <label for="email">Email<span> *</span></label>
+                                    <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="telefone">Telefone<span> *</span></label>
+                                    <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="password">Crie uma senha <span> *</span></label>
+                                    <input type="password" name="password" id="password" placeholder="Crie uma senha (8 ou mais caracteres)" required>
+                                </div>
+                                <div class="campo">
+                                    <label for="confirm">Repetir senha<span> *</span></label>
+                                    <input type="password" name="password" id="confirm" placeholder="Confirme sua senha" required>
+                                </div>
+                            </div>
+
+                        </fieldset>
+                    </form>
+                </div>
+
+            </div>
+
+            <div class="botoes">
+                <h2><br> Como você classifica sua empresa? <br></h2>
+                <button type="button" class="btn btn-success">MEI</button>
+                <button type="button" class="btn btn-success">Micro</button>
+                <button type="button" class="btn btn-success">Pequena</button>
+                <button type="button" class="btn btn-success">Média</button>
+            </div>
+
+        </div>
+
+        <div id="plans">
+
+            <div class="titulo">
+                <div class="bloco_1">
+                    <p>Possui <i class="fa-solid fa-check-double icon-1"></i></p>
+                    <p>Não possui <i class="fa-solid fa-xmark icon-2"></i></p>
+                </div>
+                <h2>Nossos <span>Planos</span></h2>
+
+
+            </div>
+
+            <div class="planos">
+
+                <div id="linhas">
+                    <img src="img/linhas.png" alt="">
+                </div>
+
+                <div class="bloco_2">
+                    <ul>
+                        <li>Controle Financeiro</li>
+                        <li>Controle de Estoque</li>
+                        <li>Vendas</li>
+                        <li>Emissão de Boletos</li>
+                        <li>Cadastros - Clientes</li>
+                        <li>Relatórios</li>
+                        <li>Chamadas</li>
+                        <li>Agenda</li>
+                        <li>Contratos</li>
+                        <li>Emissão de Notas</li>
+                        <li>Lojas</li>
+                        <li>Integração</li>
+                    </ul>
+                </div>
+
+                <div class="bloco_3">
+
+                    <div class="gratuito"><img src="img/banner-1.png"></div>
+
+                    <div class="container_icons">
+
+                        <h5>Dahora</h5>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="bloco_4">
+
+                    <div class="gratuito"><img src="img/banner-1.png"></div>
+
+                    <div class="container_icons">
+
+                        <h5>Massa</h5>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="bloco_5">
+
+                    <div class="gratuito"><img src="img/banner-1.png"></div>
+
+                    <div class="container_icons">
+
+                        <h5>Arretado</h5>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>

@@ -16,6 +16,7 @@
 /* Body the page */
 body {
     background: var(--background);
+    justify-content: center;
 }
 
 /* Menu starts */
@@ -727,6 +728,7 @@ section #blogs .image img {
     left: 72.5em;
 }
 
+
 /* Section Ends */
 
 /* Footer Starts */
@@ -748,39 +750,39 @@ footer .contato {
     margin: 1em;
 }
 
-footer .contato h5{
-color: var(--dark_green);
-font-size: 1.5em;
-font-weight: 600;
-text-transform: uppercase;
-margin-left: 1em;
-margin-top: 1em;
+footer .contato h5 {
+    color: var(--dark_green);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 1em;
 }
 
-footer .contato li{
-list-style: none;
-color: var(--font_color);
-font-size: 1em;
-line-height: 2em;
-font-weight: 500;
-cursor: pointer;
+footer .contato li {
+    list-style: none;
+    color: var(--font_color);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-footer .contato li:hover{
+footer .contato li:hover {
     font-size: 1.2em;
     transition: .5s;
 }
 
-footer #contato li{
-    cursor:auto;
+footer #contato li {
+    cursor: auto;
 }
 
-footer #contato li:hover{
+footer #contato li:hover {
     list-style: none;
-color: var(--font_color);
-font-size: 1em;
-line-height: 2em;
-font-weight: 500;
+    color: var(--font_color);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
 }
 
 footer #social {
@@ -789,18 +791,18 @@ footer #social {
     text-align: center;
 }
 
-footer #social h5{
+footer #social h5 {
     color: var(--font_color);
 }
 
-footer #social img{
+footer #social img {
     margin-top: 2em;
     width: 5em;
     height: auto;
-    
+
 }
 
-footer #social i{
+footer #social i {
     font-size: 3em;
     color: var(--dark_green);
 }
