@@ -1,25 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-* {
-    font-family: 'Poppins', sans-serif;
+
+html {
+    overflow-x: hidden;
 }
 
 :root {
     --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
     --header: #292929;
-    --font_color: #eee;
-    --light_green: #3CF238;
+    --font: #eee;
+    --green_ligth: #3CF238;
     --green: #5eae53;
-    --dark_green: #1C8C3E;
+    --green_dark: #1C8C3E;
+}
+
+*{
+    font-family: 'Poppins', sans-serif;
 }
 
 /* Body the page */
 body {
     background: var(--background);
-
+    justify-content: center;
 }
 
-/* Menu starts */
+/* Menu start */
 
 header {
     padding: 0.1em;
@@ -49,16 +56,16 @@ header .navbar .menu_navbar {
 
 header .navbar .menu_navbar a {
     text-decoration: none;
-    color: var(--font_color);
+    color: var(--font);
     padding-left: 3.2em;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     cursor: pointer;
     animation: 0.5s;
 }
 
 header .navbar .menu_navbar a:hover {
-    color: var(--light_green);
+    color: var(--green_ligth);
 }
 
 header .acesso {
@@ -72,24 +79,24 @@ header .acesso {
 header .acesso button {
     border-radius: .5em;
     background: none;
-    color: var(--dark_green);
+    color: var(--green_dark);
     margin-left: 16px;
-    border: var(--dark_green) solid 2px;
+    border: var(--green_dark) solid 2px;
     font-size: 16px;
     font-weight: 600;
 }
 
 header .acesso button:hover {
-    background-color: var(--dark_green);
+    background-color: var(--green_dark);
     color: #ffff;
 }
 
-/* Menu ends */
+/* Menu end */
 
-/* Accessibility starts */
+/* Accessibility start */
 
 header .acess_icon i {
-    color: var(--font_color);
+    color: var(--font);
     font-size: 1.8em;
     float: left;
     margin: 0 30px 0 0;
@@ -98,23 +105,67 @@ header .acess_icon i {
 }
 
 header .acess_icon i:hover {
-    color: var(--dark_green);
+    color: var(--green);
 }
 
 header .acess_nav {
     position: absolute;
-    top: 100%;
-    right: -110%;
+    top: 105%;
+    top: 105%;
+    right: -90%;
     width: 10em;
-    background-color: #323232;
+    background-color: var(--header);
     text-align: center;
     align-items: center;
     display: flex;
-    color: var(--font_color);
+    color: var(--font);
     padding: 10px 20px 0px 20px;
     border-radius: 0 0 0 10px;
     box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
 }
+
+header .acess_nav.active {
+    right: 0em ;
+    transition: 1s linear;
+    animation:reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+    /* animation: go-go .8s; */
+}
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(100px);
+    }
+    to {
+      transform: translateX(0);
+    }
+  } 
 
 header .acess_nav p,
 i {
@@ -127,7 +178,7 @@ header .acess_nav i {
     align-items: center;
 }
 
-/* Accessibility ends */
+/* Accessibility end */
 
 /* Registration starts*/
 
@@ -140,7 +191,7 @@ header .acess_nav i {
 }
 
 form input:focus{
-  color: #fff;
+  color: var(--font);
   outline: 1px solid var(--green);
 }
 
@@ -232,7 +283,7 @@ fieldset{
     height: 52px;
     left: 184px;
     top: 238px;
-    color: var(--font_color);
+    color: var(--font);
 }
 
 /* Registration ends*/
