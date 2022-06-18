@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --background: #1B1B1B;
+    --header: #292929;
+    --font_color: #eee;
+    --light_green: #3CF238;
+    --green: #5eae53;
+    --dark_green: #1C8C3E;
+}
+
+/* Body the page */
+body {
+    background: var(--background);
+
+}
+
+/* Menu starts */
+
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 4.5em;
+    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
+}
+
+header .logo #logo_branca {
+    width: auto;
+    height: 3em;
+    margin: 0 0 0 30px;
+}
+
+header .navbar .menu_navbar {
+    margin: 0 90px 0 0;
+    margin-left: 150px;
+}
+
+header .navbar .menu_navbar a {
+    text-decoration: none;
+    color: var(--font_color);
+    padding-left: 3.2em;
+    font-size: 1.1em;
+    font-weight: 500;
+    cursor: pointer;
+    animation: 0.5s;
+}
+
+header .navbar .menu_navbar a:hover {
+    color: var(--dark_green);
+}
+
+header .acesso {
+    display: flex;
+    width: auto;
+    height: 2em;
+    left: auto;
+    top: 1em;
+}
+
+header .acesso button {
+    border-radius: .5em;
+    background: none;
+    color: var(--dark_green);
+    margin-left: 16px;
+    border: var(--dark_green) solid 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header .acesso button:hover {
+    background-color: var(--dark_green);
+    color: #ffff;
+}
+
+/* Menu ends */
+
+/* Accessibility starts */
+
+header .acess_icon i {
+    color: var(--font_color);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover {
+    color: var(--dark_green);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 100%;
+    right: -110%;
+    width: 10em;
+    background-color: #323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--font_color);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--header);
+}
+
+header .acess_nav p,
+i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Accessibility ends */
+
+/* Registration starts*/
+
+.cadastro input {
+    position: absolute;
+    width: 600px;
+    background: var(--header);
+    border-radius: 0.9em;
+    border: none;  
+}
+
+form input{
+    color: #eee;
+    font-family: 'Poppins', sans-serif;
+}
+
+input{
+    display: flex;
+    margin-left: 20%;
+    margin-top: -3.2em;
+    padding: 0.3em 0 0.3em 0;
+    padding-left: 2%;
+}
+
+label {
+    display: flex;
+    color: #CDCDCD;
+    height: 50px;
+}
+
+h1{
+    text-align: center;
+    height: 1.5em;
+    margin: -3em 0 -1em 0;
+    font-size: 3em;
+    margin-left: 2em;
+    
+}
+
+h2{
+    text-align: center;
+    height: 10rem;
+    margin-top: 1em;
+    font-size: 2.5em;
+    margin-right: 1em;
+
+}
+
+p{
+    font-size: 1em;
+    color: #cdcdcd93
+}
+
+span{
+    color: red;
+    font-size: 1.5em;
+}
+
+.btn-success {
+    background: rgba(40, 40, 40, 0.5);
+    border-radius: 10px;
+    border-color: rgba(40, 40, 40, 0.5);
+    width: 12rem;
+    align-items: center;
+    text-align: center;
+    display: inline-block;
+    margin-right: 40px;
+}
+
+.botoes{
+    text-align: center;
+    align-items: center;
+    margin-left: 7.5em;
+}
+
+fieldset{
+    text-align:justify;
+    margin-top: 2%;
+}
+
+.campo{
+    margin-bottom: 1em;
+    text-align:left;
+    margin-left: 15%;
+}
+
+#subtitulo{
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+#cadastro {
+    position: absolute;                 
+    width: 1063px;
+    height: 52px;
+    left: 184px;
+    top: 238px;
+    color: var(--font_color);
+}
+
+/* Registration ends*/
+
+/* Planos */
+
+#linhas img{
+    position: absolute;
+    width: 905px;
+    height: 500.83px;
+    bottom: 70px;    
+}
+
+section #plans .titulo {
+    display: flex;
+}
+
+section #plans {
+    position: absolute;
+    width: 58em;
+    height: auto;
+    left: 6em;
+    margin-top: 3em;
+}
+
+section #plans h2 {
+    margin-top: 3em;
+    text-align: center;
+    color: var(--font);
+    font-weight: 600;
+    line-height: 42px;
+    margin-left: 3em;
+    font-size: 40px;
+}
+
+section #plans span {
+    color: #E8EC41;
+    position: relative;
+    padding-left: 16px;
+    background-image: url(/img/banner.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+section #plans .icon-1 {
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+section #plans .icon-2 {
+    color: #8B0000;
+    font-size: 1.5em;
+}
+
+section #plans .bloco_1 {
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: var(--header);
+    color: var(--green);
+    font-weight: 600;
+    padding-left: 1em;
+    padding-top: .5em;
+    margin-right: 5em;
+    width: 10em;
+    height: 6em;
+    margin-top: 10em;
+}
+
+section #plans .planos {
+    display: flex;
+    align-items: center;
+}
+
+/* Bloco 2 */
+section #plans .planos .bloco_2 {
+    border: var(--green) solid 2px;
+    border-radius: 12px;
+    background-color: var(--header);
+    color: var(--font);
+    font-weight: 400;
+    line-height: 2.5em;
+    margin-right: 3em;
+    padding-right: 2em;
+    padding-top: 1em;
+    font-size: 1em;
+    margin-top: 5em;
+}
+
+section #plans .planos .bloco_2 #clientes{
+    
+}
+
+section #plans .planos .bloco_2 ul {
+    width: 13em;
+    line-height: 3em;
+}
+
+/* Bloco 3 */
+section #plans .planos .bloco_3 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+section #plans .planos .bloco_3 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+    padding-top: 1em;
+}
+
+section #plans .planos .bloco_3 .container_icons i {
+    padding: .5em;
+}
+
+section #plans .planos .bloco_3 .container_icons h5 {
+    margin-top: 1.5em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.5em;
+}
+
+
+section #plans .planos .bloco_3 li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+section .bloco_3 .gratuito {
+    position: absolute;
+}
+
+/* bloco 4 */
+section #plans .planos .bloco_4 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+section #plans .planos .bloco_4 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+    padding-top: 1em;
+}
+
+section #plans .planos .bloco_4 .container_icons i {
+    padding: .5em;
+}
+
+section #plans .planos .bloco_4 .container_icons h5 {
+    margin-top: 1.5em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 2em;
+}
+
+
+section #plans .planos .bloco_4 li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+section .bloco_4 .gratuito {
+    position: absolute;
+}
+
+/* bloco 5 */
+section #plans .planos .bloco_5 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+section #plans .planos .bloco_5 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+    padding-top: 1em;
+}
+
+section #plans .planos .bloco_5 .container_icons i {
+    padding: .5em;
+}
+
+section #plans .planos .bloco_5 .container_icons h5 {
+    margin-top: 1.5em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.5em;
+}
+
+
+section #plans .planos .bloco_5 li {
+    list-style: none;
+    margin-left: 1.5em;
+}
+
+section .bloco_5 .gratuito {
+    position: absolute;
+}
+
+/* Botão */
+
+section #plans .saber_mais {
+    position: absolute;
+    top: 62em;
+    left: 25em;
+}
+
+section #plans .saber_mais button {
+    width: 292px;
+    height: 52px;
+    border-radius: .5em;
+    background-color: var(--green_dark);
+    color: var(--font);
+    font-size: 28px;
+    font-weight: 600;
+    border: none;
+}
+
+section #plans .saber_mais button:hover {
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    border: var(--green_dark) solid 2px;
+}
