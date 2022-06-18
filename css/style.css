@@ -619,11 +619,10 @@ section #about #box2 {
 /* Nosso time */
 
 section #time h2 {
-    margin-top: -30px;
-    margin-left: 13.5em;
+    /* margin-left: 13.5em; */
+    text-align: center;
     color: var(--font);
     font-weight: 600;
-    line-height: 42px;
     font-size: 40px;
 }
 
