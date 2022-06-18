@@ -58,7 +58,7 @@ header .navbar .menu_navbar a {
     text-decoration: none;
     color: var(--font);
     padding-left: 3.2em;
-    font-size: 1.1em;
+    font-size: 1em;
     font-weight: 500;
     cursor: pointer;
     animation: 0.5s;
@@ -619,7 +619,7 @@ section #about #box2 {
 
 section #time h2 {
     margin-top: -30px;
-    text-align: center;
+    margin-left: 13.5em;
     color: var(--font);
     font-weight: 600;
     line-height: 42px;
@@ -704,22 +704,21 @@ section #time a {
 
 section #blogs .image img {
     position: absolute;
-    left: 68.55em;
+    left: 67.55em;
     top: 10em;
 }
 
 section #blogs {
     position: absolute;
-    right: 80px;
     top: 285em;
+    text-align: center;
 }
 
 section #blogs h2 {
     margin-top: 3em;
-    text-align: center;
     color: var(--font);
-    font-weight: 600;
     font-size: 40px;
+    margin-left: 2.8em;
 }
 
 section #blogs .container-blogs {
@@ -733,7 +732,7 @@ section #blogs .container-blogs .caixa {
     background: var(--header);
     border-radius: .5rem;
     text-align: center;
-    margin-left: 8em;
+    margin-left: 7em;
 }
 
 section #blogs .container-blogs .caixa img {
