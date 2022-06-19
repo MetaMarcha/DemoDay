@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
+    --green_dark: #1C8C3E;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body the page */
+body {
+    background: var(--background);
+    justify-content: center;
+}
+
+/* Menu start */
+
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 4.5em;
+    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
+}
+
+header .logo #logo_branca {
+    width: auto;
+    height: 3em;
+    margin: 0 0 0 30px;
+}
+
+/* Menu end */
+
+/* Accessibility start */
+
+header .acess_icon i {
+    color: var(--font);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover {
+    color: var(--green);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 105%;
+    top: 105%;
+    right: -90%;
+    width: 10em;
+    background-color: #323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--font);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
+}
+
+header .acess_nav.active {
+    right: 0em;
+    transition: 1s linear;
+    animation: reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+    /* animation: go-go .8s; */
+}
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .acess_nav p,
+i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Accessibility end */
+
+
+
+
+
+
+
+/* PERFIL */
+
+#perfil {
+    position: absolute;
+    width: 100%;
+    height: 312px;
+    top: 58px;
+    background-color: var(--green_dark);
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+#perfil #Name {
+
+    position: relative;
+    width: 369px;
+    height: 46px;
+    left: 45px;
+    top: 240px;
+    font-size: 30.6667px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: var(--font);
+}
+
+
+#personalizar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1300px;
+    top: 40px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+#configurar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 1300px;
+    top: 100px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+
+.conf_perso i {
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--green_dark);
+}
+
+
+#icones {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 196px;
+    top: 200px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+
+#icones i {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--green_dark);
+}
+
+#foto img {
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    left: 45px;
+    top: 60px;
+}
+
+.emojis {
+    position: absolute;
+    top: 58px;
+    margin-left: 15em;
+    box-sizing: border-box;
+    width: 20em;
+    height: 10em;
+    background: #0E0E0E;
+    border: 2px solid var(--header);
+    border-radius: 21.7989px;
+    padding: 1em;
+    display: flexbox;
+    right: -90%;
+}
+
+.emojis div i {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--green_dark);
+    padding: 20px;
+    opacity: 20%;
+}
+
+.emojis.active {
+    left: 0%;
+    animation: reverse .8s;
+}
+
+.emojis div i:hover {
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--green_dark);
+    padding: 20px;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+
+/* PLANOS - ctrl k c*/
+
+#planos {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1330px;
+    height: 400px;
+    left: 0px;
+    top: 370px;
+    margin: 15px;
+    background: #282828;
+    border: 1px solid #1C8C3E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#planos h2 {
+    margin-left: 2%;
+    width: 167px;
+    height: 46px;
+    font-size: 30px;
+    line-height: 50px;
+    color: #CDCDCD;
+    display: inline;
+}
+
+#planos span {
+    width: 95px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 30.6667px;
+    line-height: 50px;
+
+    color: var(--green_dark);
+}
+
+
+#planos .mudar_plano {
+    box-sizing: border-box;
+    position: relative;
+    width: 150px;
+    height: 60px;
+    left: 1150px;
+    background: #545353;
+    border: 1px solid var(--green_dark);
+    border-radius: 16.5px;
+}
+
+
+#planos .mudar_plano a {
+    font-size: 19.682px;
+    display: flex;
+    text-align: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+#ferramentas button {
+    width: 314px;
+    height: 51px;
+    margin: .5em;
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    border: var(--green_dark) solid 2px;
+    font-style: normal;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#ferramentas button:hover {
+    border: none;
+    border-radius: .5em;
+    background-color: var(--green_dark);
+    color: var(--font);
+    transition: .5s;
+}
+
+
+#Daora{
+    transform: scaleY(0);
+}
+
+#Massa{
+    transform: scaleY(0);
+}
+
+#Arretado{
+    transform: scaleY(0);
+}
+
+
+
+
+/* CALENDÁRIO */
+
+
+#agenda #calendario {
+    box-sizing: border-box;
+    position: absolute;
+    width: 675px;
+    height: 488px;
+    left: 45px;
+    top: 892px;
+    border: 1px solid #1C8C3E;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
+    border-radius: 0 0 15px 15px;
+}
+
+#agenda #calendario div{
+    position: relative;
+    width: 674px;
+    height: 57px;
+    background: #1C8C3E;
+    border-radius: 0 0 10px 10px;
+}
+
+#calendario #Mes{
+    font-size: 34px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 5.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer Start */
+
+footer {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 0px;
+    top: 90em;
+    background-color: var(--header);
+    display: flex;
+    filter: drop-shadow(0px 8px 18px rgba(28, 140, 62, 0.3));
+}
+
+footer .contato {
+    height: auto;
+    width: 20%;
+    margin: 1em;
+}
+
+footer .contato h5 {
+    color: var(--dark_green);
+    color: var(--green_dark);
+    font-size: 1.5em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-left: 1em;
+    margin-top: 1em;
+}
+
+footer .contato li {
+    list-style: none;
+    color: var(--font_color);
+    color: var(--font);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+footer .contato li:hover {
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+footer #contato li {
+    cursor: auto;
+}
+
+footer #contato li:hover {
+    list-style: none;
+    color: var(--font_color);
+    color: var(--font);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+}
+
+footer .contato a {
+    list-style: none;
+    color: var(--font);
+    font-size: 1em;
+    line-height: 2em;
+    font-weight: 500;
+    cursor: pointer;
+    display: grid;
+    text-decoration: none;
+}
+
+footer .contato a:hover {
+    font-size: 1.2em;
+    transition: .5s;
+}
+
+footer #social {
+    width: 30%;
+    align-items: center;
+    text-align: center;
+}
+
+footer #social h5 {
+    color: var(--font_color);
+    color: var(--font);
+}
+
+footer #social img {
+    margin-top: 2em;
+    width: 5em;
+    height: auto;
+
+}
+
+footer #social i {
+    font-size: 3em;
+    color: var(--green_dark);
+}
+
+footer #insta {
+    font-style: none;
+    display: inline;
+}
+
+footer #insta:hover {
+    transition: none;
+    font-size: 1em;
+    cursor: copy;
+}
+
+/* Footer End */
+
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: var(--header);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--barrinhahover);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--barrinha);
+}
+
+/* Barra de rolagem personalizada FINAL */
