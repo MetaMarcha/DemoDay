@@ -23,6 +23,7 @@
 
     <!-- Logo -->
     <link rel="shortcut icon" href="img/logo_1.png" type="image/x-icon">
+
 </head>
 
 <body>
@@ -31,21 +32,6 @@
         <a href="index.html" class="logo">
             <img src="img/logo.png" alt="logo meta marcha" title="MetaMarcha" id="logo_branca">
         </a>
-
-        <nav class="navbar">
-            <div class="menu_navbar">
-                <a href="index.html">Início</a>
-                <a href="index.html#erp">ERP</a>
-                <a href="#plans">Planos</a>
-                <a href="index.html#about">Sobre nós</a>
-                <a href="index.html#blogs">Blogs</a>
-            </div>
-        </nav>
-
-        <div class="acesso">
-            <button type="button" href="cadastro.html">Cadastre-se</button>
-            <a href="login.html"><button type="button">Entre</button></a>
-        </div>
 
         <div class="acess_icon">
             <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
@@ -59,16 +45,15 @@
 
     </header>
 
-    <section class="home" id="home">
-
-        <div class="container_form">
+    <section class="form" id="home">
 
             <div class="content">
                 <h1>Cadastre-se</h1>
                 <p> <span>*</span> ← Obrigatórios</p>
 
                 <div class="formulario_cadastro">
-                    <form>
+
+                    <form action="text" method="post">
                         <fieldset class="grupo">
 
                             <div class="cadastro">
@@ -105,187 +90,29 @@
                         </fieldset>
                     </form>
                 </div>
-            </div>
-        </div>
+            </div >
 
-    </section>    
-
-    <section>
-        <div class="botoes">
-            <h2><br> Como você classifica sua empresa? <br></h2>
-            <button type="button" class="btn btn-success">MEI</button>
-            <button type="button" class="btn btn-success">Micro</button>
-            <button type="button" class="btn btn-success">Pequena</button>
-            <button type="button" class="btn btn-success">Média</button>
-        </div>
-    </section>    
-
-    <section>
-        <div id="plans">
-
-            <div class="titulo">
-                <div class="bloco_1">
-                    <p>Possui <i class="fa-solid fa-check-double icon-1"></i></p>
-                    <p>Não possui <i class="fa-solid fa-xmark icon-2"></i></p>
-                </div>
-                <h2>Nossos Planos</h2>
-
-
+            <div class="container">
+                <h2>Como você classifica sua empresa?</h2>
+                <button name="button" value="OK" type="button" class="
+                button">MEI</button>
+                <button name="button" value="OK" type="button" class="
+                button">Micro</button>
+                <button name="button" value="OK" type="button" class="
+                button">Pequena</button>
+                <button name="button" value="OK" type="button" class="
+                button">Média</button>
+                
             </div>
 
-            <div class="planos">
+            <div class="button" id="button">
+                <a href="./index.html"><button name="button_back" class="go-back" id="back">Voltar</button></a>
+                <a href="./cadastro_2.html"><button name="button_go" class="go-back" id="go">Próximo</button></a>
+            </div>
 
-                <div id="linhas">
-                    <img src="img/linhas.png" alt="">
-                </div>
-
-                <div class="bloco_2">
-                    <ul>
-                        <li>Controle Financeiro</li>
-                        <li>Controle de Estoque</li>
-                        <li>Vendas</li>
-                        <li>Emissão de Boletos</li>
-                        <li>Cadastros - Clientes</li>
-                        <li>Relatórios</li>
-                        <li>Chamadas</li>
-                        <li>Agenda</li>
-                        <li>Contratos</li>
-                        <li>Emissão de Notas</li>
-                        <li>Lojas</li>
-                        <li>Integração</li>
-                    </ul>
-                </div>
-
-                <div class="bloco_3">
-
-                    <div class="gratuito"><img src="img/banner-1.png"></div>
-
-                    <div class="container_icons">
-
-                        <h5>Daora</h5>
-
-                        <ul>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="bloco_4">
-
-                    <div class="gratuito"><img src="img/banner-1.png"></div>
-
-                    <div class="container_icons">
-
-                        <h5>Massa</h5>
-
-                        <ul>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-                <div class="bloco_5">
-
-                    <div class="gratuito"><img src="img/banner-1.png"></div>
-
-                    <div class="container_icons">
-
-                        <h5>Arretado</h5>
-
-                        <ul>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
-                        </ul>
-                    </div>
-
-                </div>
-
-        </div>
-
-    </section>    
-
+    </section> 
     
-
-    <footer>
-        <div class="contato">
-            <h5>Dúvidas? Entre em contato conosco</h5>
-            <ul>
-                <li href="#">Perguntas frequentes</li>
-                <li href="#">Termo de uso</li>
-                <li href="#">Privacidade</li>
-                <li href="#">Avisos Legais</li>
-            </ul>
-        </div>
-
-        <div class="contato">
-            <h5>Mapa do Site</h5>
-            <ul>
-                <a href="#plans">Planos</a>
-                <a href="#about">Sobre Nós</a>
-                <a href="#time">Desenvolvedores</a>
-                <a href="#blogs">Blogs</a>
-                <a href="#">Ajuda</a>
-            </ul>
-        </div>
-
-        <div class="contato" id="contato">
-            <h5>Nossos Contatos</h5>
-            <ul>
-                <li><i class="fa-solid fa-mobile-button icon"></i> +55 (11) 66094-4368</li>
-                <li><i class="fa-solid fa-mobile-button icon"></i> +55 (11) 83655-9385</li>
-                <li><i class="fa-solid fa-envelope icon"></i> MetaMarchaG8@gmail.com</li>
-                <li><i class="fa-solid fa-map-location-dot icon"></i>São Paulo, SP - 05051-000</li>
-            </ul>
-        </div>
-
-        <div class="contato" id="social">
-
-            <img src="img/logo_1.png">
-
-            <h5>Siga-nos</h5>
-            <div class="icons-social">
-                <i class="fa-brands fa-twitter-square" title="Twitter"></i>
-                <i class="fa-brands fa-facebook-square" title="Facebook"></i>
-                <a href="https://www.instagram.com/metamarcha/" target="_blank" id="insta"><i class="fa-brands fa-instagram-square" title="Instagram"></a></i>
-                <i class="fa-brands fa-linkedin" title="Linkedin"></i>
-
-            </div>
-        </div>
-    </footer>
+        
 
     <script src="js/script.js"></script>
 
