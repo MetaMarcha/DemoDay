@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Plataforma de gestão comercial, nós da MetaMarcha irá ajudar você micro, pequeno e até médio comerciante a gerir melhor o seu negócio. Acabou a era do papel e caneta, utilize de forma prática e fácil o nosso site e nos agradeça depois!">
-    <meta name="author" content="Amanda Valentin, Beatriz Barreto, Camila Soares,João Gonçalves, Júlia Oliveira, Michelly Nonato, Samara Moura">
+    <meta name="description"
+        content="Plataforma de gestão comercial, nós da MetaMarcha irá ajudar você micro, pequeno e até médio comerciante a gerir melhor o seu negócio. Acabou a era do papel e caneta, utilize de forma prática e fácil o nosso site e nos agradeça depois!">
+    <meta name="author"
+        content="Amanda Valentin, Beatriz Barreto, Camila Soares,João Gonçalves, Júlia Oliveira, Michelly Nonato, Samara Moura">
     <meta name="keywords" content="ERP, PROA, Demoday, plataforma de gestão, gestão, financeiro, controle">
 
     <title>Meta Marcha</title>
@@ -29,23 +31,27 @@
 
     <header>
         <a href="#" class="logo">
-            <img src="img/logo.png" alt="logo meta marcha" title="MetaMarcha" id="logo_branca">
+            <img src="img/logo.png" alt="logo meta marcha" title="MetaMarcha">
         </a>
 
         <nav class="navbar">
-            <div class="menu_navbar">
-                <a href="#home">Inicio</a>
-                <a href="#erp">ERP</a>
-                <a href="#plans">Planos</a>
-                <a href="#about">Sobre nós</a>
-                <a href="#blogs">Blogs</a>
-            </div>
+            <a href="#home">Inicio</a>
+            <a href="#erp">ERP</a>
+            <a href="#plans">Planos</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#blogs">Blogs</a>
         </nav>
 
         <div class="acesso">
             <a href="cadastro.html"><button type="button">Cadastre-se</button></a>
             <a href="login.html"><button type="button">Entre</button></a>
         </div>
+
+        <!-- Botão aparecer na responsividade -->
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <!-- favor não apagar -->
 
         <div class="acess_icon">
             <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
@@ -54,7 +60,8 @@
         <div class="acess_nav">
             <p id="maior_acess">A+</p>
             <p id="menor_acess">A-</p>
-            <i class="fa-solid fa-circle-half-stroke" id="contraste_button"></i>
+            <p id="simbolo">|</p>
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
         </div>
 
     </header>
@@ -63,89 +70,70 @@
 
     <!-- Starts home -->
 
-    <section>
 
-        <div id="home">
-            <img id="formas" src="img/fundo-1.png" alt="Imagem de fundo do site">
+    <section id="home">
 
-            <div id="fundo">
-                <img src="img/fundo-3.png"
-                    alt="Imagem de fundo do site, desenho ilustrtivo de um menino usando um computador">
-            </div>
+        <h2 class="title">Conheça sua nova ferramenta de gestão</h2>
 
-            <div class="container">
+        <div class="container">
 
-                <h2 class="title">Conheça sua nova ferramenta de gestão</h2>
-
-                <div id="buttons-container">
-
-                    <button type="button" href="#">Organize sua Agenda <i class="fa-solid fa-angles-right"></i></button>
-                    <button type="button" href="#">Conheça nossos ferramentas<i
-                            class="fa-solid fa-angles-right"></i></button>
-                    <button type="button" href="#">Acesse nossos cursos <i class="fa-solid fa-angles-right"></i></button>
-
-                </div>
-
-            </div>
+            <button type="button" href="#">Organize sua Agenda <i class="fa-solid fa-angles-right"></i></button>
+            <button type="button" href="#">Conheça nossas ferramentas<i class="fa-solid fa-angles-right"></i></button>
+            <button type="button" href="#">Acesse nossos cursos <i class="fa-solid fa-angles-right"></i></button>
 
         </div>
+
     </section>
 
-    <!-- Starts ERP -->
+    <!-- Ends home -->
 
-    <section>
 
-        <div id="erp">
+    <!--Starts ERP-->
 
-            <h3>O que é uma ERP e como aplicar no seu negócio</h3>
+    <section id="erp">
 
-            <div class="container-text">
+        <h2 class="title">O que é uma ERP e como aplicar no seu negócio</h2>
 
-                <div class="img">
-                    <img src="img/fundo-4.png" alt="">
-                </div>
+        <div class="box_container">
 
-                <div class="text">
-                    <h4>O que é uma ERP? </h4>
-                    <p>Sistema de planejamento empresarial ou corporativa que interliga todos os processos financeiros
-                        de um negócio em uma única plataforma.</p>
-                    <h4>Como você pode aplicar em seu negócio</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi illo cum in temporibus quia
-                        praesentium amet modi rem enim est repellat quis quibusdam impedit, sit eligendi id dolores
-                        deserunt maxime?</p>
-                </div>
+            <img src="img/fundo-4.png" alt="Imagem ilustrativa.">
+            <div class="box_text">
+                <h3>O que é uma ERP? </h3>
+                <p>Sistema de planejamento empresarial ou corporativa que interliga todos os processos financeiros
+                    de um negócio em uma única plataforma.</p>
 
+                <h3>Como você pode aplicar em seu negócio</h3>
+                <p>Para implantar um ERP na sua empresa é necessário pensar em alguns processos, que visam a transição
+                    rápida e totalmente eficiente em todas as áreas. Ao tomar a decisão de contratar uma ERP, converse
+                    com suas equipes e colaboradores para avaliar e iniciar todos os backups necessários para a migração
+                    dos dados. É importante selecionar algumas pessoas responsáveis para acompanhar a implantação, ao
+                    determinar essas pessoas, o processo ganha uma atenção exclusiva e os detalhes podem ser
+                    acompanhados mais de perto para que tudo ocorra dentro do planejado.
+                </p>
             </div>
-
         </div>
 
     </section>
 
     <!-- Ends ERP -->
-    
+
     <!-- Starts Plans -->
 
-    <section>
+    <section id="plans">
 
-        <div id="plans">
-
-            <div class="titulo">
-                <div class="bloco_1">
-                    <p>Possui <i class="fa-solid fa-check-double icon-1"></i></p>
-                    <p>Não possui <i class="fa-solid fa-xmark icon-2"></i></p>
-                </div>
-                <h2>Nossos Planos</h2>
+        <h2 class="title">Nosso Planos</h2>
 
 
+        <div class="principal_plans">
+
+            <div class="box1">
+                <p class="option">Possui <i class="fa-solid fa-check-double icon-1"></i></p>
+                <p class="option">Não possui <i class="fa-solid fa-xmark icon-2"></i></p>
             </div>
 
-            <div class="planos">
+            <div class="container_plans">
 
-                <div id="linhas">
-                    <img src="img/linhas.png" alt="">
-                </div>
-
-                <div class="bloco_2">
+                <div class="box2">
                     <ul>
                         <li>Controle Financeiro</li>
                         <li>Controle de Estoque</li>
@@ -162,13 +150,12 @@
                     </ul>
                 </div>
 
-                <div class="bloco_3 todosPlanos">
 
-                    <div class="gratuito"><img src="img/banner-1.png"></div>
+                <div class="box_planos">
+                    <div class="box3">
 
-                    <div class="container_icons">
-
-                        <h5>Daora</h5>
+                        <div class="banner"><img src="img/banner-1.png"></div>
+                        <h4>Daora</h4>
 
                         <ul>
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
@@ -184,17 +171,12 @@
                             <li><i class="fa-solid fa-xmark icon-2"></i></li>
                             <li><i class="fa-solid fa-xmark icon-2"></i></li>
                         </ul>
+
                     </div>
 
-                </div>
-
-                <div class="bloco_4 todosPlanos">
-
-                    <div class="gratuito"><img src="img/banner-1.png"></div>
-
-                    <div class="container_icons">
-
-                        <h5>Massa</h5>
+                    <div class="box3">
+                        <div class="banner"><img src="img/banner-1.png"></div>
+                        <h4>Massa</h4>
 
                         <ul>
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
@@ -210,17 +192,12 @@
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
                         </ul>
+
                     </div>
 
-                </div>
-
-                <div class="bloco_5 todosPlanos">
-
-                    <div class="gratuito"><img src="img/banner-1.png"></div>
-
-                    <div class="container_icons">
-
-                        <h5>Arretado</h5>
+                    <div class="box3">
+                        <div class="banner"><img src="img/banner-1.png"></div>
+                        <h4>Arretado</h4>
 
                         <ul>
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
@@ -236,63 +213,57 @@
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
                             <li><i class="fa-solid fa-check-double icon-1"></i></li>
                         </ul>
+
                     </div>
 
                 </div>
 
-                <div class="saber_mais">
-                    <button type="button">Saiba Mais</button>
-                </div>
             </div>
 
-        </div>
+            <button class="button_plans" type="button">Saiba Mais</button>
 
     </section>
-    
+
     <!-- Ends Plans -->
 
     <!-- Starts About -->
 
-    <section>
+    <section id="about">
 
-        <div id="about">
+        <h2 class="title">Sobre nós</h2>
 
-            <div class="image">
-                <img src="img/fundo-5.png" alt="">
+        <div class="container_about">
+
+            <div class="box_text2 first_box">
+                <h4 class="title2">META MARCHA</h4>
+                <p class="text">Meta Marcha é um software de gestão empresarial que ajuda milhares de empresas a
+                    controlar, organizar e otimizar os principais processos de micro, pequenas e médias empresas. Usamos
+                    a tecnologia para simplificar o que é complexo e burocrático.</p>
             </div>
 
-            <h2>Sobre Nós</h2>
+            <div class="box_grid">
 
-            <div class="container-about" id="box1">
-                <h6>Meta Marcha</h6>
-                <p>Meta Marcha é um site de gestão empresarial que ajuda milhares de empresas a controlar, organizar e
-                    otimizar os principais processos de micro, pequenas e médias empresas. Usamos a tecnologia para
-                    simplificar o que é complexo e burocrático.</p>
+                <div class="box_text2">
+                    <h4 class="title2">Missão</h4>
+                    <p class="text">Criação de uma ferramenta que auxilia seus usuários a administrar sua empresa. Como
+                        objetivo temos em fazer essa ferramenta de uma forma completa porém acessível para pessoas com
+                        baixo conhecimento em gestão.</p>
+                </div>
+
+                <div class="box_text2">
+                    <h4 class="title2">Visão</h4>
+                    <p class="text">Má gestão de empresas e falta de coordenação do fluxo de caixa.
+                        Mal gerenciamento de finanças e de seu estoque, gerando ainda mais gastos do que realmente
+                        lucro.
+                        Auxiliando pequenas e micro-empresas a coordenar seu négocio da melhor forma.</p>
+                </div>
+
+                <div class="box_text2">
+                    <h4 class="title2">Valores</h4>
+                    <p class="text">Acessibilidade com ERP no gerenciamento de micro e pequenos negócios.
+                        Má gestão de empresas e falta de coordenação do fluxo de caixa.</p>
+                </div>
             </div>
-
-            <div class="grid">
-                <div class="container-about " id="box2">
-                    <h6>Missão</h6>
-                    <p>Criação de uma ferramenta que auxilia seus usuários a administrar sua empresa. Como objetivo
-                        temos em fazer essa ferramenta de uma forma completa porém acessível para pessoas com baixo
-                        conhecimento em gestão.</p>
-                </div>
-
-                <div class="container-about" id="box2">
-                    <h6>Visão</h6>
-                    <p>Má gestão de empresas e falta de coordenação do fluxo de caixa. Mal gerenciamento de finanças e
-                        de seu estoque, gerando ainda mais gastos do que realmente lucro. Auxiliando pequenas e
-                        micro-empresas a coordenar seu négocio da melhor forma.</p>
-                </div>
-
-                <div class="container-about" id="box2">
-                    <h6>Valores</h6>
-                    <p>Acessibilidade com ERP no gerenciamento de micro e pequenos negócios. Má gestão de empresas e
-                        falta de coordenação do fluxo de caixa.</p>
-                </div>
-
-            </div>
-
         </div>
 
     </section>
@@ -301,244 +272,248 @@
 
     <!-- Starts Team -->
 
-    <section>
+    <section id="team">
 
-        <div id="time">
+        <h2 class="title">Nossa Equipe</h2>
 
-            <h2>Nossa Equipe</h2>
+        <div class="front-end">
 
-            <div class="container-time-1">
+            <div class="box_text2 profile">
 
-                <div class="profile">
+                <img src="img/integrante-1.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Amanda Valentim</h4>
+                <h5>front-end</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
 
-                    <img src="img/integrante-1.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>Amanda Valentim</h4>
-                    <h5>front-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
-
-                    <div class="icons-social">
-                        <a href="https://www.linkedin.com/in/amanda-valentim-a5941a1b7/" target="_blank"
-                            title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="https://github.com/amandavalentim" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
-
-                </div>
-
-                <div class="profile">
-                    <img src="img/integrante-3.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>Camila Soares</h4>
-                    <h5>front-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
-
-                    <div class="icons-social">
-                        <a href="https://www.linkedin.com/in/camila-carla-soares-092353232/" target="_blank"
-                            title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="https://github.com/CamilaCSoares" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
-
-                </div>
-
-                <div class="profile">
-
-                    <img src="img/integrante-5.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>Júlia Oliveira</h4>
-                    <h5>front-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
-
-                    <div class="icons-social">
-                        <a href="https://www.linkedin.com/in/j%C3%BAlia-karoline-oliveira-202174232/" target="_blank"
-                            title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="https://github.com/Unijuba" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
-
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/amanda-valentim-a5941a1b7/" target="_blank" title="Linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/amandavalentim" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
                 </div>
 
             </div>
 
-            <div class="container-time-2">
+            <div class="box_text2 profile">
 
-                <div class="profile">
-                    <img src="img/integrante-2.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>Beatriz Barreto</h4>
-                    <h5>back-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
+                <img src="img/integrante-3.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Camila Soares</h4>
+                <h5>front-end</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
 
-                    <div class="icons-social">
-                        <a href="https://www.linkedin.com/in/beatriz-sm-barreto/" target="_blank" title="Linkedin"> <i
-                                class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="https://github.com/beatrixiez" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
-
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/camila-carla-soares-092353232/" target="_blank"
+                        title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/CamilaCSoares" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
                 </div>
 
-                <div class="profile">
-                    <img src="img/integrante-4.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>João Gonçalves</h4>
-                    <h5>back-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
 
-                    <div class="icons-social">
-                        <a href="https://www.linkedin.com/in/joaopedrogsilva/" target="_blank" title="Linkedin"> <i
-                                class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="https://github.com/jpedr1nho" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
+            </div>
 
+            <div class="box_text2 profile">
+
+                <img src="img/integrante-5.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Júlia Oliveira</h4>
+                <h5>front-end</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/j%C3%BAlia-karoline-oliveira-202174232/" target="_blank"
+                        title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/Unijuba" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
                 </div>
 
-                <div class="profile">
+            </div>
 
-                    <img src="img/integrante-6.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>Michelly Nonato</h4>
-                    <h5>back-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
 
-                    <div class="icons-social">
-                        <a href="https://www.linkedin.com/in/michelly-nonato/" target="_blank" title="Linkedin"> <i
-                                class="fa-brands fa-linkedin-in"></i> </a>
-                        <a href="https://github.com/MichellyNonatto" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
+        </div>
 
+        <div class="back-end">
+
+            <div class="box_text2 profile">
+
+                <img src="img/integrante-2.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Beatriz Barreto</h4>
+                <h5>back-end</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/beatriz-sm-barreto/" target="_blank" title="Linkedin"> <i
+                            class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/beatrixiez" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
                 </div>
 
-                <div class="profile">
+            </div>
 
-                    <img src="img/integrante-7.png" alt="Foto de um integrante Meta Marcha">
-                    <h4>Samara Moura</h4>
-                    <h5>back-end</h5>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
-                        dignissimos
-                        sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
-                        magnam voluptates itaque similique cum?</p>
+            <div class="box_text2 profile">
 
-                    <div class="icons-social">
-                        <i class="fa-brands fa-linkedin-in" title="Linkedin"></i>
-                        <a href="https://github.com/jovemfs" target="_blank" title="GitHub"> <i
-                                class="fa-brands fa-github"></i> </a>
-                    </div>
+                <img src="img/integrante-4.png" alt="Foto de um integrante Meta Marcha">
+                <h4>João Gonçalves</h4>
+                <h5>back-end</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
 
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/joaopedrogsilva/" target="_blank" title="Linkedin"> <i
+                            class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/jpedr1nho" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+
+
+                </div>
+            </div>
+
+            <div class="box_text2 profile">
+
+                <img src="img/integrante-6.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Michelly Nonato</h4>
+                <h5>back-end</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/michelly-nonato/" target="_blank" title="Linkedin"> <i
+                            class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/MichellyNonatto" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
                 </div>
 
             </div>
 
         </div>
 
+        <div class="desing_box box_text2 profile">
+
+            <img src="img/integrante-7.png" alt="Foto de um integrante Meta Marcha">
+
+            <div>
+                <h4>Samara Moura</h4>
+                <h5>back-end e desing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum alias nostrum debitis
+                    dignissimos
+                    sint consectetur ea, quae quaerat eligendi possimus commodi explicabo voluptas incidunt soluta
+                    magnam voluptates itaque similique cum?</p>
+
+                <div class="icons-social">
+                    <i class="fa-brands fa-linkedin-in" title="Linkedin"></i>
+                    <a href="https://github.com/jovemfs" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+                </div>
+
+            </div>
+        </div>
+
+
     </section>
-    
+
     <!-- Section team end -->
 
     <!-- Section blogs start -->
 
-    <section>
+    <section id="blogs">
+        <h2 class="title">Nossos Blogs</h2>
 
-        <div id="blogs">
+        <div class="container_blogs">
 
-            <div class="image">
-                <img src="img/fundo-6.png" alt="">
+            <div class="box_blog">
+                <img src="img/blog-1.png" alt="">
+                <h5>Aprenda como manter a sua equipe motivada!</h5>
+                <p>Uma equipe motivada é uma equipe produtiva, aprenda algumas maneiras de sempre motivar a sua equipe!
+                </p>
+                <button>Saiba mais</button>
             </div>
 
-            <h2>Nossos Blogs</h2>
+            <div class="box_blog">
+                <img src="img/blog-2.png" alt="">
+                <h5>Como melhorar o atendimento ao cliente?</h5>
+                <p>Listamos 12 dicas práticas para melhorar o atendimento e com isso ganhar clientes fieis!</p>
+                <button>Saiba mais</button>
+            </div>
 
-            <div class="container-blogs">
-
-                <div class="caixa">
-                    <img src="img/blog-1.png" alt="">
-                    <h5>Aprenda como manter a sua equipe motivada</h5>
-                    <p>Uma equipe motivada é uma equipe produtiva, aprenda algumas maneiras de sempre motivar a sua
-                        equipe!</p>
-                    <button type="button">Saiba Mais</button>
-                </div>
-
-                <div class="caixa">
-                    <img src="img/blog-2.png" alt="">
-                    <h5>Como melhorar o atendimento ao cliente?</h5>
-                    <p>Listamos 12 dicas práticas para melhorar o atendimento e com isso ganhar clientes fieis!</p>
-                    <button type="button">Saiba Mais</button>
-                </div>
-
-                <div class="caixa">
-                    <img src="img/blog-3.png" alt="">
-                    <h5>Como ter uma empresa de sucesso?</h5>
-                    <p>Compreenda os fatores essencias para possuir uma empresa de sucesso!</p>
-                    <button type="button">Saiba Mais</button>
-                </div>
-
+            <div class="box_blog">
+                <img src="img/blog-3.png" alt="">
+                <h5>Como ter uma empresa de sucesso.</h5>
+                <p>Compreenda os fatores essencias para possuir uma empresa de sucesso!</p>
+                <button>Saiba mais</button>
             </div>
 
         </div>
-
     </section>
-    <!-- Section blogs end -->
+    <!-- Blogs end -->
+
+    <!-- Footer Start -->
 
     <footer>
-        <div class="contato">
-            <h5>Dúvidas? Entre em contato conosco</h5>
-            <ul>
-                <li href="#">Perguntas frequentes</li>
-                <li href="#">Termo de uso</li>
-                <li href="#">Privacidade</li>
-                <li href="#">Avisos Legais</li>
-            </ul>
+
+        <div class="box_footer">
+            <h6>Dúvidas? Entre em contato conosco</h6>
+
+            <a href="#">Perguntas Frequentes</a>
+            <a href="#">Termos de uso</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Avisos Legais</a>
         </div>
 
-        <div class="contato">
-            <h5>Mapa do Site</h5>
-            <ul>
-                <a href="#plans">Planos</a>
-                <a href="#about">Sobre Nós</a>
-                <a href="#time">Desenvolvedores</a>
-                <a href="#blogs">Blogs</a>
-                <a href="#">Ajuda</a>
-            </ul>
+        <div class="box_footer">
+            <h6>Mapa do site</h6>
+            <a href="#home">Inicio</a>
+            <a href="#erp">ERP</a>
+            <a href="#plans">Planos</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#blogs">Blogs</a>
         </div>
 
-        <div class="contato" id="contato">
-            <h5>Nossos Contatos</h5>
+        <div class="box_footer" id="contact">
+            <h6>Nossos Contatos</h6>
+
             <ul>
                 <li><i class="fa-solid fa-mobile-button icon"></i> +55 (11) 66094-4368</li>
                 <li><i class="fa-solid fa-mobile-button icon"></i> +55 (11) 83655-9385</li>
                 <li><i class="fa-solid fa-envelope icon"></i> MetaMarchaG8@gmail.com</li>
                 <li><i class="fa-solid fa-map-location-dot icon"></i>São Paulo, SP - 05051-000</li>
             </ul>
+
         </div>
 
-        <div class="contato" id="social">
+        <div class="box_footer" id="social">
 
-            <img src="img/logo_1.png">
+            <img src="img/logo_2.png">
 
-            <h5>Siga-nos</h5>
-            <div class="icons-social">
+            <h6>Siga-nos</h6>
+            <div class="social">
                 <i class="fa-brands fa-twitter-square" title="Twitter"></i>
                 <i class="fa-brands fa-facebook-square" title="Facebook"></i>
+            </div>
+
+            <div class="social">
                 <a href="https://www.instagram.com/metamarcha/" target="_blank" id="insta"><i class="fa-brands fa-instagram-square" title="Instagram"></a></i>
                 <i class="fa-brands fa-linkedin" title="Linkedin"></i>
 
             </div>
         </div>
     </footer>
+
+    <!-- Footer End -->
+
 
     <script src="js/script.js"></script>
 </body>
