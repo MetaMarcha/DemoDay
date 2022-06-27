@@ -73,7 +73,7 @@ header {
     background: none;
     color: var(--green_dark);
     margin-left: 1em;
-    border: var(--green_dark) solid 2px;
+    border: var(--green_dark) solid 1px;
     font-size: 1em;
     font-weight: 600;
 }
@@ -111,13 +111,13 @@ header .acess_icon i {
 
 .acess_nav {
     position: absolute;
-    top: 100%;
+    top: 70%;
     right: -90%;
-    width: 10em;
+    width: 15em;
     background-color: var(--header);
     text-align: center;
     align-items: center;
-    display: none;
+    display: flex;
     color: var(--font);
     padding: 10px 10px 0px 10px;
     border-radius: 0 0 0 10px;
@@ -125,7 +125,7 @@ header .acess_icon i {
 
 .acess_nav.active {
     right: 0;
-    display: flex;
+    transition: .5s linear;
 }
 
 .acess_nav p,
@@ -623,7 +623,7 @@ margin-left: 1em;
 
     .navbar {
         position: absolute;
-        display: none;
+        transition: .5s linear;
         top: 100%;
         right: -100%;
         width: 10rem;
