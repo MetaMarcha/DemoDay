@@ -175,10 +175,6 @@ section .container_login h5{
 
 
 
-
-/* Footer Start *`{
-
-
 /* Barra de rolagem personalizada INICIO */
 ::-webkit-scrollbar {
     width: .6rem;
@@ -196,4 +192,4 @@ section .container_login h5{
     background-color: var(--barrinha);
 }
 
-/* Barra de rolagem personalizada FINAL */
+/* Barra de rolagem personalizada FINAL *

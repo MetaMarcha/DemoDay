@@ -166,7 +166,7 @@ header .acess_nav.active {
     to {
       transform: translateX(0);
     }
-  } 
+  }
 
 header .acess_nav p,
 i {
@@ -183,377 +183,105 @@ header .acess_nav i {
 
 /* Registration starts*/
 
-.home{
-    min-height: 70vh;
-    display: flex;
+.content {
+    box-sizing: border-box;
+    margin: 6em;
+    width: max-content;
     align-items: center;
 }
 
-.home .form-cadastro{
-    max-width: 60rem;
+h1{
+    color: #ffffff;
+    text-align: center;
+}
+
+p{
+    color: rgba(205, 205, 205, 0.7);
+    font-size: 1.1em;
+}
+
+span{
+    color: red;
+    font-size: 1.1em;
+}
+
+label{
+    color: #CDCDCD;
+    margin-right: 2em;
+    margin-bottom: 2.6em;
+    margin-top: 8px;
+}
+
+input{
+    display: grid;
+    background: #282828;
+    border-radius: 20px;
+    border: none;
+    float: right;
+    width: 50em;
+    height: 2.6em;
+    padding-left: 1.2em;
+    color: var(--font);
+}
+
+input:focus{
+    outline: 1px solid var(--green_ligth);
+    color: var(--font);
+}
+
+
+h2{
+    color: #ffffff;
+    text-align: center;
+}
+
+button.button{
+    position: relative;
+    top: 50%;
+    left: 6%;
+    background: rgba(40, 40, 40, 0.5);
+    border-color: rgba(40, 40, 40, 0.5);
+    border-radius: 20px;
+    border: none;
+    height: 52px;
+    width: 220px;
+    color: rgba(205, 205, 205, 0.5);
+    margin-top: 3em;
+    font-size: 120%;
+    margin-left: 1.3em;
+}
+
+button.button:hover{
+    background: var(--green_dark);
+    color: var(--font);
 }
 
 /* Registration ends*/
 
-/* Planos */
+/* botões go e back */
 
-#linhas img{
-    position: absolute;
-    width: 905px;
-    height: 500.83px;
-    bottom: 70px;    
-}
-
-section #plans .titulo {
-    display: flex;
-}
-
-section #plans {
-    position: absolute;
-    width: 58em;
-    height: auto;
-    left: 6em;
-    margin-top: 3em;
-}
-
-section #plans h2 {
-    margin-top: 3em;
-    text-align: center;
-    color: var(--font);
-    font-weight: 600;
-    line-height: 42px;
-    margin-left: 3em;
-    font-size: 40px;
-}
-
-section #plans span {
-    color: #E8EC41;
-    position: relative;
-    padding-left: 16px;
-    background-image: url(/img/banner.png);
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-}
-
-section #plans .icon-1 {
-    color: var(--green);
-    font-size: 1.5em;
-}
-
-section #plans .icon-2 {
-    color: #8B0000;
-    font-size: 1.5em;
-}
-
-section #plans .bloco_1 {
-    border: var(--green) solid 2px;
-    border-radius: 10px;
-    background-color: var(--header);
-    color: var(--green);
-    font-weight: 600;
-    padding-left: 1em;
-    padding-top: .5em;
-    margin-right: 5em;
-    width: 10em;
-    height: 6em;
-    margin-top: 10em;
-}
-
-section #plans .planos {
-    display: flex;
-    align-items: center;
-}
-
-/* Bloco 2 */
-section #plans .planos .bloco_2 {
-    border: var(--green) solid 2px;
-    border-radius: 12px;
-    background-color: var(--header);
-    color: var(--font);
-    font-weight: 400;
-    line-height: 2.5em;
-    margin-right: 3em;
-    padding-right: 2em;
-    padding-top: 1em;
-    font-size: 1em;
-    margin-top: 5em;
-}
-
-section #plans .planos .bloco_2 ul {
-    width: 13em;
-    line-height: 3em;
-}
-
-/* Bloco 3 */
-section #plans .planos .bloco_3 {
-    line-height: 42px;
-    margin-right: 5em;
-    padding-right: 1em;
-    width: 10em;
-    height: 45em;
-}
-
-section #plans .planos .bloco_3 .container_icons {
-    margin-top: 1.5em;
-    border: var(--green) solid 2px;
-    border-radius: 10px;
-    background-color: #000;
-    padding-right: 8em;
-    padding-top: 1em;
-}
-
-section #plans .planos .bloco_3 .container_icons i {
-    padding: .5em;
-}
-
-section #plans .planos .bloco_3 .container_icons h5 {
-    margin-top: 1.5em;
-    color: var(--green);
-    font-weight: 800;
-    padding-left: 1.5em;
-}
-
-
-section #plans .planos .bloco_3 li {
-    list-style: none;
-    margin-left: 1.5em;
-}
-
-section .bloco_3 .gratuito {
-    position: absolute;
-}
-
-/* bloco 4 */
-section #plans .planos .bloco_4 {
-    line-height: 42px;
-    margin-right: 5em;
-    padding-right: 1em;
-    width: 10em;
-    height: 45em;
-}
-
-section #plans .planos .bloco_4 .container_icons {
-    margin-top: 1.5em;
-    border: var(--green) solid 2px;
-    border-radius: 10px;
-    background-color: #000;
-    padding-right: 8em;
-    padding-top: 1em;
-}
-
-section #plans .planos .bloco_4 .container_icons i {
-    padding: .5em;
-}
-
-section #plans .planos .bloco_4 .container_icons h5 {
-    margin-top: 1.5em;
-    color: var(--green);
-    font-weight: 800;
-    padding-left: 2em;
-}
-
-
-section #plans .planos .bloco_4 li {
-    list-style: none;
-    margin-left: 1.5em;
-}
-
-section .bloco_4 .gratuito {
-    position: absolute;
-}
-
-/* bloco 5 */
-section #plans .planos .bloco_5 {
-    line-height: 42px;
-    margin-right: 5em;
-    padding-right: 1em;
-    width: 10em;
-    height: 45em;
-}
-
-section #plans .planos .bloco_5 .container_icons {
-    margin-top: 1.5em;
-    border: var(--green) solid 2px;
-    border-radius: 10px;
-    background-color: #000;
-    padding-right: 8em;
-    padding-top: 1em;
-}
-
-section #plans .planos .bloco_5 .container_icons i {
-    padding: .5em;
-}
-
-section #plans .planos .bloco_5 .container_icons h5 {
-    margin-top: 1.5em;
-    color: var(--green);
-    font-weight: 800;
-    padding-left: 1.5em;
-}
-
-
-section #plans .planos .bloco_5 li {
-    list-style: none;
-    margin-left: 1.5em;
-}
-
-section .bloco_5 .gratuito {
-    position: absolute;
-}
-
-/* Botão */
-
-section #plans .saber_mais {
-    position: absolute;
-    top: 62em;
-    left: 25em;
-}
-
-section #plans .saber_mais button {
-    width: 292px;
-    height: 52px;
-    border-radius: .5em;
-    background-color: var(--green_dark);
-    color: var(--font);
-    font-size: 28px;
-    font-weight: 600;
-    border: none;
-}
-
-section #plans .saber_mais button:hover {
+button.go-back{
     border-radius: .5em;
     background: none;
     color: var(--green_dark);
     border: var(--green_dark) solid 2px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 5em;
+    margin-bottom: 3em;
 }
 
-/* Barra de rolagem personalizada INICIO */
-::-webkit-scrollbar{
-    width: .6rem;
-    height: .2rem;
-    border-radius: .5rem;
-    background-color: var(--header);
-}
-::-webkit-scrollbar-thumb{
-    background-color: var(--barrinhahover);
-    border-radius: .5rem;
-}
-::-webkit-scrollbar-thumb:hover{
-    background-color: var(--barrinha);
-}
-/* Barra de rolagem personalizada FINAL */
-
-
-/* Footer Start */
-
-footer {
-    position: absolute;
-    width: 100%;
-    height: auto;
-    left: 0px;
-    top: 130em;
-    background-color: var(--header);
-    display: flex;
-    filter: drop-shadow(0px 8px 18px rgba(28, 140, 62, 0.3));
-}
-
-footer .contato {
-    height: auto;
-    width: 20%;
-    margin: 1em;
-}
-
-footer .contato h5 {
-    color: var(--dark_green);
-    color: var(--green_dark);
-    font-size: 1.5em;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-footer .contato li {
-    list-style: none;
-    color: var(--font_color);
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-footer .contato li:hover {
-    font-size: 1.2em;
-    transition: .5s;
-}
-
-footer #contato li {
-    cursor: auto;
-}
-
-footer #contato li:hover {
-    list-style: none;
-    color: var(--font_color);
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-}
-
-footer .contato a {
-    list-style: none;
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-    cursor: pointer;
-    display: grid;
-    text-decoration: none;
-}
-
-footer .contato a:hover {
-    font-size: 1.2em;
-    transition: .5s;
-}
-
-footer #social {
-    width: 30%;
-    align-items: center;
+#button{
     text-align: center;
 }
 
-footer #social h5 {
-    color: var(--font_color);
+button.go-back:hover{
+    border: none; 
+    border-radius: .5em;
+    background-color: var(--green_dark);
     color: var(--font);
+    transition: .5s;
 }
-
-footer #social img {
-    margin-top: 2em;
-    width: 5em;
-    height: auto;
-
-}
-
-footer #social i {
-    font-size: 3em;
-    color: var(--green_dark);
-}
-
-footer #insta {
-    font-style: none;
-    display: inline;
-}
-
-footer #insta:hover{
-    transition: none;
-    font-size: 1em;
-    cursor:copy;
-}
-
-/* Footer End */
-
 
 /* Barra de rolagem personalizada INICIO */
 ::-webkit-scrollbar{

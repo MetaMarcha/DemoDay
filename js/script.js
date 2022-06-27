@@ -14,4 +14,8 @@ document.querySelector('#menu-btn').onclick = () => {
     acess_nav.classList.remove('active');
 }
 
+let emojis = document.querySelector('.emojis')
 
+document.querySelector('#icones').onclick = () =>{
+    emojis.classList.toggle('active');
+}
