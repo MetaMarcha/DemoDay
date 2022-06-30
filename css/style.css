@@ -19,6 +19,8 @@ a {
     --green_ligth: #3CF238;
     --green: #5eae53;
     --green_dark: #1C8C3E;
+    --barrinha: #5eae53;
+    --barrinhahover: #2d6d35;
 }
 
 * {
@@ -731,16 +733,16 @@ margin-left: 1em;
     width: .6rem;
     height: .2rem;
     border-radius: .5rem;
-    background-color: var(--header);
+    background-color: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--barrinhahover);
+    background-color: var(--barrinha);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--barrinha);
+    background-color: var(--barrinhahover);
 }
 
 /* Barra de rolagem personalizada FINAL */
