@@ -13,6 +13,8 @@ html {
     --green_ligth: #3CF238;
     --green: #5eae53;
     --green_dark: #1C8C3E;
+    --barrinha: #5eae53;
+    --barrinhahover: #2d6d35;
 }
 
 * {
@@ -39,7 +41,6 @@ header {
     justify-content: space-between;
     background-color: var(--header);
     height: 4.5em;
-    filter: drop-shadow(0px 4px 4px rgba(28, 140, 62, 0.63));
 }
 
 header .logo #logo_branca {
@@ -429,7 +430,6 @@ footer {
     top: 90em;
     background-color: var(--header);
     display: flex;
-    filter: drop-shadow(0px 8px 18px rgba(28, 140, 62, 0.3));
 }
 
 footer .contato {
@@ -534,16 +534,16 @@ footer #insta:hover {
     width: .6rem;
     height: .2rem;
     border-radius: .5rem;
-    background-color: var(--header);
+    background-color: var(--background);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--barrinhahover);
+    background-color: var(--barrinha);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--barrinha);
+    background-color: var(--barrinhahover);
 }
 
 /* Barra de rolagem personalizada FINAL */
