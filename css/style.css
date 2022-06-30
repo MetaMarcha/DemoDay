@@ -9,29 +9,26 @@
     --green_ligth: #3CF238;
     --green: #5eae53;
     --green_dark: #1C8C3E;
-  }
-  
-  * {
-    --barrinha: #5eae53;
-    --barrinhahover: #2d6d35;
 }
 
 * {
     font-family: 'Poppins', sans-serif;
     color: var(--font);
     box-sizing: border-box;
-  }
-  
-  body{
+}
+
+body {
     background-color: var(--background);
-    width: 100%; height: 100%;
-  }
-  
-  html {
+    width: 100%;
+    height: 100%;
+}
+
+html {
     overflow-x: hidden;
     scroll-behavior: smooth;
-    width: 100%; height: 100%;
-  }
+    width: 100%;
+    height: 100%;
+}
 
 /* Navbar start */
 header {
@@ -124,49 +121,16 @@ i {
 /* Accessibility end */
 
 /* Home Starts */
-  
-  .swiper {
+
+.swiper {
     z-index: -2;
     margin: 5em 0 0 0;
-}
-
-#home {
-    margin-top: 4em;
-    background-image: url(../img/fundo-1.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 70%;
-    background-position-y: -4.5em;
-}
-
-.title {
-    font-weight: 600;
-    font-size: 2.2em;
-    color: var(--green);
-    margin-left: 1em;
-    padding-top: .5em;
-    padding-left: .5em;
-}
-
-#home h2 {
-    width: 15em;
-}
-
-.container {
-    background-image: url(../img/fundo-3.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 45%;
-    margin: 2em;
-    display: grid;
-    height: 25rem;
     width: 100%;
-    height: 70%;
+    height: 80%;
     background: var(--background);
-    filter: drop-shadow(0px 4px 4px rgba(50, 48, 48, 0.63));
-  }
-  
-  .parallax-bg {
+}
+
+.parallax-bg {
     position: absolute;
     left: 0;
     top: 0;
@@ -175,44 +139,47 @@ i {
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
-  }
-  
-  .swiper-slide {
+}
+
+.swiper-slide {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 40px 60px;
-  }
-  
-  .swiper-slide h1 { 
+}
+
+.swiper-slide h1 {
     margin-top: 2em;
-    font-size: 5em;
+    font-size: 2em;
     font-weight: 600;
     text-align: center;
-    color: var(--font); 
-  
-  }
-  
-  .button_conta{
+    color: var(--font);
+
+}
+
+.button_conta {
     margin-top: 1em;
     display: flex;
     justify-content: center;
-  }
-  
-  .button_conta button{
-    color: var(--font); font-weight: 600;
-    background: var(--green_dark); border: 3px solid var(--green_dark); 
+}
+
+.button_conta button {
+    color: var(--font);
+    font-weight: 600;
+    background: var(--green_dark);
+    border: 3px solid var(--green_dark);
     border-radius: 15px;
     font-size: 2em;
-    padding: 0 .3em 0 .3em; margin-left: 1em;
-  }
-  
-  .button_conta button:hover{
-    background-color: var(--font); border-color: var(--font);
-    color: var(--green_dark); 
-    cursor: pointer; transition: ease-in .5s;
-  }
-  
-  
+    padding: 0 .3em 0 .3em;
+    margin-left: 1em;
+}
+
+.button_conta button:hover {
+    background-color: var(--font);
+    border-color: var(--font);
+    color: var(--green_dark);
+    cursor: pointer;
+    transition: ease-in .5s;
+}
 
 /* Home Ends */
 
@@ -538,7 +505,7 @@ p {
 footer {
     width: 100%;
     height: auto;
-    margin-top: 7em; 
+    margin-top: 7em;
     display: flex;
     justify-content: space-between;
     background: var(--header);
@@ -552,7 +519,7 @@ footer a {
     color: var(--font);
 }
 
-footer a:hover{
+footer a:hover {
     transition: .2s ease-out;
     font-size: 1.1em;
 }
@@ -565,50 +532,54 @@ footer a:hover{
 .box_footer {
     width: 20%;
     margin-left: 2em;
-    margin-top: 1.5em; margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 .box_footer i {
-    color: var(--green); padding: .5em;
+    color: var(--green);
+    padding: .5em;
 }
 
-.box_footer img{
-    width: 30%; height: auto;
+.box_footer img {
+    width: 30%;
+    height: auto;
 }
 
-.box_footer ul{
+.box_footer ul {
     list-style: none;
     padding-left: 0;
 }
 
-.box_footer li{
+.box_footer li {
     padding-top: .5em;
 }
 
-.social{
+.social {
     display: flex;
 }
 
-#social i{
-   font-size: 3em;
-   padding: 0 .1em 0 .5em; 
+#social i {
+    font-size: 3em;
+    padding: 0 .1em 0 .5em;
 }
 
-#contact{
+#contact {
     width: 30%;
 }
 
-#social{
+#social {
     margin-right: 2em;
 }
 
-#social h6{
-margin-left: 1em;
+#social h6 {
+    margin-left: 1em;
 }
 
-#social img{
+#social img {
     margin-left: 2.5em;
 }
+
 /* Footer Ends */
 
 
@@ -616,7 +587,7 @@ margin-left: 1em;
 
 @media(min-width:1439px) {
     html {
-        font-size:120%;
+        font-size: 120%;
     }
 }
 
@@ -750,13 +721,11 @@ margin-left: 1em;
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--transition_hover_bar);
-    background-color: var(--barrinha);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: var(--bar);
-    background-color: var(--barrinhahover);
 }
 
 /* Barra de rolagem personalizada FINAL */
