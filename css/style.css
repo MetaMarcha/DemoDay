@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
-
-html {
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-}
-
-a {
-    text-decoration: none;
-}
-
 :root {
     --background: #1B1B1B;
     --bar: #4ab358;
@@ -19,8 +9,6 @@ a {
     --green_ligth: #3CF238;
     --green: #5eae53;
     --green_dark: #1C8C3E;
-    --barrinha: #5eae53;
-    --barrinhahover: #2d6d35;
 }
 
 * {
@@ -29,15 +17,22 @@ a {
     box-sizing: border-box;
 }
 
-/* Body the page */
 body {
-    background: var(--background);
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
 }
 
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+}
 
 /* Navbar start */
 header {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     display: flex;
     left: 0;
@@ -66,22 +61,6 @@ header {
 
 .navbar a:hover {
     color: var(--green_ligth);
-}
-
-
-.acesso button {
-    border-radius: .5em;
-    background: none;
-    color: var(--green_dark);
-    margin-left: 1em;
-    border: var(--green_dark) solid 1px;
-    font-size: 1em;
-    font-weight: 600;
-}
-
-.acesso button:hover {
-    background-color: var(--green_dark);
-    color: var(--font);
 }
 
 #menu-btn {
@@ -143,64 +122,64 @@ i {
 
 /* Home Starts */
 
-#home {
-    margin-top: 4em;
-    background-image: url(../img/fundo-1.png);
-    background-repeat: no-repeat;
-    background-position: left;
-    background-size: 70%;
-    background-position-y: -4.5em;
-}
-
-.title {
-    font-weight: 600;
-    font-size: 2.2em;
-    color: var(--green);
-    margin-left: 1em;
-    padding-top: .5em;
-    padding-left: .5em;
-}
-
-#home h2 {
-    width: 15em;
-}
-
-.container {
-    background-image: url(../img/fundo-3.png);
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 45%;
-    margin: 2em;
-    display: grid;
-    height: 25rem;
+.swiper {
+    z-index: -2;
+    margin: 5em 0 0 0;
     width: 100%;
+    height: 80%;
+    background: var(--background);
 }
 
-.container i {
-    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-    color: var(--green);
-    float: right;
-    margin-top: 7px;
+.parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
 }
 
-.container button {
-    width: 55%;
-    color: var(--font);
+.swiper-slide {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+}
+
+.swiper-slide h1 {
+    margin-top: 2em;
     font-size: 2em;
-    font-weight: 500;
-    background: var(--header);
-    border: none;
-    border-radius: 10px;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
-    padding: .5em;
-    margin: .3em;
-    text-align: left;
+    font-weight: 600;
+    text-align: center;
+    color: var(--font);
+
 }
 
-.container i:hover {
-    color: var(--green_ligth);
+.button_conta {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
 
+.button_conta button {
+    color: var(--font);
+    font-weight: 600;
+    background: var(--green_dark);
+    border: 3px solid var(--green_dark);
+    border-radius: 15px;
+    font-size: 2em;
+    padding: 0 .3em 0 .3em;
+    margin-left: 1em;
+}
+
+.button_conta button:hover {
+    background-color: var(--font);
+    border-color: var(--font);
+    color: var(--green_dark);
+    cursor: pointer;
+    transition: ease-in .5s;
+}
 
 /* Home Ends */
 
@@ -526,7 +505,7 @@ p {
 footer {
     width: 100%;
     height: auto;
-    margin-top: 7em; 
+    margin-top: 7em;
     display: flex;
     justify-content: space-between;
     background: var(--header);
@@ -540,7 +519,7 @@ footer a {
     color: var(--font);
 }
 
-footer a:hover{
+footer a:hover {
     transition: .2s ease-out;
     font-size: 1.1em;
 }
@@ -553,50 +532,54 @@ footer a:hover{
 .box_footer {
     width: 20%;
     margin-left: 2em;
-    margin-top: 1.5em; margin-bottom: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
 }
 
 .box_footer i {
-    color: var(--green); padding: .5em;
+    color: var(--green);
+    padding: .5em;
 }
 
-.box_footer img{
-    width: 30%; height: auto;
+.box_footer img {
+    width: 30%;
+    height: auto;
 }
 
-.box_footer ul{
+.box_footer ul {
     list-style: none;
     padding-left: 0;
 }
 
-.box_footer li{
+.box_footer li {
     padding-top: .5em;
 }
 
-.social{
+.social {
     display: flex;
 }
 
-#social i{
-   font-size: 3em;
-   padding: 0 .1em 0 .5em; 
+#social i {
+    font-size: 3em;
+    padding: 0 .1em 0 .5em;
 }
 
-#contact{
+#contact {
     width: 30%;
 }
 
-#social{
+#social {
     margin-right: 2em;
 }
 
-#social h6{
-margin-left: 1em;
+#social h6 {
+    margin-left: 1em;
 }
 
-#social img{
+#social img {
     margin-left: 2.5em;
 }
+
 /* Footer Ends */
 
 
@@ -604,7 +587,7 @@ margin-left: 1em;
 
 @media(min-width:1439px) {
     html {
-        font-size:120%;
+        font-size: 120%;
     }
 }
 
@@ -737,12 +720,12 @@ margin-left: 1em;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var(--barrinha);
+    background-color: var(--transition_hover_bar);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var(--barrinhahover);
+    background-color: var(--bar);
 }
 
 /* Barra de rolagem personalizada FINAL */

@@ -19,3 +19,4 @@ let emojis = document.querySelector('.emojis')
 document.querySelector('#icones').onclick = () =>{
     emojis.classList.toggle('active');
 }
+
