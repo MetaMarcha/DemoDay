@@ -23,6 +23,9 @@
 
     <!-- Logo -->
     <link rel="shortcut icon" href="img/logo_1.png" type="image/x-icon">
+
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -41,11 +44,6 @@
             <a href="#about">Sobre nós</a>
             <a href="#blogs">Blogs</a>
         </nav>
-
-        <div class="acesso">
-            <a href="cadastro.html"><button type="button">Cadastre-se</button></a>
-            <a href="login.html"><button type="button">Entre</button></a>
-        </div>
 
         <!-- Botão aparecer na responsividade -->
         <div class="icons">
@@ -71,19 +69,41 @@
     <!-- Starts home -->
 
 
-    <section id="home">
+    <!-- Swiper -->
 
-        <h2 class="title">Conheça sua nova ferramenta de gestão</h2>
+    <div style="--swiper-navigation-color: #4ab358; --swiper-pagination-color: #4ab358" class="swiper mySwiper"
+        id="home">
+        <div class="parallax-bg" style="
+          background-image: url(https://diaonline.ig.com.br/wp-content/uploads/2020/06/loja-de-informatica-em-brasilia-opcoes-para-encontrar-tudo-que-voce-precisa-e1591709900564.jpeg);
+        " data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
 
-        <div class="container">
-
-            <button type="button" href="#">Organize sua Agenda <i class="fa-solid fa-angles-right"></i></button>
-            <button type="button" href="#">Conheça nossas ferramentas<i class="fa-solid fa-angles-right"></i></button>
-            <button type="button" href="#">Acesse nossos cursos <i class="fa-solid fa-angles-right"></i></button>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">
+                    <h1>Slide 1</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">
+                    <h1>Slide 2</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">
+                    <h1>Slide 3</h1>
+                </div>
+            </div>
 
         </div>
 
-    </section>
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="button_conta">
+      <a href="cadastro_2.html"><button>Cadastra-se</button></a> 
+      <a href="login.html"> <button>Entrar</button></a>
+    </div>
 
     <!-- Ends home -->
 
@@ -496,7 +516,7 @@
 
         <div class="box_footer" id="social">
 
-            <img src="img/logo_2.png">
+            <img src="img/logo_1.png">
 
             <h6>Siga-nos</h6>
             <div class="social">
@@ -505,7 +525,8 @@
             </div>
 
             <div class="social">
-                <a href="https://www.instagram.com/metamarcha/" target="_blank" id="insta"><i class="fa-brands fa-instagram-square" title="Instagram"></a></i>
+                <a href="https://www.instagram.com/metamarcha/" target="_blank" id="insta"><i
+                        class="fa-brands fa-instagram-square" title="Instagram"></a></i>
                 <i class="fa-brands fa-linkedin" title="Linkedin"></i>
 
             </div>
@@ -516,6 +537,10 @@
 
 
     <script src="js/script.js"></script>
+
+    <!-- Link swiper JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
 </body>
 
 </html>
