@@ -179,7 +179,7 @@ header .acess_nav i {
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 1300px;
+    right: 2%;
     top: 40px;
     border-radius: 50%;
     background: #D9D9D9;
@@ -193,7 +193,7 @@ header .acess_nav i {
     position: absolute;
     width: 40px;
     height: 40px;
-    left: 1300px;
+    right: 2%;
     top: 100px;
     border-radius: 50%;
     background: #D9D9D9;
@@ -203,12 +203,13 @@ header .acess_nav i {
     cursor: pointer;
 }
 
-
 .conf_perso i {
     text-align: center;
     font-size: 1.3em;
     color: var(--green_dark);
 }
+
+/* 
 
 
 #icones {
@@ -230,7 +231,7 @@ header .acess_nav i {
     text-align: center;
     font-size: 1.1em;
     color: var(--green_dark);
-}
+} */
 
 #foto img {
     position: absolute;
@@ -240,6 +241,7 @@ header .acess_nav i {
     top: 60px;
 }
 
+/* 
 .emojis {
     position: absolute;
     top: 58px;
@@ -277,6 +279,7 @@ header .acess_nav i {
     opacity: 100%;
 }
 
+ */
 
 
 /* PLANOS - ctrl k c*/
@@ -286,7 +289,7 @@ header .acess_nav i {
 
     position: absolute;
     width: 1330px;
-    height: 400px;
+    height: 450px;
     left: 0px;
     top: 370px;
     margin: 15px;
@@ -297,11 +300,12 @@ header .acess_nav i {
 }
 
 #planos h2 {
-    margin-left: 2%;
-    width: 167px;
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    width: 350px;
     height: 46px;
     font-size: 30px;
-    line-height: 50px;
     color: #CDCDCD;
     display: inline;
 }
@@ -311,22 +315,22 @@ header .acess_nav i {
     height: 46px;
     font-weight: 700;
     font-size: 30.6667px;
-    line-height: 50px;
-
     color: var(--green_dark);
+    margin-left: 3%;
 }
 
 
-#planos .mudar_plano {
+/* #planos .mudar_plano {
     box-sizing: border-box;
-    position: relative;
+    position: absolute;
     width: 150px;
     height: 60px;
-    left: 1150px;
+    right: 2%;
+    top: 3%;
     background: #545353;
     border: 1px solid var(--green_dark);
     border-radius: 16.5px;
-}
+} */
 
 
 #planos .mudar_plano a {
@@ -338,22 +342,50 @@ header .acess_nav i {
 }
 
 
+/* #planos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center
+} */
 
+#ferramentas {
+    margin-top: 3em;
+}
 
 #ferramentas button {
-    width: 314px;
-    height: 51px;
-    margin: .5em;
+    position: relative;
     border-radius: .5em;
     background: none;
     color: var(--green_dark);
     border: var(--green_dark) solid 2px;
     font-style: normal;
-    font-size: 24px;
     align-items: center;
     text-align: center;
     color: #FFFFFF;
 }
+
+#ferramentas #Daora button {
+    width: 14em;
+    height: 4em;
+    margin: 1.5em;
+    font-size: 26px;
+}
+
+#ferramentas #Massa button {
+    width: 14em;
+    height: 3em;
+    font-size: 24px;
+    margin: 1.2em;
+}
+
+#ferramentas #Arretado button {
+    width: 11em;
+    height: 3em;
+    font-size: 24px;
+    margin: 1em;
+}
+
 
 #ferramentas button:hover {
     border: none;
@@ -363,25 +395,16 @@ header .acess_nav i {
     transition: .5s;
 }
 
-
-#Daora{
-    transform: scaleY(0);
+#ferramentas .alinhamento {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
 }
-
-#Massa{
-    transform: scaleY(0);
-}
-
-#Arretado{
-    transform: scaleY(0);
-}
-
-
 
 
 /* CALENDÁRIO */
 
-
+/* 
 #agenda #calendario {
     box-sizing: border-box;
     position: absolute;
@@ -408,7 +431,7 @@ header .acess_nav i {
     color: #FFFFFF;
     padding: 5.5px;
 }
-
+ */
 
 
 
@@ -427,7 +450,7 @@ footer {
     width: 100%;
     height: auto;
     left: 0px;
-    top: 90em;
+    top: 55em;
     background-color: var(--header);
     display: flex;
 }
