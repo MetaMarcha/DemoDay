@@ -41,7 +41,6 @@ section .title {
     width: 448px;
     height: 332px;
     left: 10%;
-    top: 25%;
     font-style: normal;
     font-weight: 600;
     font-size: 65px;
@@ -351,6 +350,10 @@ section .container_login h5 {
 }
 
 @media (max-width:1440px) {
+
+    section .title {
+        top: 25%;
+    }
 
     section .container_login {
         width: 470px;
