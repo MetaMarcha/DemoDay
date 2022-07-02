@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+:root {
+    --background: #1B1B1B;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
+    --green_dark: #1C8C3E;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: .2s linear;
+}
+
+/* Body the page */
+body {
+    background: var(--background);
+    justify-content: center;
+}
+
+.em_breve {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../img/fundo_login.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Menu start */
+
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 4.5em;
+}
+
+header .logo #logo_branca {
+    width: auto;
+    height: 3em;
+    margin: 0 0 0 30px;
+}
+
+/* Menu end */
+
+/* Accessibility start */
+
+header .acess_icon i {
+    color: var(--font);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover {
+    color: var(--green);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 105%;
+    top: 105%;
+    right: -90%;
+    width: 10em;
+    background-color: #323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--font);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
+}
+
+header .acess_nav.active {
+    right: 0em;
+    transition: 1s linear;
+    animation: reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+    /* animation: go-go .8s; */
+}
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .acess_nav p,
+i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Accessibility end */
+
+
+
+/* Em Breve Start */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Em Breve end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
