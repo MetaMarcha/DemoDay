@@ -20,163 +20,77 @@ html {
     transition: .2s linear;
 }
 
-/* Body the page */
 body {
-    background: var(--background);
-    justify-content: center;
+    background-color: var(--background);
+    width: 100%;
+    height: 100%;
 }
 
-.em_breve {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    background: url(../img/fundo_login.png) no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
-/* Menu start */
+
+/* header Start */
 
 header {
-    padding: 0.1em;
+    z-index: 2;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
     display: flex;
+    left: 0;
+    top: 0;
+    right: 0;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--header);
-    height: 4.5em;
 }
 
-header .logo #logo_branca {
-    width: auto;
-    height: 3em;
-    margin: 0 0 0 30px;
+header a {
+    margin-left: 3%;
+    margin-top: 2%;
 }
 
-/* Menu end */
+header i{
+    font-weight: 500;
+    font-size: 50px;
+    color: var(--green_dark);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+}
 
-/* Accessibility start */
-
-header .acess_icon i {
-    color: var(--font);
-    font-size: 1.8em;
-    float: left;
-    margin: 0 30px 0 0;
+header i:hover{
     cursor: pointer;
-
+    color: var(--green_ligth);
 }
 
-header .acess_icon i:hover {
-    color: var(--green);
+/* header end */
+
+
+/* section start */
+
+section .title {
+    font-weight: 600;
+    font-size: 60px;
+    color: #5CCD59;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
 }
 
-header .acess_nav {
-    position: absolute;
-    top: 105%;
-    top: 105%;
-    right: -90%;
-    width: 10em;
-    background-color: #323232;
-    text-align: center;
-    align-items: center;
+section .container_breve img {
+    width: 450px;
+    height: 180px;    
+}
+
+.container {
+    width: auto;
+    height: auto;
     display: flex;
-    color: var(--font);
-    padding: 10px 20px 0px 20px;
-    border-radius: 0 0 0 10px;
-    box-shadow: 0 0 1em var(--header);
-    animation: go-go .8s;
-}
-
-header .acess_nav.active {
-    right: 0em;
-    transition: 1s linear;
-    animation: reverse .8s;
-}
-
-@keyframes go-back {
-
-    from {
-        transform: translateX(100px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-
-    /* animation: go-go .8s; */
-}
-
-/* @keyframes go-go {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(100px);
-    }
-  }  */
-
-header .acess_nav.active {
-    right: 2rem;
-    transition: .5s linear;
-    animation: go-back .8s;
-}
-
-@keyframes go-back {
-    from {
-        transform: translateX(100px);
-    }
-
-    to {
-        transform: translateX(0);
-    }
-}
-
-header .acess_nav p,
-i {
-    padding-right: 10px;
-    padding-left: 10px;
-}
-
-header .acess_nav i {
-    margin-top: -13px;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
 }
 
-/* Accessibility end */
+section .container_breve {
+    top: 10em;
+    position: relative;
+    align-items: center;
+    text-align: center;
+}
 
-
-
-/* Em Breve Start */
-
-
-
-
-
-
-
-
-
-
-
-
-/* Em Breve end */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* section end */
