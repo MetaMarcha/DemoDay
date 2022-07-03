@@ -1,20 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
 
 html {
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 :root {
     --background: #1B1B1B;
-    --barrinha: #4ab358;
-    --barrinhahover: #2d6d35;
     --header: #292929;
     --font: #eee;
     --green_ligth: #3CF238;
     --green: #5eae53;
     --green_dark: #1C8C3E;
-    --barrinha: #5eae53;
-    --barrinhahover: #2d6d35;
 }
 
 * {
@@ -142,41 +138,63 @@ header .acess_nav i {
 
 
 
+/* 
+section .title {
+    position: absolute;
+    width: 600px;
+    height: 332px;
+    left: 10%;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 65px;
+    
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: var(--green);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+} */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Barra de rolagem personalizada INICIO */
-::-webkit-scrollbar {
-    width: .6rem;
-    height: .2rem;
-    border-radius: .5rem;
-    background-color: var(--background);
+section .financeiro {
+    /* padding-top: 30px; */
+    box-sizing: border-box;
+    position: absolute;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 65%;
+    /* height: 700px; */
+    top: 30%;
+    background: #0e0e0e;
+    border: 0.865138px solid var(--green_dark);
+    box-shadow: 0px 3.46055px 3.46055px rgba(0, 0, 0, 0.25);
+    border-radius: 12.9771px;
 }
 
-::-webkit-scrollbar-thumb {
-    background-color: var(--barrinha);
-    border-radius: .5rem;
+.input_financeiro label {
+    position: absolute;
+    left: 10%;
+    color: red;
 }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: var(--barrinhahover);
+section .campo input {
+    background: var(--header);
+    border-radius: 0.9em;
+    border: none;
+    width: 20%;
+    height: 30%;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-left: 5%;
 }
 
-/* Barra de rolagem personalizada FINAL */
+.campo input:focus {
+    color: #fff;
+    outline: 1px solid var(--green);
+}
+
+input {
+    display: flex;
+    padding: 0.3em 0 0.3em 0;
+    padding-left: 5%;
+}

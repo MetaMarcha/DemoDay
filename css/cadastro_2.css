@@ -18,7 +18,7 @@ html {
     --barrinhahover: #2d6d35;
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -128,9 +128,9 @@ header .acess_nav {
 }
 
 header .acess_nav.active {
-    right: 0em ;
+    right: 0em;
     transition: 1s linear;
-    animation:reverse .8s;
+    animation: reverse .8s;
 }
 
 @keyframes go-back {
@@ -142,6 +142,7 @@ header .acess_nav.active {
     to {
         transform: translateX(0);
     }
+
     /* animation: go-go .8s; */
 }
 
@@ -162,12 +163,13 @@ header .acess_nav.active {
 
 @keyframes go-back {
     from {
-      transform: translateX(100px);
+        transform: translateX(100px);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
 header .acess_nav p,
 i {
@@ -184,7 +186,7 @@ header .acess_nav i {
 
 /* Planos */
 
-h1{
+h1 {
     margin-top: 4em;
     text-align: center;
     color: var(--font);
@@ -213,7 +215,7 @@ h1{
     font-size: 1.5em;
 }
 
-h2.nossos_planos{
+h2.nossos_planos {
     margin-top: -2.4em;
     font-weight: 600;
     padding-bottom: 1.4em;
@@ -359,8 +361,8 @@ h2.nossos_planos{
 
 /* Alinhamento */
 
-.planos{
-    position:relative;
+.planos {
+    position: relative;
     top: 50%;
     left: 5%;
 }
@@ -380,14 +382,14 @@ section #plans .planos {
     display: flex;
 }
 
-#linhas img{
+#linhas img {
     position: absolute;
     top: 9em;
 }
 
 /* botões de preço */
 
-button.button{
+button.button {
     border-radius: .8em;
     background-color: var(--header);
     border: none;
@@ -399,14 +401,14 @@ button.button{
     text-align: center;
 }
 
-button.button span{
+button.button span {
     color: var(--green_dark);
     font-weight: bold;
 }
 
 /* botões 30 dias grátis */
 
-.button_free{
+.button_free {
     border-radius: .8em;
     background: #000;
     color: var(--font);
@@ -419,14 +421,14 @@ button.button span{
 }
 
 
-.button_free:hover{
+.button_free:hover {
     background-color: var(--green_dark);
     border: none;
 }
 
 /* botões go e back */
 
-button.go-back{
+button.go-back {
     border-radius: .5em;
     background: none;
     color: var(--green_dark);
@@ -437,12 +439,12 @@ button.go-back{
     margin-bottom: 3em;
 }
 
-#button{
+#button {
     text-align: center;
 }
 
-button.go-back:hover{
-    border: none; 
+button.go-back:hover {
+    border: none;
     border-radius: .5em;
     background-color: var(--green_dark);
     color: var(--font);

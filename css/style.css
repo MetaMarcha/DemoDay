@@ -519,9 +519,11 @@ footer a {
     color: var(--font);
 }
 
-footer a:hover {
-    transition: .2s ease-out;
+footer .formatar_link a:hover {
+    transform: matrix3d(1.15);
     font-size: 1.1em;
+    color: var(--font);
+    transition: .2s linear;
 }
 
 .box_footer h6 {
@@ -564,6 +566,12 @@ footer a:hover {
     padding: 0 .1em 0 .5em;
 }
 
+#social i:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: .2s linear;
+}
+
 #contact {
     width: 30%;
 }
@@ -579,6 +587,7 @@ footer a:hover {
 #social img {
     margin-left: 2.5em;
 }
+
 
 /* Footer Ends */
 
