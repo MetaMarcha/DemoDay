@@ -175,12 +175,22 @@ section .container_login h5 {
 /* Conheça nossa ferramneta */
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* RESPONSIVIDADE */
 
 /* media queries  */
-
-
-
 
 
 @media (max-width:2652px) {
@@ -380,7 +390,7 @@ section .container_login h5 {
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center
+        align-items: center;
     }
 
     section .container_login {
