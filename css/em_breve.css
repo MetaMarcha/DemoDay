@@ -46,7 +46,7 @@ header a {
     margin-top: 2%;
 }
 
-header i{
+header i {
     font-weight: 500;
     font-size: 50px;
     color: var(--green_dark);
@@ -54,9 +54,10 @@ header i{
     margin-bottom: 25px;
 }
 
-header i:hover{
+header i:hover {
     cursor: pointer;
     color: var(--green_ligth);
+    transform: scale(1.1);
 }
 
 /* header end */
@@ -74,7 +75,7 @@ section .title {
 
 section .container_breve img {
     width: 450px;
-    height: 180px;    
+    height: 180px;
 }
 
 .container {

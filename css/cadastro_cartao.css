@@ -123,6 +123,7 @@ i {
     to {
         transform: translateX(0);
     }
+
     /* animation: go-go .8s; */
 }
 
@@ -134,10 +135,11 @@ i {
 
 @keyframes go-back {
     from {
-      transform: translateX(100px);
+        transform: translateX(100px);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
 }
 
@@ -323,17 +325,19 @@ section .form-pagamento .button {
 
 /* scrollbar */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     width: .6rem;
     height: .2rem;
     border-radius: .5rem;
     background-color: var(--header);
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
     background-color: var(--scrollbar-hover);
     border-radius: .5rem;
 }
-::-webkit-scrollbar-thumb:hover{
+
+::-webkit-scrollbar-thumb:hover {
     background-color: var(--scrollbar);
 }
 

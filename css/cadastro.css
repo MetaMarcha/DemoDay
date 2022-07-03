@@ -18,7 +18,7 @@ html {
     --barrinhahover: #2d6d35;
 }
 
-*{
+* {
     font-family: 'Poppins', sans-serif;
 }
 
@@ -127,9 +127,9 @@ header .acess_nav {
 }
 
 header .acess_nav.active {
-    right: 0em ;
+    right: 0em;
     transition: 1s linear;
-    animation:reverse .8s;
+    animation: reverse .8s;
 }
 
 @keyframes go-back {
@@ -141,6 +141,7 @@ header .acess_nav.active {
     to {
         transform: translateX(0);
     }
+
     /* animation: go-go .8s; */
 }
 
@@ -161,12 +162,13 @@ header .acess_nav.active {
 
 @keyframes go-back {
     from {
-      transform: translateX(100px);
+        transform: translateX(100px);
     }
+
     to {
-      transform: translateX(0);
+        transform: translateX(0);
     }
-  }
+}
 
 header .acess_nav p,
 i {
@@ -190,29 +192,29 @@ header .acess_nav i {
     align-items: center;
 }
 
-h1{
+h1 {
     color: #ffffff;
     text-align: center;
 }
 
-p{
+p {
     color: rgba(205, 205, 205, 0.7);
     font-size: 1.1em;
 }
 
-span{
+span {
     color: red;
     font-size: 1.1em;
 }
 
-label{
+label {
     color: #CDCDCD;
     margin-right: 2em;
     margin-bottom: 2.6em;
     margin-top: 8px;
 }
 
-input{
+input {
     display: grid;
     background: #282828;
     border-radius: 20px;
@@ -224,18 +226,18 @@ input{
     color: var(--font);
 }
 
-input:focus{
+input:focus {
     outline: 1px solid var(--green_ligth);
     color: var(--font);
 }
 
 
-h2{
+h2 {
     color: #ffffff;
     text-align: center;
 }
 
-button.button{
+button.button {
     position: relative;
     top: 50%;
     left: 6%;
@@ -251,7 +253,7 @@ button.button{
     margin-left: 1.3em;
 }
 
-button.button:hover{
+button.button:hover {
     background: var(--green_dark);
     color: var(--font);
 }
@@ -260,7 +262,7 @@ button.button:hover{
 
 /* botões go e back */
 
-button.go-back{
+button.go-back {
     border-radius: .5em;
     background: none;
     color: var(--green_dark);
@@ -271,12 +273,12 @@ button.go-back{
     margin-bottom: 3em;
 }
 
-#button{
+#button {
     text-align: center;
 }
 
-button.go-back:hover{
-    border: none; 
+button.go-back:hover {
+    border: none;
     border-radius: .5em;
     background-color: var(--green_dark);
     color: var(--font);
