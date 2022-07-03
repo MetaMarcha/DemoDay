@@ -447,109 +447,95 @@ header .acess_nav i {
 
 footer {
     position: absolute;
+    top: 120%;
     width: 100%;
     height: auto;
-    left: 0px;
-    top: 55em;
-    background-color: var(--header);
+    margin-top: 7em;
+    display: flex;
+    justify-content: space-between;
+    background: var(--header);
+    line-height: 2em;
+}
+
+footer a {
+    text-decoration: none;
+    text-align: left;
+    display: grid;
+    color: var(--font);
+}
+
+footer .formatar_link a:hover {
+    transform: matrix3d(1.15);
+    font-size: 1.1em;
+    color: var(--font);
+    transition: .2s linear;
+}
+
+.box_footer h6 {
+    color: var(--green);
+    font-size: 1.5em;
+}
+
+.box_footer {
+    width: 20%;
+    margin-left: 2em;
+    margin-top: 1.5em;
+    margin-bottom: 2em;
+}
+
+.box_footer i {
+    color: var(--green);
+    padding: .5em;
+}
+
+.box_footer img {
+    width: 30%;
+    height: auto;
+}
+
+.box_footer ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.box_footer li {
+    padding-top: .5em;
+    color: var(--font);
+}
+
+.social {
     display: flex;
 }
 
-footer .contato {
-    height: auto;
-    width: 20%;
-    margin: 1em;
-}
-
-footer .contato h5 {
-    color: var(--dark_green);
-    color: var(--green_dark);
-    font-size: 1.5em;
-    font-weight: 600;
-    text-transform: uppercase;
-    margin-left: 1em;
-    margin-top: 1em;
-}
-
-footer .contato li {
-    list-style: none;
-    color: var(--font_color);
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-    cursor: pointer;
-}
-
-footer .contato li:hover {
-    font-size: 1.2em;
-    transition: .5s;
-}
-
-footer #contato li {
-    cursor: auto;
-}
-
-footer #contato li:hover {
-    list-style: none;
-    color: var(--font_color);
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-}
-
-footer .contato a {
-    list-style: none;
-    color: var(--font);
-    font-size: 1em;
-    line-height: 2em;
-    font-weight: 500;
-    cursor: pointer;
-    display: grid;
-    text-decoration: none;
-}
-
-footer .contato a:hover {
-    font-size: 1.2em;
-    transition: .5s;
-}
-
-footer #social {
-    width: 30%;
-    align-items: center;
-    text-align: center;
-}
-
-footer #social h5 {
-    color: var(--font_color);
-    color: var(--font);
-}
-
-footer #social img {
-    margin-top: 2em;
-    width: 5em;
-    height: auto;
-
-}
-
-footer #social i {
+#social i {
     font-size: 3em;
-    color: var(--green_dark);
+    padding: 0 .1em 0 .5em;
 }
 
-footer #insta {
-    font-style: none;
-    display: inline;
+#social i:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    transition: .2s linear;
 }
 
-footer #insta:hover {
-    transition: none;
-    font-size: 1em;
-    cursor: copy;
+#contact {
+    width: 30%;
 }
 
-/* Footer End */
+#social {
+    margin-right: 2em;
+}
+
+#social h6 {
+    margin-left: 1em;
+}
+
+#social img {
+    margin-left: 2.5em;
+}
+
+
+/* Footer Ends */
 
 
 /* Barra de rolagem personalizada INICIO */
