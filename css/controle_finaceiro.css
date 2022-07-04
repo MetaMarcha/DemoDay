@@ -137,6 +137,40 @@ header .acess_nav i {
 /* Accessibility end */
 
 
+
+.flexa a {
+    position: absolute;
+    margin-left: 3%;
+    margin-top: 6%;
+}
+
+.flexa i {
+    font-size: 50px;
+    color: var(--green_dark);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 25px;
+}
+
+.flexa i:hover {
+    cursor: pointer;
+    color: var(--green_ligth);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 section .ferramenta {
     width: auto;
     height: auto;
