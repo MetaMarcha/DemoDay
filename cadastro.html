@@ -18,7 +18,7 @@
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
     <!-- Links -->
-    <link rel="stylesheet" href="css/cadastro.css">
+    <link rel="stylesheet" href="css/cadastro.css"
     <script src="https://kit.fontawesome.com/0eb9d79b15.js" crossorigin="anonymous"></script>
 
     <!-- Logo -->
@@ -53,42 +53,57 @@
 
             <div class="formulario_cadastro">
 
-                <form action="text" method="post">
+                <form action="" method="post" class="form">
                     <fieldset class="grupo">
 
                         <div class="cadastro">
                             <div class="campo">
                                 <label for="nome">Nome completo<span> *</span></label>
-                                <input type="text" name="nome" id="nome" placeholder="Digite seu nome completo"
-                                    required>
+                                <input required class="nome" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" maxlength="200" minlength="10">
                             </div>
                             <div class="campo">
                                 <label for="CPF">CPF ou CNPJ<span> *</span></label>
-                                <input type="text" name="CPF" id="CPF" placeholder="Digite seu CPF ou CNPJ" required>
+                                <input required class="documento" type="text" name="CPF" id="CPF" placeholder="Digite seu CPF ou CNPJ">
                             </div>
                             <div class="campo">
                                 <label for="empresa">Nome da empresa</label>
-                                <input type="text" name="empresa" id="empresa"
-                                    placeholder="Digite o nome da sua empresa">
+                                <input required class="empresa" type="text" name="empresa" id="empresa" placeholder="Digite o nome da sua empresa" maxlength="200">
                             </div>
                             <div class="campo">
                                 <label for="email">Email<span> *</span></label>
-                                <input type="email" name="email" id="email" placeholder="Digite seu email" required>
+                                <input required class="email" type="email" name="email" id="email" placeholder="Digite seu email" maxlength="50">
                             </div>
                             <div class="campo">
                                 <label for="telefone">Telefone<span> *</span></label>
-                                <input type="tel" name="tel" id="tel" placeholder="Digite seu telefone" required>
+                                <input required class="tel" type="tel" name="tel" id="tel" placeholder="Digite seu telefone" maxlength="15">
                             </div>
                             <div class="campo">
                                 <label for="password">Crie uma senha <span> *</span></label>
-                                <input type="password" name="password" id="password"
-                                    placeholder="Crie uma senha (8 ou mais caracteres)" required>
+                                <input required class="senha" type="password" name="senha" id="password"placeholder="Crie uma senha (8 ou mais caracteres)" onchange='confirasenha();' minlength="8">
                             </div>
                             <div class="campo">
                                 <label for="confirm">Repetir senha<span> *</span></label>
-                                <input type="password" name="password" id="confirm" placeholder="Confirme sua senha"
-                                    required>
+                                <input required class="senha" type="password" name="confirma" id="confirm" placeholder="Confirme sua senha" onchange='confirasenha();'>
                             </div>
+                            
+                            <div class="container opcao">
+                                <h2>Como você classifica sua empresa?</h2>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">MEI</button>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">Micro</button>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">Pequena</button>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">Média</button>
+                    
+                            </div>
+                    
+                            <div class="button" id="button">
+                                <a href="index.html"><button name="button_back" class="go-back" id="back" type="button">Voltar</button></a>
+                                <button name="button_go" class="go-back form" id="proximo" type="submit">Próximo</button>
+                            </div>
+                           
                         </div>
 
                     </fieldset>
@@ -96,29 +111,13 @@
             </div>
         </div>
 
-        <div class="container">
-            <h2>Como você classifica sua empresa?</h2>
-            <button name="button" value="OK" type="button" class="
-                button">MEI</button>
-            <button name="button" value="OK" type="button" class="
-                button">Micro</button>
-            <button name="button" value="OK" type="button" class="
-                button">Pequena</button>
-            <button name="button" value="OK" type="button" class="
-                button">Média</button>
-
-        </div>
-
-        <div class="button" id="button">
-            <a href="./index.html"><button name="button_back" class="go-back" id="back">Voltar</button></a>
-            <a href="./cadastro_2.html"><button name="button_go" class="go-back" id="go">Próximo</button></a>
-        </div>
+        
 
     </section>
 
 
 
-    <script src="js/script.js"></script>
+    <script src="js/cadastro.js"></script>
 
 </body>
 
