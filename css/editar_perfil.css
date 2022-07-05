@@ -158,16 +158,25 @@ i {
 
 /* menu */
 
+.settings {
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-around;
+}
+
 .solid{
     margin-top: 1em;
     border-style: solid;
     border-color: var(--dark-green);
     border-radius: 10px;
-    width: 20em;
+    width: 25em;
+    height: 15em;
 }
 
-#grupo.solid{
-    width: 40em;
+#grupo_2.solid{
+    width: 50em;
+    height: 41em;
+    margin-left: 20em;
 }
 
 .menu{
@@ -228,11 +237,23 @@ h2{
 
 label{
     color: var(--font-color);
+    margin-top: 1em;
 }
 
 input{
     width: 30em;
     margin-bottom: 2em;
+    margin-top: 1em;
+}
+
+button{
+    background: #000;
+    color: var(--font-color);
+    border-color: var(--dark-green);
+    border-radius: 15px;
+    width: 15em;
+    height: 40px;
+    
 }
 
 
@@ -257,3 +278,4 @@ input{
 }
 
 /* scrollbar */
+
