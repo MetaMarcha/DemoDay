@@ -19,6 +19,7 @@ html {
 
 * {
     font-family: 'Poppins', sans-serif;
+    transition: .2s linear;
 }
 
 /* Body the page */
@@ -151,8 +152,8 @@ header .acess_nav i {
 #perfil {
     position: absolute;
     width: 100%;
-    height: 312px;
-    top: 58px;
+    height: 280px;
+    top: 10%;
     background-color: var(--green_dark);
     text-align: center;
     align-items: center;
@@ -165,8 +166,8 @@ header .acess_nav i {
     width: 369px;
     height: 46px;
     left: 45px;
-    top: 240px;
-    font-size: 30.6667px;
+    top: 220px;
+    font-size: 30px;
     line-height: 46px;
     text-align: center;
     letter-spacing: -0.02em;
@@ -175,7 +176,7 @@ header .acess_nav i {
 }
 
 
-#personalizar {
+/* #personalizar {
     position: absolute;
     width: 40px;
     height: 40px;
@@ -187,14 +188,14 @@ header .acess_nav i {
     align-items: center;
     display: flex;
     cursor: pointer;
-}
+} */
 
 #configurar {
     position: absolute;
     width: 40px;
     height: 40px;
     right: 2%;
-    top: 100px;
+    top: 40px;
     border-radius: 50%;
     background: #D9D9D9;
     text-align: center;
@@ -235,10 +236,10 @@ header .acess_nav i {
 
 #foto img {
     position: absolute;
-    width: 180px;
-    height: 180px;
+    width: 170px;
+    height: 170px;
     left: 45px;
-    top: 60px;
+    top: 40px;
 }
 
 /* 
@@ -288,12 +289,11 @@ header .acess_nav i {
     box-sizing: border-box;
 
     position: absolute;
-    width: 1330px;
+    width: 98%;
     height: 450px;
-    left: 0px;
-    top: 370px;
+    top: 56%;
     margin: 15px;
-    background: #282828;
+    background: var(--header);
     border: 1px solid #1C8C3E;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 15px;
@@ -305,7 +305,7 @@ header .acess_nav i {
     top: 3%;
     width: 350px;
     height: 46px;
-    font-size: 30px;
+    font-size: 26px;
     color: #CDCDCD;
     display: inline;
 }
@@ -314,7 +314,7 @@ header .acess_nav i {
     width: 95px;
     height: 46px;
     font-weight: 700;
-    font-size: 30.6667px;
+    font-size: 26.5px;
     color: var(--green_dark);
     margin-left: 3%;
 }
@@ -333,13 +333,13 @@ header .acess_nav i {
 } */
 
 
-#planos .mudar_plano a {
-    font-size: 19.682px;
+/* #planos .mudar_plano a {
+    font-size: 109.682px;
     display: flex;
     text-align: center;
     color: #FFFFFF;
     text-decoration: none;
-}
+} */
 
 
 /* #planos{
@@ -365,18 +365,19 @@ header .acess_nav i {
     color: #FFFFFF;
 }
 
-#ferramentas #Daora button {
-    width: 14em;
+/* #ferramentas #Daora button {
+    width: 1%;
     height: 4em;
     margin: 1.5em;
     font-size: 26px;
-}
+    background-color: red;
+} */
 
 #ferramentas #Massa button {
     width: 14em;
     height: 3em;
-    font-size: 24px;
-    margin: 1.2em;
+    font-size: 20px;
+    margin: 1.8em;
 }
 
 #ferramentas #Arretado button {
@@ -447,7 +448,7 @@ header .acess_nav i {
 
 footer {
     position: absolute;
-    top: 120%;
+    top: 116%;
     width: 100%;
     height: auto;
     margin-top: 7em;
@@ -518,12 +519,8 @@ footer .formatar_link a:hover {
     transition: .2s linear;
 }
 
-#contact {
+/* #contact {
     width: 30%;
-}
-
-#social {
-    margin-right: 2em;
 }
 
 #social h6 {
@@ -533,7 +530,7 @@ footer .formatar_link a:hover {
 #social img {
     margin-left: 2.5em;
 }
-
+ */
 
 /* Footer Ends */
 
@@ -556,3 +553,5 @@ footer .formatar_link a:hover {
 }
 
 /* Barra de rolagem personalizada FINAL */
+
+
