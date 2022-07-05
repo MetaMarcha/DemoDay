@@ -100,7 +100,7 @@ section .container_breve {
 /* media queries  */
 
 
-/* Laptop 768 min  */
+/* Laptop */
 
 @media screen and (min-width:768px) and (max-width: 1280px) {
 
@@ -115,7 +115,7 @@ section .container_breve {
 
 }
 
-/* Tablet min 581 max 767*/
+/* Tablet */
 
 @media screen and (min-width:581px) and (max-width: 767px) {
 
@@ -139,7 +139,7 @@ section .container_breve {
     }
 }
 
-/* Mobile max 580 */
+/* Mobile */
 
 @media screen and (max-width:580px) {
 
