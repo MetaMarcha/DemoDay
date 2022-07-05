@@ -1,0 +1,542 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
+    --green_dark: #1C8C3E;
+    --barrinha: #5eae53;
+    --barrinhahover: #2d6d35;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    transition: .2s linear;
+}
+
+/* Body the page */
+body {
+    background: var(--background);
+    justify-content: center;
+}
+
+/* Menu start */
+
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 4.5em;
+}
+
+header .logo #logo_branca {
+    width: auto;
+    height: 3em;
+    margin: 0 0 0 30px;
+}
+
+/* Menu end */
+
+/* Accessibility start */
+
+header .acess_icon i {
+    color: var(--font);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover {
+    color: var(--green);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 105%;
+    top: 105%;
+    right: -90%;
+    width: 10em;
+    background-color: #323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--font);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
+}
+
+header .acess_nav.active {
+    right: 0em;
+    transition: 1s linear;
+    animation: reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+}
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .acess_nav p,
+i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Accessibility end */
+
+
+
+
+
+
+
+/* PERFIL */
+
+#perfil {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    top: 10%;
+    background-color: var(--green_dark);
+    text-align: center;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+}
+
+#perfil #Name {
+
+    position: relative;
+    width: 369px;
+    height: 46px;
+    left: 45px;
+    top: 220px;
+    font-size: 30px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: var(--font);
+}
+
+
+#configurar {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: 2%;
+    top: 40px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.conf_perso i {
+    text-align: center;
+    font-size: 1.3em;
+    color: var(--green_dark);
+}
+
+
+#foto img {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 45px;
+    top: 40px;
+}
+
+
+/* PLANOS - ctrl k c*/
+
+#planos {
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 98%;
+    height: 450px;
+    top: 56%;
+    margin: 15px;
+    background: var(--header);
+    border: 1px solid #1C8C3E;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+
+#planos h2 {
+    position: absolute;
+    left: 2%;
+    top: 3%;
+    width: 350px;
+    height: 46px;
+    font-size: 26px;
+    color: #CDCDCD;
+    display: inline;
+}
+
+#planos span {
+    width: 95px;
+    height: 46px;
+    font-weight: 700;
+    font-size: 26.5px;
+    color: var(--green_dark);
+    margin-left: 3%;
+}
+
+
+#ferramentas {
+    margin-top: 3em;
+}
+
+#ferramentas button {
+    position: relative;
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    border: var(--green_dark) solid 2px;
+    font-style: normal;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#ferramentas #Massa button {
+    width: 14em;
+    height: 3em;
+    font-size: 20px;
+    margin: 1.8em;
+}
+
+
+#ferramentas button:hover {
+    border: none;
+    border-radius: .5em;
+    background-color: var(--green_dark);
+    color: var(--font);
+    transition: .5s;
+}
+
+#ferramentas .alinhamento {
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+}
+
+
+
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--barrinha);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--barrinhahover);
+}
+
+/* Barra de rolagem personalizada FINAL */
+
+
+
+
+
+
+
+
+/* media queries  */
+
+
+/* Laptop */
+
+@media screen and (min-width:768px) and (max-width: 1280px) {
+
+    #planos {
+        height: 380px;
+    }
+
+    #ferramentas #Massa button {
+        font-size: 18px;
+        margin: 1.2em;
+    }
+
+
+    @media screen and (min-width:54px) and (max-width: 910px) {
+
+        #perfil {
+            height: 270px;
+        }
+
+        #perfil #Name {
+            font-size: 25px;
+            left: 20px;
+            top: 215px;
+        }
+
+        #foto img {
+            width: 160px;
+            height: 160px;
+            top: 45px;
+        }
+
+        #planos {
+            height: 310px;
+            top: 56%;
+        }
+
+        #ferramentas #Massa button {
+            font-size: 14.5px;
+        }
+
+    }
+
+}
+
+/* Tablet */
+
+@media screen and (min-width:581px) and (max-width: 767px) {
+
+    header .logo #logo_branca {
+        height: 2.1em;
+    }
+
+    header .acess_icon i {
+        font-size: 20px;
+
+    }
+
+    header {
+        height: 3.7em;
+    }
+
+
+    #perfil {
+        height: 240px;
+    }
+
+    #perfil #Name {
+        font-size: 23px;
+        left: 10px;
+        top: 180px;
+    }
+
+    #foto img {
+        width: 140px;
+        height: 140px;
+        top: 30px;
+    }
+
+    #planos {
+        height: 280px;
+        top: 50%;
+    }
+
+    #planos h2 {
+        font-size: 20px;
+    }
+
+    #planos span {
+        font-size: 20px;
+    }
+
+    #ferramentas #Massa button {
+        font-size: 12.5px;
+        margin: 1.2em;
+    }
+
+  
+    @media screen and (min-width:54px) and (max-width: 640px) {
+
+        #perfil {
+            height: 210px;
+        }
+
+        #perfil #Name {
+            font-size: 20px;
+            left: -10px;
+            top: 160px;
+        }
+
+        #foto img {
+            width: 130px;
+            height: 130px;
+            top: 25px;
+        }
+
+        #planos {
+            top: 45%;
+        }
+
+        #planos h2 {
+            font-size: 17px;
+        }
+
+        #planos span {
+            font-size: 17px;
+        }
+
+        #ferramentas #Massa button {
+            font-size: 10.5px;
+            margin: 1.5em;
+        }
+
+    }
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:580px) {
+
+
+    header .logo #logo_branca {
+        height: 2em;
+    }
+
+    header .acess_icon i {
+        font-size: 20px;
+    }
+
+    header {
+        height: 3.6em;
+    }
+
+    .conf_perso i {
+        font-size: 1em;
+        position: relative;
+        right: 5px;
+    }
+
+
+    #configurar {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: 2%;
+        top: 40px;
+    }
+
+    #ferramentas #Massa button {
+        font-size: 15px;
+    }
+
+    #perfil {
+        height: 190px;
+    }
+
+    #perfil #Name {
+        font-size: 20px;
+        left: -120px;
+        top: 140px;
+        width: 100%;
+    }
+
+    #foto img {
+        width: 110px;
+        height: 110px;
+        top: 30px;
+    }
+
+    #planos {
+        height: 170%;
+        top: 46%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #planos h2 {
+        top: 1%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #planos span {
+        font-size: 20px;
+    }
+
+    #ferramentas .alinhamento {
+        display: grid;
+    }
+
+
+    #ferramentas {
+        margin-top: 7%;
+    }
+
+
+    @media screen and (max-width:470px) {
+
+        #perfil #Name {
+            font-size: 18px;
+            left: -20px;
+            top: 130px;
+        }
+
+        #planos h2 {
+            top: 1%;
+            font-size: 18px;
+        }
+
+        #planos span {
+            font-size: 18px;
+        }
+
+    }
+
+}

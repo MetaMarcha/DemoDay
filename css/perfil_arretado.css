@@ -100,17 +100,8 @@ header .acess_nav.active {
         transform: translateX(0);
     }
 
-    /* animation: go-go .8s; */
 }
 
-/* @keyframes go-go {
-    from {
-      transform: translateX(0);
-    }
-    to {
-      transform: translateX(100px);
-    }
-  }  */
 
 header .acess_nav.active {
     right: 2rem;
@@ -176,20 +167,6 @@ header .acess_nav i {
 }
 
 
-/* #personalizar {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    right: 2%;
-    top: 40px;
-    border-radius: 50%;
-    background: #D9D9D9;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-} */
-
 #configurar {
     position: absolute;
     width: 40px;
@@ -210,29 +187,6 @@ header .acess_nav i {
     color: var(--green_dark);
 }
 
-/* 
-
-
-#icones {
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 196px;
-    top: 200px;
-    border-radius: 50%;
-    background: #D9D9D9;
-    text-align: center;
-    align-items: center;
-    display: flex;
-    cursor: pointer;
-}
-
-
-#icones i {
-    text-align: center;
-    font-size: 1.1em;
-    color: var(--green_dark);
-} */
 
 #foto img {
     position: absolute;
@@ -241,46 +195,6 @@ header .acess_nav i {
     left: 45px;
     top: 40px;
 }
-
-/* 
-.emojis {
-    position: absolute;
-    top: 58px;
-    margin-left: 15em;
-    box-sizing: border-box;
-    width: 20em;
-    height: 10em;
-    background: #0E0E0E;
-    border: 2px solid var(--header);
-    border-radius: 21.7989px;
-    padding: 1em;
-    display: flexbox;
-    right: -90%;
-}
-
-.emojis div i {
-    text-align: center;
-    font-size: 1.5em;
-    color: var(--green_dark);
-    padding: 20px;
-    opacity: 20%;
-}
-
-.emojis.active {
-    left: 0%;
-    animation: reverse .8s;
-}
-
-.emojis div i:hover {
-    text-align: center;
-    font-size: 1.5em;
-    color: var(--green_dark);
-    padding: 20px;
-    cursor: pointer;
-    opacity: 100%;
-}
-
- */
 
 
 /* PLANOS - ctrl k c*/
@@ -320,35 +234,6 @@ header .acess_nav i {
 }
 
 
-/* #planos .mudar_plano {
-    box-sizing: border-box;
-    position: absolute;
-    width: 150px;
-    height: 60px;
-    right: 2%;
-    top: 3%;
-    background: #545353;
-    border: 1px solid var(--green_dark);
-    border-radius: 16.5px;
-} */
-
-
-/* #planos .mudar_plano a {
-    font-size: 109.682px;
-    display: flex;
-    text-align: center;
-    color: #FFFFFF;
-    text-decoration: none;
-} */
-
-
-/* #planos{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center
-} */
-
 #ferramentas {
     margin-top: 3em;
 }
@@ -365,20 +250,6 @@ header .acess_nav i {
     color: #FFFFFF;
 }
 
-/* #ferramentas #Daora button {
-    width: 1%;
-    height: 4em;
-    margin: 1.5em;
-    font-size: 26px;
-    background-color: red;
-} */
-
-#ferramentas #Massa button {
-    width: 14em;
-    height: 3em;
-    font-size: 20px;
-    margin: 1.8em;
-}
 
 #ferramentas #Arretado button {
     width: 11em;
@@ -403,137 +274,6 @@ header .acess_nav i {
 }
 
 
-/* CALENDÁRIO */
-
-/* 
-#agenda #calendario {
-    box-sizing: border-box;
-    position: absolute;
-    width: 675px;
-    height: 488px;
-    left: 45px;
-    top: 892px;
-    border: 1px solid #1C8C3E;
-    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.4);
-    border-radius: 0 0 15px 15px;
-}
-
-#agenda #calendario div{
-    position: relative;
-    width: 674px;
-    height: 57px;
-    background: #1C8C3E;
-    border-radius: 0 0 10px 10px;
-}
-
-#calendario #Mes{
-    font-size: 34px;
-    text-align: center;
-    color: #FFFFFF;
-    padding: 5.5px;
-}
- */
-
-
-
-
-
-
-
-
-
-
-
-/* Footer Start */
-
-footer {
-    position: absolute;
-    top: 116%;
-    width: 100%;
-    height: auto;
-    margin-top: 7em;
-    display: flex;
-    justify-content: space-between;
-    background: var(--header);
-    line-height: 2em;
-}
-
-footer a {
-    text-decoration: none;
-    text-align: left;
-    display: grid;
-    color: var(--font);
-}
-
-footer .formatar_link a:hover {
-    transform: matrix3d(1.15);
-    font-size: 1.1em;
-    color: var(--font);
-    transition: .2s linear;
-}
-
-.box_footer h6 {
-    color: var(--green);
-    font-size: 1.5em;
-}
-
-.box_footer {
-    width: 20%;
-    margin-left: 2em;
-    margin-top: 1.5em;
-    margin-bottom: 2em;
-}
-
-.box_footer i {
-    color: var(--green);
-    padding: .5em;
-}
-
-.box_footer img {
-    width: 30%;
-    height: auto;
-}
-
-.box_footer ul {
-    list-style: none;
-    padding-left: 0;
-}
-
-.box_footer li {
-    padding-top: .5em;
-    color: var(--font);
-}
-
-.social {
-    display: flex;
-}
-
-#social i {
-    font-size: 3em;
-    padding: 0 .1em 0 .5em;
-}
-
-#social i:hover {
-    cursor: pointer;
-    transform: scale(1.15);
-    transition: .2s linear;
-}
-
-/* #contact {
-    width: 30%;
-}
-
-#social h6 {
-    margin-left: 1em;
-}
-
-#social img {
-    margin-left: 2.5em;
-}
- */
-
-/* Footer Ends */
-
 
 /* Barra de rolagem personalizada INICIO */
 ::-webkit-scrollbar {
@@ -555,3 +295,261 @@ footer .formatar_link a:hover {
 /* Barra de rolagem personalizada FINAL */
 
 
+
+
+
+/* media queries  */
+
+
+
+/* Laptop */
+
+@media screen and (min-width:768px) and (max-width: 1280px) {
+
+
+    #planos {
+        height: 380px;
+    }
+
+    #ferramentas #Arretado button {
+        font-size: 18px;
+        margin: 1.2em;
+    }
+
+
+    @media screen and (max-width: 975px) {
+
+        #ferramentas #Arretado button {
+            font-size: 16px;
+            margin: 1em;
+        }
+
+        @media screen and (min-width:54px) and (max-width: 910px) {
+
+            #perfil {
+                height: 270px;
+            }
+
+            #perfil #Name {
+                font-size: 25px;
+                left: 20px;
+                top: 215px;
+            }
+
+            #foto img {
+                width: 160px;
+                height: 160px;
+                top: 45px;
+            }
+
+            #planos {
+                height: 310px;
+                top: 56%;
+            }
+
+            #ferramentas #Arretado button {
+                font-size: 12.5px;
+                margin: 1.2em;
+            }
+
+        }
+    }
+}
+
+/* Tablet */
+
+@media screen and (min-width:581px) and (max-width: 767px) {
+
+    header .logo #logo_branca {
+        height: 2.1em;
+    }
+
+    header .acess_icon i {
+        font-size: 20px;
+
+    }
+
+    header {
+        height: 3.7em;
+    }
+
+
+    #perfil {
+        height: 240px;
+    }
+
+    #perfil #Name {
+        font-size: 23px;
+        left: 10px;
+        top: 180px;
+    }
+
+    #foto img {
+        width: 140px;
+        height: 140px;
+        top: 30px;
+    }
+
+    #planos {
+        height: 280px;
+        top: 50%;
+    }
+
+    #planos h2 {
+        font-size: 20px;
+    }
+
+    #planos span {
+        font-size: 20px;
+    }
+
+    #ferramentas #Arretado button {
+        font-size: 11px;
+        margin: 1.2em;
+    }
+
+
+    @media screen and (min-width:54px) and (max-width: 616px) {
+
+        #perfil {
+            height: 210px;
+        }
+
+        #perfil #Name {
+            font-size: 20px;
+            left: -10px;
+            top: 160px;
+        }
+
+        #foto img {
+            width: 130px;
+            height: 130px;
+            top: 25px;
+        }
+
+        #planos {
+            height: 280px;
+            top: 45%;
+        }
+
+        #planos h2 {
+            font-size: 17px;
+        }
+
+        #planos span {
+            font-size: 17px;
+        }
+
+    }
+
+
+}
+
+/* Mobile */
+
+@media screen and (max-width:580px) {
+
+    header .logo #logo_branca {
+        height: 2em;
+    }
+
+    header .acess_icon i {
+        font-size: 20px;
+    }
+
+    header {
+        height: 3.6em;
+    }
+
+    .conf_perso i {
+        font-size: 1em;
+        position: relative;
+        right: 5px;
+    }
+
+
+    #configurar {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        right: 2%;
+        top: 40px;
+    }
+
+    #ferramentas #Arretado button {
+        font-size: 15px;
+    }
+
+    #perfil {
+        height: 190px;
+    }
+
+    #perfil #Name {
+        font-size: 20px;
+        left: -120px;
+        top: 140px;
+        width: 100%;
+    }
+
+    #foto img {
+        width: 110px;
+        height: 110px;
+        top: 30px;
+    }
+
+    #planos {
+        height: 160%;
+        top: 46%;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #planos h2 {
+        top: 1%;
+        font-size: 20px;
+        width: 100%;
+    }
+
+    #planos span {
+        font-size: 20px;
+    }
+
+    #ferramentas .alinhamento {
+        display: grid;
+    }
+
+    #ferramentas {
+        margin-top: 7%;
+    }
+
+    
+    @media screen and (max-width:470px) {
+
+        #perfil #Name {
+            font-size: 18px;
+            left: -20px;
+            top: 130px;
+            width: 100%;
+        }
+
+        #planos {
+            height: 180%;
+        }
+
+        #planos h2 {
+            top: 1%;
+            font-size: 18px;
+            width: 100%;
+        }
+
+        #planos span {
+            font-size: 18px;
+        }
+
+        #ferramentas {
+            margin-top: 15%;
+        }
+
+    }
+
+}
