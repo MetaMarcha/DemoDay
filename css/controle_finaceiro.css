@@ -260,10 +260,10 @@ section .financeiro h3 {
 
 /* Se o salto for positivo a estivização vai ser */
 
-/* section .financeiro span {
+section .financeiro span {
     color: var(--green_dark);
     font-weight: 400;
-} */
+}
 
 /* Se o salto for negativo a estivização vai ser */
 
