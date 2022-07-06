@@ -11,6 +11,15 @@
     --dark-green: #1C8C3E;
 }
 
+:root {
+    --background: #1B1B1B;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
+    --green_dark: #1C8C3E;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
 }
@@ -407,4 +416,20 @@ section .form-pagamento .button {
         font-size: 30%;
     }
 
+}
+
+ button {
+    background-color: var(--background);
+    border: var(--green_dark) 2px solid;
+    border-radius: 10px;
+    margin-top: 1em;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: var(--font);
+}
+
+ button:hover{
+    cursor: pointer;
+    background-color: var(--green_dark);
+    transition: .5s linear;
 }
