@@ -36,7 +36,7 @@
 
     <header class="header">
 
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <img src="img/logo.png" alt="logo meta marcha" title="MetaMarcha">
         </a>
 
@@ -69,7 +69,7 @@
         <section class="pagamento">
 
             <div class="form-pagamento">
-                <form method="post">
+                <form method="post" id="myForm">
                     <div class="form-100">
                         <label for="">Número do Cartão</label>
                         <input type="text" name="cc" id="cc" placeholder="1234 1234 1234 1234" maxlength="19" required>
@@ -82,22 +82,22 @@
                         </div>
                         <div class="form-50">
                             <label for="">CVV</label>
-                            <input type="text" placeholder="123" maxlength="3" required>
+                            <input type="text" name="cvv" id="cvv" placeholder="123" maxlength="3" required>
                         </div>
                     </div>
                     <div class="form-100">
                         <label for="">Nome do Titular do Cartão</label>
-                        <input type="text" placeholder="Digite o nome como aparece no cartão" required>
+                        <input type="text" name="nomedotitular" id="nomedotitular" placeholder="Digite o nome como aparece no cartão" required>
                     </div>
                     <div class="form-100">
                         <label for="">CPF do Titular do Cartão</label>
-                        <input type="text" value="" id="cpf" placeholder="123.456.789-00" maxlength="14" required>
+                        <input type="text" value="" name="cpf" id="cpf" placeholder="123.456.789-00" maxlength="14" required>
                     </div>
                     <div class="form-100 description">
                         <p>Plano: Arretado | Teste grátis 30 dias | Total: 0 reais</p>
                     </div>
                     <div class="form-100 button">
-                        <input type="submit" name="acao" value="Concluir">
+                        <button type="button" name="acao" onclick="location.href='lgpd.html';">Concluir</button>
                     </div>
                 </form>
             </div>
