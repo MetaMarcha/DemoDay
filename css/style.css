@@ -489,7 +489,8 @@ p {
 }
 
 .box_blog img {
-    width: 100%;
+    width: 90%;
+    margin-top: 1em;
     height: auto;
 }
 
@@ -775,3 +776,7 @@ footer .formatar_link a:hover {
 }
 
 /* Barra de rolagem personalizada FINAL */
+
+#blogs .feiraqui{
+    margin-top: 1.5em;
+}

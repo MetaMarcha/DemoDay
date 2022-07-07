@@ -553,3 +553,31 @@ header .acess_nav i {
     }
 
 }
+
+.sair{
+    margin-top: 190px;
+   margin-left: 80%; 
+
+}
+
+.sair a{
+   color: var(--header); text-decoration: none;
+   font-weight: 600;
+}
+
+.sair a:hover{
+   color: var(--font);
+   transition: .5s ease-in;
+}
+
+@media (max-width:430px) {
+
+   #foto img{
+      align-items: center;
+   }
+
+  .sair{
+   margin-top: 15em; margin-left: 80%;
+   font-size: .5em;
+  }
+}
