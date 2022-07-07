@@ -456,6 +456,19 @@ p {
 
 /* Blogs Start */
 
+#feirAqui{
+    border-radius: 100%;
+}
+
+
+#myAra{
+    border-radius: 100%;
+}
+
+#resolute{
+    border-radius: 100%;
+}
+
 #blogs {
     padding-top: 7rem;
     text-align: center;
