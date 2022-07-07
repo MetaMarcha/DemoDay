@@ -676,6 +676,9 @@ footer .formatar_link a:hover {
 }
 
 @media (max-width:450px) {
+    footer #contact{
+        font-size: 1em;
+    }
     .swiper{
         height: 30%;
     }
@@ -778,5 +781,9 @@ footer .formatar_link a:hover {
 /* Barra de rolagem personalizada FINAL */
 
 #blogs .feiraqui{
+    margin-top: 1.5em;
+}
+
+#blogs .myara{
     margin-top: 1.5em;
 }
