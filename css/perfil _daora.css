@@ -178,6 +178,8 @@ header .acess_nav i {
     cursor: pointer;
 }
 
+
+
 .conf_perso i {
     text-align: center;
     font-size: 1.3em;
@@ -543,4 +545,22 @@ header .acess_nav i {
 
     }
 
+}
+
+.sair{
+    position: absolute;
+    top: 90%;
+    left: 90%;
+}
+
+.sair a{
+    font-size: 1em;
+    color: var(--header);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sair a:hover{
+    color: var(--font);
+    transition: ease-in .5s;
 }
