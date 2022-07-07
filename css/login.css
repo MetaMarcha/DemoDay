@@ -485,3 +485,10 @@ section .container_login h5 {
     }
 
 }
+
+.inicio a{
+    text-decoration: none;
+    font-size: 1em;
+    color: var(--green_dark);
+    font-weight: 600;
+}
