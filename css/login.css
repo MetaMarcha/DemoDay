@@ -492,3 +492,8 @@ section .container_login h5 {
     color: var(--green_dark);
     font-weight: 600;
 }
+
+.inicio a:hover{
+    color: var(--font);
+    transition: .5s ease;
+}
