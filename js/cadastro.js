@@ -69,7 +69,7 @@ formulario.addEventListener('submit', function (event) {
 
 function leitura() {
     if (formulario !== true){
-        window.location="http://127.0.0.1:5501/cadastro_2.html";
+        window.location="http://127.0.0.1:5501/html/cadastro2.html";
     }else{
         alert("Algo deu errado. Verifique suas informações.")
         // limpar();
