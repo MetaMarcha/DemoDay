@@ -1,0 +1,471 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+html {
+    overflow-x: hidden;
+}
+
+:root {
+    --background: #1B1B1B;
+    --barrinha: #4ab358;
+    --barrinhahover: #2d6d35;
+    --header: #292929;
+    --font: #eee;
+    --green_ligth: #3CF238;
+    --green: #5eae53;
+    --green_dark: #1C8C3E;
+    --barrinha: #5eae53;
+    --barrinhahover: #2d6d35;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body the page */
+body {
+    background: var(--background);
+    justify-content: center;
+    display: flex;
+}
+
+/* Menu start */
+
+header {
+    padding: 0.1em;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--header);
+    height: 4.5em;
+}
+
+header .logo #logo_branca {
+    width: auto;
+    height: 3em;
+    margin: 0 0 0 30px;
+}
+
+header .navbar .menu_navbar {
+    margin: 0 90px 0 0;
+    margin-left: 150px;
+}
+
+header .navbar .menu_navbar a {
+    text-decoration: none;
+    color: var(--font);
+    padding-left: 3.2em;
+    font-size: 1em;
+    font-weight: 500;
+    cursor: pointer;
+    animation: 0.5s;
+}
+
+header .navbar .menu_navbar a:hover {
+    color: var(--green_ligth);
+}
+
+header .acesso {
+    display: flex;
+    width: auto;
+    height: 2em;
+    left: auto;
+    top: 1em;
+}
+
+header .acesso button {
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    margin-left: 16px;
+    border: var(--green_dark) solid 2px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+header .acesso button:hover {
+    background-color: var(--green_dark);
+    color: #ffff;
+}
+
+/* Menu end */
+
+/* Accessibility start */
+
+header .acess_icon i {
+    color: var(--font);
+    font-size: 1.8em;
+    float: left;
+    margin: 0 30px 0 0;
+    cursor: pointer;
+
+}
+
+header .acess_icon i:hover {
+    color: var(--green);
+}
+
+header .acess_nav {
+    position: absolute;
+    top: 105%;
+    top: 105%;
+    right: -90%;
+    width: 10em;
+    background-color: #323232;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    color: var(--font);
+    padding: 10px 20px 0px 20px;
+    border-radius: 0 0 0 10px;
+    box-shadow: 0 0 1em var(--header);
+    animation: go-go .8s;
+}
+
+header .acess_nav.active {
+    right: 0em;
+    transition: 1s linear;
+    animation: reverse .8s;
+}
+
+@keyframes go-back {
+
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+
+    /* animation: go-go .8s; */
+}
+
+/* @keyframes go-go {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(100px);
+    }
+  }  */
+
+header .acess_nav.active {
+    right: 2rem;
+    transition: .5s linear;
+    animation: go-back .8s;
+}
+
+@keyframes go-back {
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+header .acess_nav p,
+i {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+header .acess_nav i {
+    margin-top: -13px;
+    align-items: center;
+}
+
+/* Accessibility end */
+
+/* Planos */
+
+h1 {
+    margin-top: 4em;
+    text-align: center;
+    color: var(--font);
+}
+
+#plans .bloco_1 {
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: var(--header);
+    color: var(--green);
+    font-weight: 600;
+    padding-left: 1em;
+    padding-top: .5em;
+    width: 10em;
+    margin-top: 10em;
+    margin-left: 3em;
+}
+
+#plans .icon-1 {
+    color: var(--green);
+    font-size: 1.3em;
+}
+
+#plans .icon-2 {
+    color: #8B0000;
+    font-size: 1.5em;
+}
+
+h2.nossos_planos {
+    margin-top: -2.4em;
+    font-weight: 600;
+    padding-bottom: 1.4em;
+}
+
+
+/* Bloco 2 */
+
+.planos .bloco_2 {
+    border: var(--green) solid 2px;
+    border-radius: 12px;
+    background-color: var(--header);
+    margin-right: 3em;
+    padding-right: 2em;
+    padding-top: 1em;
+    font-size: 1em;
+    margin-top: 5em;
+    margin-bottom: 2em;
+}
+
+.planos .bloco_2 ul {
+    color: var(--font);
+    line-height: 3em;
+}
+
+/* Bloco 3 */
+
+.planos .bloco_3 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+.planos .bloco_3 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+}
+
+.planos .bloco_3 .container_icons i {
+    margin-top: .2em;
+}
+
+.planos .bloco_3 .container_icons h5 {
+    margin-top: 2.3em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.9em;
+}
+
+.planos .bloco_3 li {
+    list-style: none;
+    margin-left: 1.5em;
+    margin-bottom: 6px;
+}
+
+.bloco_3 .gratuito {
+    position: absolute;
+}
+
+/* Bloco 4 */
+
+.planos .bloco_4 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+.planos .bloco_4 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+}
+
+.planos .bloco_4 .container_icons i {
+    margin-top: .2em;
+}
+
+.planos .bloco_4 .container_icons h5 {
+    margin-top: 2.3em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.9em;
+}
+
+.planos .bloco_4 li {
+    list-style: none;
+    margin-left: 1.5em;
+    margin-bottom: 6px;
+}
+
+.bloco_4 .gratuito {
+    position: absolute;
+}
+
+/* Bloco 5 */
+
+.planos .bloco_5 {
+    line-height: 42px;
+    margin-right: 5em;
+    padding-right: 1em;
+    width: 10em;
+    height: 45em;
+}
+
+.planos .bloco_5 .container_icons {
+    margin-top: 1.5em;
+    border: var(--green) solid 2px;
+    border-radius: 10px;
+    background-color: #000;
+    padding-right: 8em;
+}
+
+.planos .bloco_5 .container_icons i {
+    margin-top: .2em;
+}
+
+.planos .bloco_5 .container_icons h5 {
+    margin-top: 2.3em;
+    color: var(--green);
+    font-weight: 800;
+    padding-left: 1.5em;
+}
+
+.planos .bloco_5 li {
+    list-style: none;
+    margin-left: 1.5em;
+    margin-bottom: 6px;
+}
+
+.bloco_5 .gratuito {
+    position: absolute;
+}
+
+
+/* Alinhamento */
+
+.planos {
+    position: relative;
+    top: 50%;
+    left: 5%;
+}
+
+section #plans {
+    left: 6em;
+    margin-top: 3em;
+}
+
+section #plans h2 {
+    text-align: center;
+    color: var(--font);
+    font-size: 40px;
+}
+
+section #plans .planos {
+    display: flex;
+}
+
+#linhas img {
+    position: absolute;
+    top: 9em;
+}
+
+/* botões de preço */
+
+button.button {
+    border-radius: .8em;
+    background-color: var(--header);
+    border: none;
+    color: var(--font);
+    font-size: 120%;
+    width: 7.5em;
+    position: absolute;
+    margin-top: -1em;
+    text-align: center;
+}
+
+button.button span {
+    color: var(--green_dark);
+    font-weight: bold;
+}
+
+/* botões 30 dias grátis */
+
+.button_free {
+    border-radius: .8em;
+    background: #000;
+    color: var(--font);
+    border: var(--green_ligth) solid 1px;
+    margin-top: 4.8em;
+    width: 9em;
+    font-weight: bold;
+    display: grid;
+    line-height: 1.5em;
+}
+
+
+.button_free:hover {
+    background-color: var(--green_dark);
+    border: none;
+}
+
+/* botões go e back */
+
+button.go-back {
+    border-radius: .5em;
+    background: none;
+    color: var(--green_dark);
+    border: var(--green_dark) solid 2px;
+    line-height: 36px;
+    color: #FFFFFF;
+    margin-top: 12em;
+    margin-bottom: 3em;
+}
+
+#button {
+    text-align: center;
+}
+
+button.go-back:hover {
+    border: none;
+    border-radius: .5em;
+    background-color: var(--green_dark);
+    color: var(--font);
+    transition: .5s;
+}
+
+/* Barra de rolagem personalizada INICIO */
+::-webkit-scrollbar {
+    width: .6rem;
+    height: .2rem;
+    border-radius: .5rem;
+    background-color: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--barrinha);
+    border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--barrinhahover);
+}
+
+/* Barra de rolagem personalizada FINAL */

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+
+<!-- head starts -->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meta Marcha</title>
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- favicon link -->
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+
+    <!-- css file -->
+    <link rel="stylesheet" href="/css/cadastroCartao.css">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/cfe09d334f.js" crossorigin="anonymous"></script>
+
+</head>
+
+<!-- head ends -->
+
+
+<!-- body starts -->
+
+<body>
+
+    <header class="header">
+
+        <a href="/html/inicio.html" class="logo">
+            <img src="/img/logo.png" alt="logo meta marcha" title="MetaMarcha">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#plans">Planos</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#blogs">Blogs</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+
+        <div class="acess_icon">
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
+        </div>
+
+        <div class="acess_nav">
+            <p id="maior_acess">A+</p>
+            <p id="menor_acess">A-</p>
+            <p id="simbolo">|</p>
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
+        </div>
+
+    </header>
+
+    <main class="main">
+
+        <section class="pagamento">
+
+            <div class="form-pagamento">
+                <form method="post" id="myForm">
+                    <div class="form-100">
+                        <label for="">Número do Cartão</label>
+                        <input type="text" name="cc" id="cc" placeholder="1234 1234 1234 1234" maxlength="19" required>
+                    </div>
+                    <div class="form-2">
+                        <div class="form-50">
+                            <label for="">Data de Validade</label>
+                            <input type="text" name="outra_data" id="outra_data" placeholder="12/28" maxlength="5"
+                                onkeypress="mascaraData(this)" required>
+                        </div>
+                        <div class="form-50">
+                            <label for="">CVV</label>
+                            <input type="text" name="cvv" id="cvv" placeholder="123" maxlength="3" required>
+                        </div>
+                    </div>
+                    <div class="form-100">
+                        <label for="">Nome do Titular do Cartão</label>
+                        <input type="text" name="nomedotitular" id="nomedotitular" placeholder="Digite o nome como aparece no cartão" required>
+                    </div>
+                    <div class="form-100">
+                        <label for="">CPF do Titular do Cartão</label>
+                        <input type="text" value="" name="cpf" id="cpf" placeholder="123.456.789-00" maxlength="14" required>
+                    </div>
+                    <div class="form-100 description">
+                        <p>Plano: Arretado | Teste grátis 30 dias | Total: 0 reais</p>
+                    </div>
+                    <div class="form-100 button">
+                        <button type="button" name="acao" onclick="location.href='lgpd.html';">Concluir</button>
+                    </div>
+                </form>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="box_footer">
+            <h6>Dúvidas? Entre em contato conosco</h6>
+            <a href="#">Perguntas Frequentes</a>
+            <a href="#">Termos de uso</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Avisos Legais</a>
+        </div>
+
+        <div class="box_footer">
+            <h6>Mapa do site</h6>
+            <a href="#home">Início</a>
+            <a href="#erp">ERP</a>
+            <a href="#plans">Planos</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#blogs">Blogs</a>
+        </div>
+
+        <div class="box_footer" id="contact">
+            <h6>Nossos Contatos</h6>
+            <ul>
+                <li><i class="fa-solid fa-mobile-button icon"></i> +55 (11) 66094-4368</li>
+                <li><i class="fa-solid fa-mobile-button icon"></i> +55 (11) 83655-9385</li>
+                <li><i class="fa-solid fa-envelope icon"></i> MetaMarchaG8@gmail.com</li>
+                <li><i class="fa-solid fa-map-location-dot icon"></i>São Paulo, SP - 05051-000</li>
+            </ul>
+        </div>
+
+        <div class="box_footer" id="social">
+            <img src="/img/logo_1.png">
+            <h6>Siga-nos</h6>
+            <div class="social">
+                <i class="fa-brands fa-twitter-square" title="Twitter"></i>
+                <i class="fa-brands fa-facebook-square" title="Facebook"></i>
+            </div>
+            <div class="social">
+                <a href="https://www.instagram.com/metamarcha/" target="_blank" id="insta"><i
+                        class="fa-brands fa-instagram-square" title="Instagram"></a></i>
+                <i class="fa-brands fa-linkedin" title="LinkedIn"></i>
+            </div>
+        </div>
+
+    </footer>
+
+    <script src="/js/cadastro_cartao.js"></script>
+
+</body>
+
+<!-- body ends -->
+
+</html>

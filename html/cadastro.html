@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma de gestão comercial, nós da MetaMarcha irá ajudar você micro, pequeno e até médio comerciante a gerir melhor o seu negócio. Acabou a era do papel e caneta, utilize de forma prática e fácil o nosso site e nos agradeça depois!">
+    <meta name="author"
+        content="Amanda Valentin, Beatriz Barreto, Camila Soares,João Gonçalves, Júlia Oliveira, Michelly Nonato, Samara Moura">
+    <meta name="keywords" content="Cadastro, ERP, PROA, Demoday, plataforma de gestão, gestão, financeiro, controle">
+
+    <title>Meta Marcha</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/cadastro.css">
+    <script src="https://kit.fontawesome.com/0eb9d79b15.js" crossorigin="anonymous"></script>
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="/img/logo_1.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <header>
+        <a href="/index.html" class="logo">
+            <img src="/img/logo.png" alt="logo meta marcha" title="MetaMarcha" id="logo_branca">
+        </a>
+
+        <div class="acess_icon">
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
+        </div>
+
+        <div class="acess_nav">
+            <p id="maior_acess">A+</p>
+            <p id="menor_acess">A-</p>
+            <i class="fa-solid fa-circle-half-stroke" id="contraste_button"></i>
+        </div>
+
+    </header>
+
+    <section class="form" id="home">
+
+        <div class="content">
+            <h1>Cadastre-se</h1>
+            <p> <span>*</span> ← Obrigatórios</p>
+
+            <div class="formulario_cadastro">
+
+                <form action="" method="post" class="form">
+                    <fieldset class="grupo">
+
+                        <div class="cadastro">
+                            <div class="campo">
+                                <label for="nome">Nome completo<span> *</span></label>
+                                <input required class="nome" type="text" name="nome" id="nome" placeholder="Digite seu nome completo" maxlength="200" minlength="10">
+                            </div>
+                            <div class="campo">
+                                <label for="CPF">CPF ou CNPJ<span> *</span></label>
+                                <input required class="documento" type="text" name="CPF" id="CPF" placeholder="Digite seu CPF ou CNPJ">
+                            </div>
+                            <div class="campo">
+                                <label for="empresa">Nome da empresa</label>
+                                <input required class="empresa" type="text" name="empresa" id="empresa" placeholder="Digite o nome da sua empresa" maxlength="200">
+                            </div>
+                            <div class="campo">
+                                <label for="email">Email<span> *</span></label>
+                                <input required class="email" type="email" name="email" id="email" placeholder="Digite seu email" maxlength="50">
+                            </div>
+                            <div class="campo">
+                                <label for="telefone">Telefone<span> *</span></label>
+                                <input required class="tel" type="tel" name="tel" id="tel" placeholder="Digite seu telefone" maxlength="15">
+                            </div>
+                            <div class="campo">
+                                <label for="password">Crie uma senha <span> *</span></label>
+                                <input required class="senha" type="password" name="senha" id="password"placeholder="Crie uma senha (8 ou mais caracteres)" onchange='confirasenha();' minlength="8">
+                            </div>
+                            <div class="campo">
+                                <label for="confirm">Repetir senha<span> *</span></label>
+                                <input required class="senha" type="password" name="confirma" id="confirm" placeholder="Confirme sua senha" onchange='confirasenha();'>
+                            </div>
+                            
+                            <div class="container opcao">
+                                <h2>Como você classifica sua empresa?</h2>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">MEI</button>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">Micro</button>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">Pequena</button>
+                                <button name="button" value="OK" type="button" class="
+                                    button escolha">Média</button>
+                    
+                            </div>
+                    
+                            <div class="button" id="button">
+                                <a href="/index.html"><button name="button_back" class="go-back" id="back" type="button">Voltar</button></a>
+                                <a href="/html/cadastro2.html"> <button name="button_go" class="go-back form" id="proximo" type="button">Próximo</button></a>
+                            </div>
+                           
+                        </div>
+
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        
+
+    </section>
+
+
+
+    <script src="/js/cadastro.js"></script>
+
+</body>
+
+</html>

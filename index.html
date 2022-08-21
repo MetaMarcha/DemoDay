@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Plataforma de gestão comercial, nós da MetaMarcha irá ajudar você micro, pequeno e até médio comerciante a gerir melhor o seu negócio. Acabou a era do papel e caneta, utilize de forma prática e fácil o nosso site e nos agradeça depois!">
+    <meta name="author"
+        content="Amanda Valentin, Beatriz Barreto, Camila Soares,João Gonçalves, Júlia Oliveira, Michelly Nonato, Samara Moura">
+    <meta name="keywords" content="ERP, PROA, Demoday, plataforma de gestão, gestão, financeiro, controle">
+
+    <title>Meta Marcha</title>
+
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- Links -->
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/0eb9d79b15.js" crossorigin="anonymous"></script>
+
+    <!-- Logo -->
+    <link rel="shortcut icon" href="/img/logo_1.png" type="image/x-icon">
+
+    <!-- Link Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+    <!-- Start Header -->
+
+    <header>
+        <a href="#" class="logo">
+            <img src="/img/logo.png" alt="logo meta marcha" title="MetaMarcha">
+        </a>
+
+        <nav class="navbar">
+            <a href="#home">Início</a>
+            <a href="#erp">ERP</a>
+            <a href="#plans">Planos</a>
+            <a href="#about">Sobre nós</a>
+            <a href="#blogs">Parcerias</a>
+        </nav>
+
+        <!-- Botão aparecer na responsividade -->
+        <div class="icons">
+            <div class="fas fa-bars" id="menu-btn"></div>
+        </div>
+        <!-- favor não apagar -->
+
+        <div class="acess_icon">
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
+        </div>
+
+        <div class="acess_nav">
+            <p id="maior_acess">A+</p>
+            <p id="menor_acess">A-</p>
+            <p id="simbolo">|</p>
+            <i class="fa-solid fa-circle-half-stroke" id="button_icon"></i>
+        </div>
+
+    </header>
+
+    <!-- Ends Header -->
+
+    <!-- Starts home -->
+
+
+    <!-- Swiper -->
+
+    <div style="--swiper-navigation-color: #4ab358; --swiper-pagination-color: #4ab358" class="swiper mySwiper"
+        id="home">
+        <div class="parallax-bg" style="
+          background-image: url(/img/fundoSlide.png);
+        " data-swiper-parallax="-23%"></div>
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">
+                    <h1>Assistência</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">
+                    <h1>Confiabilidade</h1>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="title" data-swiper-parallax="-300">
+                    <h1>Projeto que vai mudar a visão da sua gestão!</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="swiper-pagination"></div>
+
+    </div>
+
+    <div class="button_conta">
+        <a href="/html/cadastro.html"><button>Cadastra-se</button></a>
+        <a href="/html/login.html"> <button>Entrar</button></a>
+    </div>
+
+    <!-- Ends home -->
+
+
+    <!--Starts ERP-->
+
+    <section id="erp">
+
+        <h2 class="title">O que é uma ERP e como aplicar no seu negócio</h2>
+
+        <div class="box_container">
+
+            <img src="/img/fundo-4.png" alt="Imagem ilustrativa.">
+            <div class="box_text">
+                <h3>O que é uma ERP? </h3>
+                <p>Um sistema de planejamento empresarial/corporativo que interliga todos os processos financeiros de um negócio em uma única plataforma, te permitindo administrar diversas áreas de sua empresa em um mesmo lugar.</p>
+
+                <h3>Como você pode aplicar em seu negócio</h3>
+                <p>Para implantar um ERP na sua empresa é necessário pensar em alguns processos, que visam a transição
+                    rápida e totalmente eficiente em todas as áreas. Ao tomar a decisão de contratar uma ERP, converse
+                    com suas equipes e colaboradores para avaliar e iniciar todos os backups necessários para a migração
+                    dos dados. É importante selecionar algumas pessoas responsáveis para acompanhar a implantação, ao
+                    determinar essas pessoas, o processo ganha uma atenção exclusiva e os detalhes podem ser
+                    acompanhados mais de perto para que tudo ocorra dentro do planejado.
+                </p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ends ERP -->
+
+    <!-- Starts Plans -->
+
+    <section id="plans">
+
+        <h2 class="title">Nosso Planos</h2>
+
+
+        <div class="principal_plans">
+
+            <div class="box1">
+                <p class="option">Possui <i class="fa-solid fa-check-double icon-1"></i></p>
+                <p class="option">Não possui <i class="fa-solid fa-xmark icon-2"></i></p>
+            </div>
+
+            <div class="container_plans">
+
+                <div class="box2">
+                    <ul>
+                        <li>Controle Financeiro</li>
+                        <li>Controle de Estoque</li>
+                        <li>Vendas</li>
+                        <li>Emissão de Boletos</li>
+                        <li>Cadastros - Clientes</li>
+                        <li>Relatórios</li>
+                        <li>Chamadas</li>
+                        <li>Agenda</li>
+                        <li>Contratos</li>
+                        <li>Emissão de Notas</li>
+                        <li>Lojas</li>
+                        <li>Integração</li>
+                    </ul>
+                </div>
+
+
+                <div class="box_planos">
+                    <div class="box3">
+
+                        <div class="banner"><img src="/img/banner-1.png"></div>
+                        <h4>Daora</h4>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="box3">
+                        <div class="banner"><img src="/img/banner-1.png"></div>
+                        <h4>Massa</h4>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-xmark icon-2"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="box3">
+                        <div class="banner"><img src="/img/banner-1.png"></div>
+                        <h4>Arretado</h4>
+
+                        <ul>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                            <li><i class="fa-solid fa-check-double icon-1"></i></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="button_plans" type="button">Saiba Mais</button>
+
+    </section>
+
+    <!-- Ends Plans -->
+
+    <!-- Starts About -->
+
+    <section id="about">
+
+        <h2 class="title">Sobre nós</h2>
+
+        <div class="container_about">
+
+            <div class="box_text2 first_box">
+                <h4 class="title2">META MARCHA</h4>
+                <p class="text">Meta Marcha é um software de gestão empresarial que com a missão de ajudar micro e pequenos empreendedores a
+                    controlar, organizar e otimizar os principais processos de gestão. Usamos
+                    a tecnologia para simplificar o que é complexo e burocrático.</p>
+            </div>
+
+            <div class="box_grid">
+
+                <div class="box_text2">
+                    <h4 class="title2">Missão</h4>
+                    <p class="text">Criação de uma ferramenta que auxilia seus usuários a administrar sua empresa. Como
+                        objetivo temos em fazer essa ferramenta de uma forma completa porém acessível para pessoas com
+                        baixo conhecimento em gestão.</p>
+                </div>
+
+                <div class="box_text2">
+                    <h4 class="title2">Visão</h4>
+                    <p class="text">Má gestão de empresas e falta de coordenação do fluxo de caixa.
+                        Mal gerenciamento de finanças e de seu estoque, gerando ainda mais gastos do que realmente
+                        lucro.
+                        Auxiliando pequenas e micro-empresas a coordenar seu négocio da melhor forma.</p>
+                </div>
+
+                <div class="box_text2">
+                    <h4 class="title2">Valores</h4>
+                    <p class="text">Acessibilidade com ERP no gerenciamento de micro e pequenos negócios.
+                        Má gestão de empresas e falta de coordenação do fluxo de caixa.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Ends About -->
+
+    <!-- Starts Team -->
+
+    <section id="team">
+
+        <h2 class="title">Nossa Equipe</h2>
+
+        <div class="front-end">
+
+            <div class="box_text2 profile">
+
+                <img src="/img/integrante-1.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Amanda Valentim</h4>
+                <h5>front-end</h5>
+                <p>Nas horas vagas adoro assistir filmes e estudar sobre autoconhecimento. Descobri minha paixão pela programação e gosto de estar sempre com meus amigos.</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/amanda-valentim-a5941a1b7/" target="_blank" title="Linkedin">
+                        <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/amandavalentim" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+                </div>
+
+            </div>
+
+            <div class="box_text2 profile">
+
+                <img src="/img/integrante-3.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Camila Soares</h4>
+                <h5>front-end</h5>
+                <p>Programadora front-end. No meu tempo livre toco violão e me dedico aos projetos da igreja. Amo tomar café da tarde com a família e assistir Anne with an E.</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/camila-carla-soares-092353232/" target="_blank"
+                        title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/CamilaCSoares" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+                </div>
+
+
+            </div>
+
+            <div class="box_text2 profile">
+
+                <img src="/img/integrante-5.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Júlia Oliveira</h4>
+                <h5>front-end</h5>
+                <p>Desenvolvedora Full Stack e cantora (nas horas vagas), gosto de estar com a minha familia, viajar e aprender coisas novas!</gosto></p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/j%C3%BAlia-karoline-oliveira-202174232/" target="_blank"
+                        title="Linkedin"> <i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/Unijuba" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="back-end">
+
+            <div class="box_text2 profile">
+
+                <img src="/img/integrante-2.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Beatriz Barreto</h4>
+                <h5>back-end e design</h5>
+                <p>Desenvolvedora full stack. Sou uma pessoa curiosa, interdisciplinar e animada. Gosto de praticar esportes, ouvir música, viajar e aprender mais sobre novas coisas.</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/beatriz-sm-barreto/" target="_blank" title="Linkedin"> <i
+                            class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/beatrixiez" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+                </div>
+
+            </div>
+
+            <div class="box_text2 profile">
+
+                <img src="/img/integrante-4.png" alt="Foto de um integrante Meta Marcha">
+                <h4>João Gonçalves</h4>
+                <h5>full stack</h5>
+                <p>Programador full stack que nas horas vagas gosta de dançar e se arriscar no teatro. Meu hobby é passar um tempo com meus amigos, me aventurar e descobrir coisas novas.</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/joaopedrogsilva/" target="_blank" title="Linkedin"> <i
+                            class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/jpedr1nho" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+
+
+                </div>
+            </div>
+
+            <div class="box_text2 profile">
+
+                <img src="/img/integrante-6.png" alt="Foto de um integrante Meta Marcha">
+                <h4>Michelly Nonato</h4>
+                <h5>full stack</h5>
+                <p>Desenvolvedora full stack que, quando consegue um tempinho, adora maratonar séries e filmes. Gosto de estar com meus amigos, aprender coisas novas e ler sobre assuntos diversos.</p>
+
+                <div class="icons-social">
+                    <a href="https://www.linkedin.com/in/michelly-nonato/" target="_blank" title="Linkedin"> <i
+                            class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://github.com/MichellyNonatto" target="_blank" title="GitHub"> <i
+                            class="fa-brands fa-github"></i> </a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="desing_box box_text2 profile">
+
+            <img src="/img/integrante-7.png" alt="Foto de um integrante Meta Marcha">
+
+            <div>
+                <h4>Samara Moura</h4>
+                <h5>back-end e design</h5>
+                <p>Estudante de designer gráfico e muitas outras formas visuais de arte. Sempre lendo mangás velhos de samurai, assistindo filmes antigos e jogando Fortnite com os amigos. 
+                    Gosto de me aventurar em muitas áreas, descobrir sobre elas e somar ao que já sei.</p>
+
+                <div class="icons-social">
+                    <a href="https://www.behance.net/mucaos"><i class="fa-brands fa-behance" title="Behance"></i></a>
+                    <a href="https://github.com/jovemfs" target="_blank" title="GitHub"> <i
+                        class="fa-brands fa-github"></i> </a>
+                    <a href="https://www.linkedin.com/in/samara-moura-8698731b0/"><i class="fa-brands fa-linkedin-in" title="Linkedin"></i></a>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Section team end -->
+
+    <!-- Section blogs start -->
+
+    <section id="blogs">
+        <h2 class="title">Nossas Parcerias</h2>
+
+        <div class="container_blogs">
+
+            <div class="box_blog">
+                <img src="/img/resolute.png" alt="" id="resolute">
+                <h5>Resolute</h5>
+                <p>Conheça a Resolute, um marketplace de freelancers especializados na área de tecnologia e integração de profissionais PCD no mercado de trabalho.
+                </p>
+               <a href="https://github.com/resolute-jobs" target="_blank" title="GitHub Resolute"><button>Saiba mais</button></a>
+            </div>
+
+            <div class="box_blog">
+                <img src="/img/feiraAqui.png" alt="" id="feirAqui">
+                <h5>FeirAqui</h5>
+                <p>O Feiraqui é um FoodTech e tem como missão tornar as feiras-livres acessivel a todos.</p>
+                <a href="https://github.com/FeirAqui" target="_blank" title="GitHub Feiraqui"><button class="feiraqui">Saiba mais</button></a>
+            </div>
+
+            <div class="box_blog">
+                <img src="/img/logoMyAra.png" alt="" id="myAra">
+                <h5>MyAra</h5>
+                <p>Uma Healthcare que promete realizar o match entre colaboradores e psicólogos com foco em melhorar a saúde mental.</p>
+               <a href="https://github.com/projetoMyAra" target="_blank" title="GitHub MyAra" class="myara"> <button>Saiba mais</button></a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Blogs end -->
+
+    <!-- Footer Start -->
+
+    <footer>
+
+        <div class="box_footer">
+            <h6>Dúvidas? Entre em contato conosco</h6>
+
+            <div class="formatar_link">
+                <a href="#">Perguntas Frequentes</a>
+                <a href="lgpd.html">Termos de uso</a>
+                <a href="#">Privacidade</a>
+                <a href="#">Avisos Legais</a>
+            </div>
+        </div>
+
+        <div class="box_footer">
+            <div class="formatar_link">
+                <h6>Mapa do site</h6>
+                <a href="#home">Início</a>
+                <a href="#erp">ERP</a>
+                <a href="#plans">Planos</a>
+                <a href="#about">Sobre nós</a>
+                <a href="#blogs">Parcerias</a>
+            </div>
+        </div>
+
+        <div class="box_footer" id="contact">
+            <h6>Nossos Contatos</h6>
+
+            <ul>
+                <li><i class="fa-solid fa-envelope icon"></i> SuporteMetaMarcha@gmail.com</li>
+                <li><i class="fa-solid fa-envelope icon"></i> MetaMarchaG8@gmail.com</li>
+                <li><i class="fa-solid fa-map-location-dot icon"></i>São Paulo, SP - 05051-000</li>
+            </ul>
+        </div>
+
+        <div class="box_footer" id="social">
+
+            <img src="/img/logo_1.png">
+
+            <h6>Siga-nos</h6>
+            <div class="social">
+                <i class="fa-brands fa-twitter-square" title="Twitter"></i>
+                <i class="fa-brands fa-facebook-square" title="Facebook"></i>
+            </div>
+
+            <div class="social">
+                <a id="social_insta" href="https://www.instagram.com/metamarcha/" target="_blank" id="insta"><i
+                        class="fa-brands fa-instagram-square" title="Instagram"></a></i>
+                <i class="fa-brands fa-linkedin" title="Linkedin"></i>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Footer End -->
+
+
+    <script src="/js/script.js"></script>
+
+    <!-- Link swiper JS-->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+</body>
+
+</html>
